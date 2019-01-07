@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>食物百科</h2>
+        对比详情
     </div>
 </template>
 

@@ -3,10 +3,10 @@
        <dl @click="$router.push('/')">
            <dd>食物百科</dd>
        </dl>
-       <dl>
+       <dl @click="$router.push('/shopping')">
            <dd>逛吃</dd>
        </dl>
-       <dl>
+       <dl @click="$router.push('/my')">
            <dd>我的</dd>
        </dl>
    </footer>

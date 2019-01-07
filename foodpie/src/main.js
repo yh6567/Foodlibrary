@@ -11,11 +11,11 @@ import store from "./vuex";
 Vue.use(MintUI)
 for(var key in filters){
   Vue.filter(key,filters[key]);
-}
+}//过滤器的使用；若用到或添加请到filters文件夹里添加
 axios.interceptors.response.use(({data})=>{
   return data;
-})
-Vue.prototype.$ajax =axios;
+}) //axios拦截 .then返回的就是data数据本身；
+Vue.prototype.$axios =axios; //axios调用接口在vue原型上
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
