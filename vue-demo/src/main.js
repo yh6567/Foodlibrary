@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import "./common/css/reset.css"
+import "./common/js/flexble";
 
 Vue.config.productionTip = false
 
@@ -8,5 +10,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  components: { App },
   render: h => h(App)
 })
