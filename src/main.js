@@ -12,10 +12,13 @@ Vue.use(MintUI)
 for(var key in filters){
   Vue.filter(key,filters[key]);
 }
+
 axios.interceptors.response.use(({data})=>{
   return data;
 })
+
 Vue.prototype.$ajax =axios;
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
