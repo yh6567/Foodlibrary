@@ -11,19 +11,19 @@
        <nav>
            <dl @click="$router.push('/analysis')">
                <dd>
-                   <img src="" alt="">
+                   <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
                 </dd>
                <dt>饮食分析</dt>
            </dl>
             <dl @click="$router.push('/search')">
                <dd>
-                   <img src="" alt="">
+                   <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
                </dd>
                <dt>搜索对比</dt>
            </dl>
             <dl @click="$router.push('/sweep')">
                <dd>
-                   <img src="" alt="">
+                   <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
                </dd>
                <dt>扫码对比</dt>
            </dl>
@@ -81,6 +81,9 @@ export default {
 </script>
 
 <style scoped>
+#main{
+    background: #f2f2f2;
+}
 
 ul{
     display: flex;
@@ -108,7 +111,14 @@ li dl dt img{
 .nav-title{
     text-align: center;
     font-size: 5vw;
-    line-height: 8vw;
+    line-height: 10vw;
+    border-bottom: #ddd 1px solid;
+}
+.food-family{
+    background: #fff;
+    margin: 3vw;
+    
+
 }
 #main header{
     height: 40vw;
@@ -129,13 +139,19 @@ li dl dt img{
       font-weight: 400;
  }
  #main nav{
-     height: 10vw;
+     height: 20vw;
     align-items: center;
      display: flex;
      justify-content: space-around;
      font-size: 4vw;
+     background: #fff;
+     margin: 3vw;
  }
- 
+ nav img{
+     margin-left: 3VW;
+     width: 10vw;
+     height: 10vw;
+ }
 .search{
     margin: 2vw;
     border-radius: 3vw;
