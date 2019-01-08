@@ -68,7 +68,7 @@
 		height: 0.9rem;
 		line-height: 0.88rem;
 		text-indent: 0.1rem;
-	}
+	} 
 	.like>.nickname{
 		float: left;
 	}
