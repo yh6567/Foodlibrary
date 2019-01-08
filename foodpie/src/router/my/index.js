@@ -8,7 +8,10 @@ export default
     {
       path: '/my', //路径
       name: 'my', //名字
-      component: my  //组件名
+      component: my , //组件名
+      meta:{
+        show:true
+      }
     },
     {
     	path:"/myPic",
