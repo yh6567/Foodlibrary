@@ -1,11 +1,16 @@
 <template>
     <div>
-        <h2>狂吃</h2>
+    	
+       	<cate-com/>
     </div>
 </template>
 
 <script>
+import Cate from "./cate/cate.vue";
 export default {
+  components: {
+    "cate-com":Cate
+  }
 
 }
 </script>
