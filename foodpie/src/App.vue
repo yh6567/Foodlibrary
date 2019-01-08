@@ -17,11 +17,5 @@ export default {
 </script>
 
 <style scoped>
-<<<<<<< HEAD
-  *{
-    margin: 0;padding: 0;
-  }
-=======
 
->>>>>>> 218617395bf6e67b2c2c957a40f5436fb57d1edf
 </style>
