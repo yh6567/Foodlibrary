@@ -2,7 +2,7 @@
 	<div class="cate">
 		<div class="gap"></div>
 		<div class="nav">
-			<div><h2 class="nav-font">逛吃</h2></div>
+			<div><router-link to="/baike"><h2 class="nav-font">逛吃</h2></router-link></div>
 		</div>
 		<ul class="nav_left">
     		<li v-for="(item,index) in goods" @click="Aclick(index)"   :class = "currentindex == index?'aclick':''">{{item}}</li>
@@ -27,6 +27,7 @@ export default{
  methods:{
 	Aclick(index){
 		this.currentindex=index;
+		
 	}
  }
  
