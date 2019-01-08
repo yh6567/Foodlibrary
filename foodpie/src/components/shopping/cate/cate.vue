@@ -11,6 +11,7 @@
 </template>
 
 <script>
+	 
 export default{
  data(){
   	return {
@@ -27,7 +28,7 @@ export default{
 	Aclick(index){
 		this.currentindex=index;
 	}
- },
+ }
  
 }
 </script>
@@ -43,9 +44,9 @@ export default{
 	}
 	.nav-font{
 		width: 100%;
-		height: 1.68rem;
-		font-size: 0.68rem;
-		line-height: 1.68rem;
+		height: .84rem;
+		font-size: 0.34rem;
+		line-height: .84rem;
 		text-align: center;
 		border-bottom: 1px solid #f0f0f0;
 	}
@@ -53,14 +54,19 @@ export default{
 		height: 0.45rem;
 		width: 100%;
 	}
+	.nav_left{
+		width: 100%;
+		height:.7rem;
+	}
 	.nav_left>li{
 		float: left;
-		width: 24%;
-		height: 1.4rem;
+		width: 25%;
+		height: .7rem;
 		text-align: center;
-		line-height: 1.4rem;
+		line-height: .7rem;
 	}
 	.aclick{
 		color: #eb8c54;
 	}
+	
 </style>
