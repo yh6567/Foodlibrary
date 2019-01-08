@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81bd9577-3320-4c11-ad54-1fcd3906d41a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/Ellipse 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/Ellipse 2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/Ellipse 2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/Shape 3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/Shape 3@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/Shape 3@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/background@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/background@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg@2x(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg@3x(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/bg@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/caomei.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/caomei@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/caomei@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_qq@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_qq@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_wb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_wb@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_wb@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_wx@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/dl_icon_wx@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/duihao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/duihao@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/duihao@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fangdajing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fangdajing@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fangdajing@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fenshu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fenshu@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fenshu@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fenshudiceng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fenshudiceng@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/fenshudiceng@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-01@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-01@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-03@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-03@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-04@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-04@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-ms-2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-pc-yj (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-pc-yj .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-pc-yj @2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-pc-yj @2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-pc-yj @3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-pc-yj @3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-xj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-xj@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc-xj@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_sy-tx-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_sy-tx-1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_sy-tx-1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_sy-tx-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_sy-tx-2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_sy-tx-2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_tp_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_tp_1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_tp_1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_tx_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_tx_2@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/gc_tx_2@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/huangyuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/huangyuan@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/huangyuan@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-fx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-fx@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-fx@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-3@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-3@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-4@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-4@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-5@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-sc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-sc2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-sc2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-sc2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-sc@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon-sc@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_dc@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_dc@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_dz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_dz@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_dz@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_fh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_fh@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_fh@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_jl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_jl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_jl@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_qj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_qj@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_qj@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_qk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_qk@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_qk@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_sj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_sj@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_sj@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_vs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_vs@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_vs@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_x@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_zccg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_zccg@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/icon_zccg@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/jl_icon_wh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/jl_icon_wh@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/jl_icon_wh@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/juhuangyuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/juhuangyuan@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/juhuangyuan@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lajitong-hui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lajitong-hui@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lajitong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lajitong@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lajitong@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lvyuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lvyuan@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lvyuan@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_icon_ty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_icon_ty@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_icon_ty@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_pc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_pc@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_pc@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_xq-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_xq-2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_xq-2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_xqtp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_xqtp@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ms_xqtp@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/naozhong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/naozhong@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/pc_tp1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/pc_tp1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/pc_tp1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/pc_tp2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/pc_tp2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/pc_tp2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/pingguo@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/qingchu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/qingchu@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/qingchu@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sc_tp_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sc_tp_1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sc_tp_1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sc_tp_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sc_tp_2@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sc_tp_2@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/scsw-xj 拷贝.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/scsw-xj 拷贝@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/scsw-xj 拷贝@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/shangjiantou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/shangjiantou@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/shangjiantou@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_pg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_pg@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_pg@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_vs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_vs@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_vs@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_xj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_xj@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ssdb_icon_xj@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sw_tp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sw_tp@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sw_tp@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/swxx_icon_dian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/swxx_icon_dian@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/swxx_icon_dian@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dcs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dcs@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dcs@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dnsj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dnsj@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dnsj@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dx@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dx@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dz@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_dz@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_gc(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_gc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_gc@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_gc@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_gc@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_gc@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_hbw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_hbw@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_hbw@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_jg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_jg@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_jg@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_jyj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_jyj@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_jyj@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_kfc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_kfc@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_kfc@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_m@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_m@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_nn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_nn@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_nn@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_qt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_qt@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_qt@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_rd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_rd@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_rd@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_sc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_sc@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_sc@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_sg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_sg@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_sg@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_smdb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_smdb@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_smdb@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ss@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ss@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ssdb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ssdb@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ssdb@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_swbk(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_swbk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_swbk@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_swbk@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_swbk@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_swbk@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_tw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_tw@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_tw@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_wd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_wd@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_wd@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_wd@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_xbk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_xbk@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_xbk@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_yl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_yl@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_yl@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ysfx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ysfx@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_ysfx@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_yz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_yz@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_yz@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_zs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_zs@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/sy_icon_zs@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tanhao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tanhao@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tanhao@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tj_zx_dz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tj_zx_dz@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tj_zx_dz@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_2@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_2@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_3@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_3@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_4@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tp_sc_4@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tu1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tu1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/tu1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_dl_tx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_dl_tx@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_dl_tx@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_db.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_db@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_db@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_jt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_jt@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_jt@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_sc(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_sc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_sc@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_sc@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_sc@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_sc@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_zp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_zp@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_icon_zp@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_tx_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_tx_3@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wd_tx_3@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wenhao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wenhao@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/wenhao@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/xg_tx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/xg_tx@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/xg_tx@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/xiajiantou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/xiajiantou@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/xiajiantou@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/yuanxing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/yuanxing@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/yuanxing@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon@2x(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon@3x(2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_dian(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_dian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_dian@2x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_dian@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_dian@3x(1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zs_icon_dian@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zt_sd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zt_sd@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zt_sd@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zt_xh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zt_xh@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/img/zt_xh@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/lajitong-hui@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/naozhong@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/ss_icon_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/ss_icon_ss@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/assets/ss_icon_ss@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/common/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/common/js/flexble.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/detail.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/foodAnalysis.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/my/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/my/myCollection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/my/myCompare.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/my/myNav.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/my/myPic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/my/myTop.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/my/myUpload.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/shopping/cate/cate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/shopping/evaluating/evaluating.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/shopping/intellectual/intellectual.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/shopping/page/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/router/baike/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/router/my/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/router/shopping/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postcssrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/.postcssrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/build/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/check-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/build/check-versions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/build/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/build/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vue-loader.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/build/vue-loader.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/build/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/build/webpack.dev.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/build/webpack.prod.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/config/dev.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icon-rili-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/icon-rili-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icon-rili-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/icon-rili-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icon-rili-1@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/icon-rili-1@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/lajitong-hui@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/img/lajitong-hui@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/naozhong@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/img/naozhong@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ss_icon_ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ss_icon_ss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ss_icon_ss@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ss_icon_ss@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/ss_icon_ss@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/assets/img/ss_icon_ss@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/baike/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/sweepCode.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/footnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/common/footnav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/err/err.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/err/err.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/kuangchi/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/shopping/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/my/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/searchAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/allsearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/search/allsearch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/search/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/search/search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/searched.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/search/searched.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/filters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/baike/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/router/search/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/kuangchi/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/vuex/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/my/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vuex/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/static/.gitkeep" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-324205266">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="7" />
+          <entry key="js" value="28" />
+          <entry key="json" value="4" />
+          <entry key="png" value="9" />
+          <entry key="vue" value="35" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="Image" value="9" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="28" />
+          <entry key="Svelte" value="7" />
+          <entry key="Vue.js" value="35" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="63" />
+          <entry key="js" value="895" />
+          <entry key="vue" value="2724" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="895" />
+          <entry key="Svelte" value="63" />
+          <entry key="Vue.js" value="2724" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding>
+                <element signature="e#130#160#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpie/src/common/js/flexble.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/allsearch.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-144" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/search.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/searched.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/src/components/common/footnav.vue" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/components/search/seach-nav.vue" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/components/search/index.vue" />
+        <option value="$PROJECT_DIR$/src/components/search/allsearch.vue" />
+        <option value="$PROJECT_DIR$/observer.js" />
+        <option value="$PROJECT_DIR$/src/observer.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/components/search/searched.vue" />
+        <option value="$PROJECT_DIR$/src/components/search/search.vue" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/foodpie/src/router/index.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/router/shopping/index.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/router/search/index.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/searchAnalysis.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/router/baike/index.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/App.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/main.js" />
+        <option value="$PROJECT_DIR$/foodpie/index.html" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/search/index.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/common/js/flexble.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/search/search.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/foodpie/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/foodpie/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="125" />
+    <option name="y" value="23" />
+    <option name="width" value="1315" />
+    <option name="height" value="805" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/components/common" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81bd9577-3320-4c11-ad54-1fcd3906d41a" name="Default Changelist" comment="" />
+      <created>1546832197594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546832197594</updated>
+      <workItem from="1546832199206" duration="8455000" />
+      <workItem from="1546847834510" duration="14184000" />
+      <workItem from="1546912021123" duration="2889000" />
+      <workItem from="1546931697357" duration="7375000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="32903000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="571" y="0" width="869" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2759434" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/router/my/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/kuangchi/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/filters/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/logo.png" />
+    <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="69" column="58" lean-forward="true" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/flexble.js" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/err/err.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/kuangchi/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/baike/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/my/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/observer.js" />
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observer.js" />
+    <entry file="file://$PROJECT_DIR$/src/assets/lajitong-hui@3x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/icon-rili-1@3x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/icon-rili-1@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/icon-rili-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/naozhong@3x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/ss_icon_ss.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/ss_icon_ss@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/ss_icon_ss@3x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search/search.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search/searched.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/footnav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search/allsearch.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/router/my/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/shopping/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/router/baike/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/router/shopping/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/router/search/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/searchAnalysis.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/allsearch.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/searched.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/common/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/common/js/flexble.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#130#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/search.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
