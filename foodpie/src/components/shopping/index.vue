@@ -10,6 +10,7 @@
 import Cate from "./cate/cate.vue";
 import Page from "./page/index.vue";
 import Home from './evaluating/evaluating.vue'
+import Intellectual from './intellectual/intellectual.vue'
 export default {
 	routes:[
 		{
@@ -21,7 +22,7 @@ export default {
 	,
   components: {
     "cate-com":Cate,
-    "Page-com":Page
+    "Page-com":Page,
   }
 
 }
