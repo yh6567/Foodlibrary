@@ -1,5 +1,5 @@
 <template>
-   <footer>
+   <footer v-if="this.$route.meta.show">
        <dl @click="$router.push('/')">
            <dd>食物百科</dd>
        </dl>
@@ -14,20 +14,20 @@
 
 <script>
 export default {
-
+   
 }
 </script>
 
 <style scoped>
 footer {
   width: 100%;
-  
+  height: 15vw;
   background: #fff;
   border-top: 1px solid #f1f1f1;
   position: fixed;
   bottom: 0;
   left: 0;
-
+    font-size: 4vw;
   display: flex;
   justify-content: space-around;
 }
