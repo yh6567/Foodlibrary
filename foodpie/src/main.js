@@ -9,6 +9,9 @@ import "@/assets/css/reset.css"
 import axios from 'axios'
 import filters from "@/filters"
 import store from "./vuex";
+
+import "./common/css/reset.css"
+
 Vue.use(MintUI)
 for(var key in filters){
   Vue.filter(key,filters[key]);
