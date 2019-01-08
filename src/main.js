@@ -8,7 +8,9 @@ import 'mint-ui/lib/style.css'
 import axios from 'axios'
 import filters from "@/filters"
 import store from "./vuex";
+
 Vue.use(MintUI)
+
 for(var key in filters){
   Vue.filter(key,filters[key]);
 }
