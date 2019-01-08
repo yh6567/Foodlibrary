@@ -1,5 +1,6 @@
 <template>
     <div>
+        <span @click="$router.push('/')"><</span>
         搜索分析
     </div>
 </template>

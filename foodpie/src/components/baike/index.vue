@@ -28,7 +28,6 @@
                <dt>扫码对比</dt>
            </dl>
        </nav>
-       <!-- <img src="@/assets/logo.png" alt=""> -->
        <div class="food-family">
           <p class="nav-title">食物分类</p>
           <ul>
@@ -50,18 +49,20 @@ export default {
     data(){
         return{
             foodFamilylist:[
-               { "name":"主食类","imgUrl":"@/assets/logo.png"},
-               { "name":"肉蛋类","imgUrl":"@/assets/img/"},
-               { "name":"大豆及制品","imgUrl":"@/assets/img/"},
-               { "name":"蔬菜菌藻类","imgUrl":"@/assets/img/"},
-               { "name":"水果类","imgUrl":"@/assets/img/"},
-               { "name":"奶类","imgUrl":"@/assets/img/"},
-               { "name":"油脂类","imgUrl":"@/assets/img/"},
-               { "name":"坚果类","imgUrl":"@/assets/img/"},
-               { "name":"调味品","imgUrl":"@/assets/img/"},
-               { "name":"饮料类","imgUrl":"@/assets/img/"},
-               { "name":"零食，点心及冷饮","imgUrl":"@/assets/img/"},
-               { "name":"其他","imgUrl":"@/assets/img/"},
+               
+              
+                {imgUrl:require("../../assets/img/sy_icon_zs@2x.png"),name:"主食类"},
+                {imgUrl:require("../../assets/img/sy_icon_rd@2x.png"),name:"肉蛋类"},
+                {imgUrl:require("../../assets/img/sy_icon_dz@2x.png"),name:"大豆及制品"},           
+                {imgUrl:require("../../assets/img/sy_icon_sc@2x.png"),name:"蔬菜菌藻类"},
+                {imgUrl:require("../../assets/img/sy_icon_sg@2x.png"),name:"水果类"},
+                {imgUrl:require("../../assets/img/sy_icon_nn@2x.png"),name:"奶类"},
+                {imgUrl:require("../../assets/img/sy_icon_yz@2x.png"),name:"油脂类"},
+                {imgUrl:require("../../assets/img/sy_icon_jg@2x.png"),name:"坚果类"},
+                {imgUrl:require("../../assets/img/sy_icon_tw@2x.png"),name:"调味品"},
+                {imgUrl:require("../../assets/img/sy_icon_yl@2x.png"),name:"饮料类"},
+                {imgUrl:require("../../assets/img/sy_icon_dx@2x.png"),name:"零食,点心及冷饮"},
+                {imgUrl:require("../../assets/img/sy_icon_qt@2x.png"),name:"其他"} 
                ],
       value:''
         } 
@@ -87,21 +88,22 @@ ul{
      flex-wrap: wrap;
 }
 li{
+   
     width: 30vw;
     height: 30vw;
-    list-style: none;
-    
+    list-style: none; 
 }
 li dl{
    display: flex;
    flex-direction: column;
    justify-content: space-around;
     align-items: center;
+    font-size: 4vw;
 }
 
 li dl dt img{
     width: 25vw;
-    height: 25vw;
+    height: 20vw;
 }
 .nav-title{
     text-align: center;
@@ -116,14 +118,14 @@ li dl dt img{
  #main h2{
      text-align: center;
      line-height:10vw;
-     font-size: 1rem;
+     font-size: 5vw;
      font-weight: 600;
  }
  #main h3{
       text-align: center;
-      margin-top: 1.5rem;
-      line-height:1rem;
-      font-size: 0.9rem;
+      margin-top: 8vw;
+      line-height:2vw;
+      font-size: 4vw;
       font-weight: 400;
  }
  #main nav{
@@ -135,10 +137,11 @@ li dl dt img{
  }
  
 .search{
-    margin: 1rem;
+    margin: 2vw;
     border-radius: 3vw;
     width: 92vw;
-    height: 2rem;
+    height: 8vw;
+    font-size: 4vw;
     background: #fff;
 }
 .search input{

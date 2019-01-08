@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span @click="$router.push('/')">></span>
+        <span @click="$router.push('/')"><</span>
        <h2 :title="title">{{title}}</h2>
     </div>
 </template>
