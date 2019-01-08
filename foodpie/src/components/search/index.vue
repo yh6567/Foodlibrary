@@ -21,10 +21,10 @@
       'searched-com': searched,
       'allsearch-com': allsearch,
       },
-      mounted:{
-        function(){
-            console.log(this,$refs);
-        }
+      mounted(){
+
+            console.log(this.$refs);
+
       }
   }
 </script>

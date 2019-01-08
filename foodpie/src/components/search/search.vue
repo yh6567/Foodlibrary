@@ -1,9 +1,9 @@
 //搜索页面输入框
 <template>
   <div>
-    <img class="back" src="../../assets/icon-rili-1@3x.png">
-    <input placeholder="请输入食物名称"/>
-    <img class="search" src="../../assets/ss_icon_ss@3x.png"/>
+    <img class="back" src="../../assets/img/icon-rili-1@3x.png">
+    <input type="text" v-model="searching" placeholder="请输入食物名称"/>
+    <img class="search" src="../../assets/img/ss_icon_ss@3x.png" @click="writeSearched()"/>
   </div>
 </template>
 
@@ -11,8 +11,18 @@
   export default {
       data(){
           return{
-              
+              searching :"",
+              besearched :[]
           }
+      },
+      methods:{
+         writeSearched(){
+             if(!this.searching)return;
+             if(this.besearched.map((a)=>{if(a==this.searching)return}))return;
+             this.besearched.push(this.searching);
+             console.log(this.besearched);
+             this.searching = '';
+        }
       }
   }
 </script>
