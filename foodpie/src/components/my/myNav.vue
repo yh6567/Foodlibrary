@@ -18,22 +18,22 @@
 			return{
 				myNavs:[
 					{
-						src:"../../assets/img/wd_icon_zp.png",
+						src:require("../../assets/img/wd_icon_zp.png"),
 						tit:"我的照片",
 						name:"myPic"
 					},
 					{
-						src:"../../assets/img/wd_icon_sc.png",
+						src:require("../../assets/img/wd_icon_sc.png"),
 						tit:"我的收藏",
 						name:"myCollection"
 					},
 					{
-						src:"../../assets/img/wd_icon_sc(1).png",
+						src:require("../../assets/img/wd_icon_sc(1).png"),
 						tit:"上传食物数据",
 						name:"myUpload"
 					},
 					{
-						src:"../../assets/img/wd_icon_db.png",
+						src:require("../../assets/img/wd_icon_db.png"),
 						tit:"对比库",
 						name:"myCompare"
 					}
@@ -57,20 +57,24 @@
 		line-height: 1.25rem;
 	}
 	.my_nav>li>a{
-		display: flex;
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 	.my_nav>li>a>img{
-		width: .78rem;
 		margin-top: .41rem;
+		float: left;
 	}
 	.my_nav>li>a>h4{
-		width: 6.5rem;
 		font-size:.26rem;
 		font-family:PingFang-SC-Regular;
 		font-weight: normal;
 		color:rgba(17,17,17,1);
+		float: left;
+		margin-left: .2rem;
 	}
 	.my_nav>li>a>p{
 		margin-top: .45rem;
+		float: right;
 	}
 </style>

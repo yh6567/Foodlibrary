@@ -5,12 +5,17 @@ import MyUpload from "@/components/my/myUpload";
 import MyCompare from "@/components/my/myCompare";
 import Login from "@/components/my/login";
 import ForgetPwd from "@/components/my/forgetPwd";
+import register from "@/components/my/register";
+
 export default 
        [
     {
       path: '/my', //路径
       name: 'my', //名字
-      component: my  //组件名
+      component: my , //组件名
+      meta:{
+      	show:true
+      }
     },
     {
     	path:"/myPic",
@@ -44,5 +49,10 @@ export default
     	path:"/forgetPwd",
     	name:"forgetPwd",
     	component:ForgetPwd
+	},
+	{
+    	path:"/register",
+    	name:"register",
+    	component:register
     },
   ]

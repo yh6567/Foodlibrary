@@ -1,11 +1,12 @@
 <template>
 	<div class="myLogin">
 		<div class="loginTop">
-			<img src="../../assets/img/icon-rili-1.png" />
+			<img @click="loginBack()" src="../../assets/img/icon-rili-1.png" />
 			<p>登录</p>
 		</div>
 		<div class="loginInput">
-			<input type="text" placeholder="手机" />
+			<input type="text" placeholder="手机" /><br />
+			<!-- <span>手机号</span> -->
 			<input type="password" placeholder="密码" />
 			<div class="forgetPwd">
 				<router-link :to="{name:'forgetPwd'}">忘记密码？</router-link>
@@ -19,9 +20,14 @@
 		</div>
 		<div class="otherLogin">
 			<h4>使用合作账号登录</h4>
-			<li>
-				<img />
-			</li>
+			<ul>
+				<li v-for="(item,index) in loginNavs">
+					<router-link :to="item.name">
+						<img :src="item.src" />
+					</router-link>
+				</li>
+			</ul>
+			
 		</div>
 	</div>
 </template>
@@ -32,19 +38,24 @@
 			return {
 				loginNavs:[
 					{
-						src:""
+						name:"wechat",
+						src:require("../../assets/img/dl_icon_wx.png")
 					},
 					{
-						src:""
+						name:"qq",
+						src:require("../../assets/img/dl_icon_qq.png")
 					},
 					{
-						src:""
+						name:"weibo",
+						src:require("../../assets/img/dl_icon_wb.png")
 					},
 				]
 			}
 		},
-		created(){
-			console.log(router.path)
+		methods:{
+			loginBack(){
+				this.$router.back();
+			}
 		}
 	}
 </script>
@@ -52,16 +63,15 @@
 <style>
 	.myLogin{
 		width: 100%;
-		height: 100%;
-		/*padding: 0 .32rem;*/
+		height: 13.34rem;
 		font-family:PingFang-SC-Regular;
 		font-size: .26rem;
+		background: #f7f7f7;
 	}
 	.loginTop{
 		width: 100%;
 		height: 1.29rem;
-		border-bottom: .01rem solid #ccc;
-		background: pink;
+		border-bottom: .01rem solid rgba(240,240,240,1);
 		overflow: hidden;
 	}
 	.loginTop>img{
@@ -71,7 +81,7 @@
 	.loginTop>p{
 		position: absolute;
 		left: 3.49rem;
-		top: .71rem;
+		top: .69rem;
 		font-size: .34rem;
 		color: rgba(17,17,17,1);
 		
@@ -114,6 +124,24 @@
 		color: #A09F9F;
 		
 	}
-	.loginInput>.register>a{
+	.otherLogin{
+		width: 100%;
+		height: 2.32rem;
+		margin-top: 4.5rem;
+	}
+	.otherLogin>h4{
+		width: 100%;
+		text-align: center;
+		font-size:.26rem;
+		font-family:PingFang-SC-Regular;
+		font-weight:normal;
+		color:rgba(17,17,17,1);
+		margin-bottom: .4rem;
+	}
+	.otherLogin>ul{
+		width: 100%;
+		display: flex;
+		padding: 0 1.65rem;
+		justify-content: space-between;
 	}
 </style>
