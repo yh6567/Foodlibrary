@@ -23,6 +23,7 @@
 			<ul>
 				<li v-for="(item,index) in loginNavs">
 					<router-link :to="item.name">
+						<img src="../../assets/img/background.png" />
 						<img :src="item.src" />
 					</router-link>
 				</li>
@@ -39,7 +40,7 @@
 				loginNavs:[
 					{
 						name:"wechat",
-						src:require("../../assets/img/dl_icon_wx.png")
+						src:require("../../assets/img/dl_icon_wx@2x.png")
 					},
 					{
 						name:"qq",

@@ -44,7 +44,7 @@ export default {
   			url:"/api/mock/5c3465b07db0f179db202936/example/register_check",
   		}).then((data)=>{
   			console.log(1)
-  			console.log(data);
+//			console.log(data);
   		})
   	}
   }

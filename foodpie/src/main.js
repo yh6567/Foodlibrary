@@ -10,6 +10,7 @@ import axios from 'axios'
 import filters from "@/filters"
 import store from "./vuex";
 
+import "./common/js/flexble.js"
 import "./common/css/reset.css"
 
 Vue.use(MintUI)

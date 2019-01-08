@@ -1,11 +1,28 @@
 <template>
     <div>
-        <h2>狂吃</h2>
+       	<cate-com/>
+       	<Page-com/>
+       	<evaluating-com/>
     </div>
 </template>
 
 <script>
+import Cate from "./cate/cate.vue";
+import Page from "./page/index.vue";
+import Home from './evaluating/evaluating.vue'
 export default {
+	routes:[
+		{
+		path: '/home',
+	    name:"home",
+	    component: Home
+		}
+	]
+	,
+  components: {
+    "cate-com":Cate,
+    "Page-com":Page
+  }
 
 }
 </script>
