@@ -42,6 +42,7 @@
 		display: block;
 		width: 1.18rem;
 		height: .47rem;
+		line-height: .47rem;
 		border:1px solid rgba(243,213,174,1);
 		border-radius:4px;
 		margin-left: 3.2rem;

@@ -1,7 +1,7 @@
 <template>
 	<div class="myLogin">
 		<div class="loginTop">
-			<img @click="loginBack()" src="../../assets/img/icon-rili-1.png" />
+			<img @click="loginBack()" src="../../assets/img/icon-rili-1@2x.png" />
 			<p>登录</p>
 		</div>
 		<div class="loginInput">
@@ -23,7 +23,6 @@
 			<ul>
 				<li v-for="(item,index) in loginNavs">
 					<router-link :to="item.name">
-						<img src="../../assets/img/background.png" />
 						<img :src="item.src" />
 					</router-link>
 				</li>
@@ -44,11 +43,11 @@
 					},
 					{
 						name:"qq",
-						src:require("../../assets/img/dl_icon_qq.png")
+						src:require("../../assets/img/dl_icon_qq@2x.png")
 					},
 					{
 						name:"weibo",
-						src:require("../../assets/img/dl_icon_wb.png")
+						src:require("../../assets/img/dl_icon_wb@2x.png")
 					},
 				]
 			}
@@ -93,6 +92,7 @@
 	.loginInput>input{
 		width:6.86rem;
 		height:.88rem;
+		font-size:.26rem;
 		background:rgba(255,255,255,1);
 		border:.02rem solid rgba(240,240,240,1);
 		margin-top: .4rem;

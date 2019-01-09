@@ -1,7 +1,7 @@
 <template>
     <div class="register">
-        <div class="registerTop">
-            <img src="../../assets/img/icon-rili-1.png"/>
+        <div class="registerTop" @click="loginBack()">
+            <img src="../../assets/img/icon-rili-1@2x.png"/>
          	<span>返回</span>
          	<p>免费注册</p>
         </div>
@@ -41,27 +41,27 @@ export default {
   methods:{
   	handleGet(){
   		this.$axios({
-  			url:"/api/mock/5c3465b07db0f179db202936/example/register_check",
+  			url:"/api/register",
   		}).then((data)=>{
   			console.log(1)
-//			console.log(data);
+			console.log(data);
   		})
+  	},
+  	loginBack(){
+  		this.$router.back();
   	}
   }
 }
 </script>
 
 <style>
-	*{
-		margin: 0;
-		padding: 0;
-	}
     .register{
         width: 7.5rem;
         height: 13.34rem;
         background: #f7f7f7;
         overflow: hidden;
         font-family:PingFang-SC-Regular;
+        font-size: .26rem;
     }
     .register>.registerTop{
     	margin-top: .38rem;
@@ -112,6 +112,11 @@ export default {
 		font-size:.26rem;
 		color:rgba(160,159,159,1);
     }
+    /*改变input中placeholder字体颜色*/
+    input::-webkit-input-placeholder{
+		color:rgba(160,159,159,1);
+		font-size:.26rem;
+    }
     .form>.tel>input:nth-child(1){
     	width: 4.74rem;
     	display: block;
@@ -129,6 +134,10 @@ export default {
     }
     .form>p>input{
     	vertical-align: bottom;
+    	width:.24rem;
+		height:.24rem;
+		border:.01rem solid rgba(0,0,0,1);
+		border-radius:.04rem;
     }
     .form>input{
     	width: 6.86rem;
@@ -136,5 +145,7 @@ export default {
     	margin-top: .92rem;
     	background:rgba(235,139,78,1);
 		border-radius:.04rem;
+		font-size:.28rem;
+		color:rgba(255,255,255,1);
     }
 </style>

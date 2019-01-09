@@ -18,22 +18,22 @@
 			return{
 				myNavs:[
 					{
-						src:require("../../assets/img/wd_icon_zp.png"),
+						src:require("../../assets/img/wd_icon_zp@2x.png"),
 						tit:"我的照片",
 						name:"myPic"
 					},
 					{
-						src:require("../../assets/img/wd_icon_sc.png"),
+						src:require("../../assets/img/wd_icon_sc@2x.png"),
 						tit:"我的收藏",
 						name:"myCollection"
 					},
 					{
-						src:require("../../assets/img/wd_icon_sc(1).png"),
+						src:require("../../assets/img/wd_icon_sc@2x(1).png"),
 						tit:"上传食物数据",
 						name:"myUpload"
 					},
 					{
-						src:require("../../assets/img/wd_icon_db.png"),
+						src:require("../../assets/img/wd_icon_db@2x.png"),
 						tit:"对比库",
 						name:"myCompare"
 					}
