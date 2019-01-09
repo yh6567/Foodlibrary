@@ -4,7 +4,7 @@
         <p>最近搜过</p>
     </div>
     <ul>
-      <li v-for="(item,index) in searched">
+      <li v-for="(item,index) in searched" @click="allSearched(item)">
         <img src="../../../assets/img/naozhong@3x.png"/>
         <span >{{item}}</span>
       </li>
@@ -21,7 +21,8 @@ export default {
     data() {
         return {
             searched:[],
-            searchedclearflag: true
+            searchedclearflag: true,
+            allsearched:[]
         }
     },
     methods:{
@@ -29,6 +30,16 @@ export default {
             window.localStorage.setItem("searched",'');
             this.searched = [];
             this.searchedclearflag = false;
+        },
+        allSearched(a){
+            if(window.localStorage.getItem("searched")){
+                this.allsearched  = window.localStorage.getItem("searched").split(",");
+            }
+            this.allsearched = this.allsearched.filter( each =>{
+                return each !== a;
+            })
+            this.allsearched.push(a);
+            window.localStorage.setItem("searched",this.allsearched.toString());
         }
     },
     created(){
