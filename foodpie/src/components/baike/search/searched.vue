@@ -1,5 +1,5 @@
 <template>
-  <div class="searched">
+  <div class="searched" v-show="searchedclearflag">
     <div class="searched-title">
         <p>最近搜过</p>
     </div>
@@ -20,17 +20,16 @@
 export default {
     data() {
         return {
-            searched:[]
+            searched:[],
+            searchedclearflag: true
         }
     },
     methods:{
         clearsearched(){
-            window.localStorage.setItem("searched","");
-            this.searched = '';
+            window.localStorage.setItem("searched",'');
+            this.searched = [];
+            this.searchedclearflag = false;
         }
-    },
-    watch: {
-        // searched,
     },
     created(){
             this.searched = window.localStorage.getItem("searched").split(",");

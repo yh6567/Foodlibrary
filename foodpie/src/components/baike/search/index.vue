@@ -1,7 +1,7 @@
 <template>
   <div class="min-height">
     <search-com/>
-    <searched-com v-show="this.searchedflag"/>
+    <searched-com v-show="searchedflag"/>
     <allsearch-com/>
   </div>
 </template>
@@ -22,7 +22,6 @@
       'allsearch-com': allsearch,
       },
       mounted(){
-
 
       },
       created(){

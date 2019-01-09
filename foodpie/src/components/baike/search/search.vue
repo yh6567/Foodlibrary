@@ -1,7 +1,7 @@
 //搜索页面输入框
 <template>
   <div>
-    <img class="back" src="../../../assets/img/icon-rili-1@3x.png">
+    <img class="back" src="../../../assets/img/icon-rili-1@3x.png" @click="back()">
     <input type="text" v-model="searching" placeholder="请输入食物名称"/>
     <img class="search" src="../../../assets/img/ss_icon_ss@3x.png" @click="writeSearched()"/>
   </div>
@@ -22,16 +22,16 @@
              if(window.localStorage.getItem("searched")){
                  this.besearched  = window.localStorage.getItem("searched").split(",");
              }
-             console.log(this.besearched);
-
              this.besearched = this.besearched.filter( each =>{
                return each !== this.searching;
              })
              this.besearched.push(this.searching);
              window.localStorage.setItem("searched",this.besearched.toString());
              this.searching = '';
-
-        }
+        },
+          back(){
+             this.$router.push({path:"/"});
+          }
       }
   }
 </script>

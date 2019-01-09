@@ -4,7 +4,7 @@
       <p>大家都在搜</p>
     </div>
     <ul>
-      <li v-for="(item,index) in fruits">
+      <li v-for="(item,index) in fruits" @click="touchSearched(item)">
         <span>{{item}}</span>
       </li>
     </ul>
@@ -15,11 +15,20 @@
   export default {
     data(){
       return{
-        fruits:['苹果','香蕉','馒头','红薯','酸奶','米饭','玉米','鸡蛋','豆浆','草莓']
+        fruits:['苹果','香蕉','馒头','红薯','酸奶','米饭','玉米','鸡蛋','豆浆','草莓'],
+          touchbesearched:[]
       }
-    },
-      created(){
-        if()
+    },methods:{
+          touchSearched(a){
+              if(window.localStorage.getItem("searched")){
+                  this.touchbesearched  = window.localStorage.getItem("searched").split(",");
+              }
+              this.touchbesearched = this.touchbesearched.filter( each =>{
+                  return each !== a;
+              })
+              this.touchbesearched.push(a);
+              window.localStorage.setItem("searched",this.touchbesearched.toString());
+          }
       }
   }
 </script>
