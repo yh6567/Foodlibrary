@@ -22,14 +22,7 @@ export default
         show:false
       }
     },
-    {
-      path: '/search',
-      name: 'search',
-      component: search,
-      meta:{
-        show:false
-      }
-    },{
+   {
       path:"/sweep",
       name:'sweep',
       component:sweep,

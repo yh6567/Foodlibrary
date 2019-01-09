@@ -1,5 +1,5 @@
 import shopping from "@/components/shopping/index"
-export default 
+export default
        [
     {
       path: '/shopping',

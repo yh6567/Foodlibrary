@@ -1,4 +1,4 @@
-# foodpie
+# foodLibrary
 
 > A Vue.js project
 
