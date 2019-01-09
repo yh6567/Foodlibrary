@@ -1,8 +1,14 @@
-<template>
+	<template>
   <div id="app">
 
     <router-view/>
+<<<<<<< HEAD
     <FootNav />
+=======
+
+    <FootNav />
+
+>>>>>>> yh
   </div>
 </template>
 
@@ -16,6 +22,11 @@ export default {
 }
 </script>
 
+<<<<<<< HEAD
 <style>
+=======
+
+<style scoped>
+>>>>>>> yh
 
 </style>

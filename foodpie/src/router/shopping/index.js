@@ -1,4 +1,5 @@
 import shopping from "@/components/shopping/index"
+
 export default
        [
     {
@@ -8,5 +9,6 @@ export default
       meta:{
         show:true
       }
-    }
+    },
+    
   ]
