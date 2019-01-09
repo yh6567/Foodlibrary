@@ -75,7 +75,11 @@ export default {
 
     },
     mounted(){
-
+        // this.$axios.get("http://localhost:3000/data").then((data)=>{
+       // console.log(data);
+        //this.foodFamilylist=data;
+        
+   // })
     }
 }
 </script>

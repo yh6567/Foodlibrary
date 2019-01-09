@@ -11,7 +11,8 @@ import filters from "@/filters"
 import store from "./vuex";
 import Bus from "./Bus"
 Vue.prototype.$bus = Bus;
-
+import echarts from "echarts"
+Vue.prototype.$echarts = echarts;
 import "./common/css/reset.css"
 
 Vue.use(MintUI)
