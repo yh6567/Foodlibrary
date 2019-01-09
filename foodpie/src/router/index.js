@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 import Router from 'vue-router'
 
- import baike from './baike'
+ import baike from './baike/'
  import shopping from './shopping'
  import my from "./my"
 Vue.use(Router)

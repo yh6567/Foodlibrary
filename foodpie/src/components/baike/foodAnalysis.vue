@@ -11,8 +11,8 @@
 
       </div>
     </div>
-    <div>
-        <input type="text" placeholder="搜索">
+    <div class="search-input">
+        <i>√</i><input type="text" placeholder="请输入食物名称">
     </div>
   </div>
 </template>
@@ -36,5 +36,17 @@ export default {};
     border: none;
     outline: none;
 
+}
+.search-input{
+  height: 10vw;
+  background: #f4f4f4;
+  margin: 2vw;
+  
+}
+.search-input input{
+  line-height: 10vw;
+  background: #f4f4f4;
+  border: none;
+  outline: none;
 }
 </style>
