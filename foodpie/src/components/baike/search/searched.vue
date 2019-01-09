@@ -5,12 +5,12 @@
     </div>
     <ul>
       <li>
-        <img src="../../assets/img/naozhong@3x.png"/>
+        <img src="../../../assets/img/naozhong@3x.png"/>
         <span >苹果</span>
       </li>
     </ul>
     <div class="clear-history">
-      <img src="../../assets/img/lajitong-hui@3x.png">
+      <img src="../../../assets/img/lajitong-hui@3x.png">
       <p>清空历史记录</p>
     </div>
   </div>
