@@ -4,12 +4,12 @@
         <p>最近搜过</p>
     </div>
     <ul>
-      <li>
+      <li v-for="(item,index) in searched">
         <img src="../../../assets/img/naozhong@3x.png"/>
-        <span >苹果</span>
+        <span >{{item}}</span>
       </li>
     </ul>
-    <div class="clear-history">
+    <div class="clear-history" @click="clearsearched()">
       <img src="../../../assets/img/lajitong-hui@3x.png">
       <p>清空历史记录</p>
     </div>
@@ -18,7 +18,23 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            searched:[]
+        }
+    },
+    methods:{
+        clearsearched(){
+            window.localStorage.setItem("searched","");
+            this.searched = '';
+        }
+    },
+    watch: {
+        // searched,
+    },
+    created(){
+            this.searched = window.localStorage.getItem("searched").split(",");
+    }
 }
 </script>
 
@@ -42,9 +58,11 @@ export default {
     padding-left: .33rem;
   }
   ul>li{
-    background: #fff;
-    width: 100%;
-    height: .89rem;
+      background: #fff;
+      width: 100%;
+      height: .89rem;
+      border-bottom: 2px solid #F6F6F6;
+      overflow: hidden;
     img{
       width: .24rem;
       height: .24rem;
@@ -54,16 +72,6 @@ export default {
     span{
       margin: .29rem 0 .29rem 0;
       float: left;
-    }
-    &::after{
-        content: '';
-        width: 5.86rem;
-        height: .01rem;
-        *zoom:1;
-        display: table;
-        border: red;
-        margin-left: .82rem;
-        clear: both;
     }
   }
   .clear-history{

@@ -7,6 +7,7 @@
   </div>
 </template>
 
+
 <script>
   export default {
       data(){
@@ -18,10 +19,18 @@
       methods:{
          writeSearched(){
              if(!this.searching)return;
-             if(this.besearched.map((a)=>{if(a==this.searching)return}))return;
-             this.besearched.push(this.searching);
+             if(window.localStorage.getItem("searched")){
+                 this.besearched  = window.localStorage.getItem("searched").split(",");
+             }
              console.log(this.besearched);
+
+             this.besearched = this.besearched.filter( each =>{
+               return each !== this.searching;
+             })
+             this.besearched.push(this.searching);
+             window.localStorage.setItem("searched",this.besearched.toString());
              this.searching = '';
+
         }
       }
   }
