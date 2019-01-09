@@ -1,28 +1,35 @@
 <template>
     <div>
        	<cate-com/>
+       	<!--<components is=""></components>-->
        	<Page-com/>
-       	<evaluating-com/>
+       	<!--<Kap-com/>-->
     </div>
 </template>
 
 <script>
 import Cate from "./cate/cate.vue";
 import Page from "./page/index.vue";
-import Home from './evaluating/evaluating.vue'
+import Home from './evaluating/evaluating.vue';
+//import Kap from './KAP/Kap.vue'
 export default {
-	routes:[
-		{
-		path: '/home',
-	    name:"home",
-	    component: Home
-		}
-	]
-	,
   components: {
     "cate-com":Cate,
-    "Page-com":Page
-  }
+    "Page-com":Page,
+    'Home-com':Home,
+//	'Kap-com':Kap
+  },
+  created(){
+ 	this.observer.$on('index',(data)=>{
+ 		console.log(data)
+ 		this.cataIndex=data;
+ 	})
+ },
+ data(){
+ 	return{
+ 		cataIndex:''
+ 	}
+ }
 
 }
 </script>

@@ -27,8 +27,10 @@ export default{
  methods:{
 	Aclick(index){
 		this.currentindex=index;
+		this.observer.$emit('index',this.currentindex)
 	}
- }
+ },
+ 
  
 }
 </script>
