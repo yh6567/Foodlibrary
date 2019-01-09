@@ -11,7 +11,7 @@ import FootNav from "@/components/common/footnav"
 export default {
   name: 'App',
   components:{
-   'FootNav' : FootNav
+    FootNav
   }
 }
 </script>

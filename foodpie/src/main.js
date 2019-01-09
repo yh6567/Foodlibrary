@@ -12,7 +12,6 @@ import store from "./vuex"
 import "./common/js/flexble"
 
 
-import "./common/js/flexble.js"
 import "./common/css/reset.css"
 
 Vue.use(MintUI)
