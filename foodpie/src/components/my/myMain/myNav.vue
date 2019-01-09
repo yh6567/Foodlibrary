@@ -5,10 +5,11 @@
 				<router-link :to="{name:item.name}">
 					<img :src="item.src"/>
 					<h4>{{item.tit}}</h4>
-					<p><img src="../../assets/img/wd_icon_jt.png" /></p>
+					<p><img src="../../../assets/img/wd_icon_jt.png" /></p>
 				</router-link>
 			</li>
 		</ul>
+		
 	</div>
 </template>
 
@@ -18,22 +19,22 @@
 			return{
 				myNavs:[
 					{
-						src:require("../../assets/img/wd_icon_zp@2x.png"),
+						src:require("../../../assets/img/wd_icon_zp@2x.png"),
 						tit:"我的照片",
 						name:"myPic"
 					},
 					{
-						src:require("../../assets/img/wd_icon_sc@2x.png"),
+						src:require("../../../assets/img/wd_icon_sc@2x.png"),
 						tit:"我的收藏",
 						name:"myCollection"
 					},
 					{
-						src:require("../../assets/img/wd_icon_sc@2x(1).png"),
+						src:require("../../../assets/img/wd_icon_sc@2x(1).png"),
 						tit:"上传食物数据",
 						name:"myUpload"
 					},
 					{
-						src:require("../../assets/img/wd_icon_db@2x.png"),
+						src:require("../../../assets/img/wd_icon_db@2x.png"),
 						tit:"对比库",
 						name:"myCompare"
 					}
@@ -64,6 +65,8 @@
 	.my_nav>li>a>img{
 		margin-top: .41rem;
 		float: left;
+		width: .4rem;
+		height: .34rem;
 	}
 	.my_nav>li>a>h4{
 		font-size:.26rem;
@@ -77,4 +80,5 @@
 		margin-top: .45rem;
 		float: right;
 	}
+	
 </style>
