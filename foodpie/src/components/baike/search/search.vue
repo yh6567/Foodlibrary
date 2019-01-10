@@ -18,11 +18,6 @@
       },
       methods:{
          writeSearched(){
-<<<<<<< HEAD:foodpie/src/components/search/search.vue
-             console.log(this.searching);
-             // if(!this.searching)return;
-             // if(this.besearched.map((a)=>{if(a==this.searching)return}))return;
-=======
              if(!this.searching)return;
              if(window.localStorage.getItem("searched")){
                  this.besearched  = window.localStorage.getItem("searched").split(",");
@@ -30,7 +25,6 @@
              this.besearched = this.besearched.filter( each =>{
                return each !== this.searching;
              })
->>>>>>> miowmiow:foodpie/src/components/baike/search/search.vue
              this.besearched.push(this.searching);
              window.localStorage.setItem("searched",this.besearched.toString());
              this.searching = '';
