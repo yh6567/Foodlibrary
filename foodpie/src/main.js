@@ -10,7 +10,15 @@ import axios from 'axios'
 import filters from "@/filters"
 import store from "./vuex"
 import "./common/js/flexble"
+<<<<<<< HEAD
 
+//import store from "./vuex";
+import Bus from "./Bus"
+Vue.prototype.$bus = Bus;
+=======
+//引入observer非父子组件传值
+import observer from './common/js/observer.js'
+>>>>>>> yh
 
 import "./common/css/reset.css"
 
@@ -25,8 +33,8 @@ axios.interceptors.response.use(({data})=>{
 }) //axios拦截 .then返回的就是data数据本身；
 
 Vue.prototype.$axios =axios; //axios调用接口在vue原型上
-
-Vue.config.productionTip = false
+Vue.prototype.observer = observer; //非父子传值
+Vue.config.productionTip = false; //
 
 /* eslint-disable no-new */
 new Vue({

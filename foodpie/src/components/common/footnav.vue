@@ -1,24 +1,45 @@
 <template>
    <footer v-if="this.$route.meta.show">
-       <dl @click="$router.push('/')">
-       <dt><img src="../../assets/img/sy_icon_zs@2x.png" alt=""></dt>
-           <dd>食物百科</dd>
-           
-       </dl>
-       <dl @click="$router.push('/shopping')">
-       <dt><img src="../../assets/img/sy_icon_gc@2x.png" alt=""></dt>
-           <dd>逛吃</dd>
-       </dl>
-       <dl @click="$router.push('/my')">
-       <dt><img src="../../assets/img/sy_icon_zs@2x.png" alt=""></dt>
-           <dd>我的</dd>
-       </dl>
+    
+       <router-link :v="name==='main'?'':'ac'" to="/">
+        <mt-tab-item id="食物百科">
+                <img slot="icon" src="../../assets/img/sy_icon_swbk@2x.png">
+                食物百科
+            </mt-tab-item>
+       </router-link>
+       <router-link to="/shopping">
+         <mt-tab-item id="逛吃">
+            <img slot="icon" src="../../assets/img/sy_icon_gc@2x.png">
+             逛吃
+            </mt-tab-item>
+       </router-link >
+       <router-link to="/my">
+            <mt-tab-item id="我的">
+            <img slot="icon" src="../../assets/img/sy_icon_wd@2x.png">
+            我的
+            </mt-tab-item>
+       </router-link >
+      
+     
    </footer>
 </template>
 
 <script>
 export default {
-   
+   data(){
+       return{
+           name:""
+       }
+   },
+   methods:{
+       change(){
+           this.flag= !true
+       }
+   },
+   mounted(){
+       this.name=this.$route.name;
+       
+   }
 }
 </script>
 
@@ -34,6 +55,7 @@ footer {
     font-size: 4vw;
   display: flex;
   justify-content: space-around;
+  border-top: #ddd 1px solid;
 }
 dl{
    display: flex; 
@@ -44,5 +66,8 @@ dl{
 dl dt img{
     width: 10vw;
     height: 10vw;
+}
+.ac{
+    color: yellowgreen;
 }
 </style>

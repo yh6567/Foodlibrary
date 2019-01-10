@@ -1,8 +1,14 @@
-<template>
+	<template>
   <div id="app">
 
     <router-view/>
-    <FootNav v-if="this.$route.meta.show"/>
+<<<<<<< HEAD
+    <FootNav />
+=======
+
+    <FootNav />
+
+>>>>>>> yh
   </div>
 </template>
 
@@ -11,11 +17,16 @@ import FootNav from "@/components/common/footnav"
 export default {
   name: 'App',
   components:{
-   'FootNav' : FootNav
+    FootNav
   }
 }
 </script>
 
+<<<<<<< HEAD
 <style>
+=======
+
+<style scoped>
+>>>>>>> yh
 
 </style>

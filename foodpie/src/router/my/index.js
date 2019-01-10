@@ -3,12 +3,20 @@ import MyPic from "@/components/my/myPic";
 import MyCol from "@/components/my/myCollection";
 import MyUpload from "@/components/my/myUpload";
 import MyCompare from "@/components/my/myCompare";
+import Login from "@/components/my/login/login";
+import ForgetPwd from "@/components/my/forgetPwd";
+import register from "@/components/my/login/register";
+import registerSuccess from "@/components/my/login/registerSuccess";
+import updateMsg from "@/components/my/login/updateMsg";
 export default 
        [
     {
       path: '/my', //路径
       name: 'my', //名字
-      component: my  //组件名
+      component: my , //组件名
+      meta:{
+      	show:true
+      }
     },
     {
     	path:"/myPic",
@@ -30,4 +38,33 @@ export default
     	name:"myCompare",
     	component:MyCompare
     },
+    {
+    	path:"/login",
+    	name:"login",
+    	component:Login,
+    	meta:{
+    		flag:false,
+    	}
+    },
+    {
+    	path:"/forgetPwd",
+    	name:"forgetPwd",
+    	component:ForgetPwd
+	},
+	{
+    	path:"/register",
+    	name:"register",
+    	component:register
+    },
+    {
+    	path:"/registerSuccess",
+    	name:"registerSuccess",
+    	component:registerSuccess
+    },
+    {
+    	path:"/updateMsg",
+    	name:"updateMsg",
+    	component:updateMsg
+    	
+    }
   ]

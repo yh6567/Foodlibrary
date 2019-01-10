@@ -10,6 +10,7 @@ export default
       name: 'main', //名字
       component: baike, //组件名
       meta:{
+      	//是否显示底部导航
         show:true
       }
     },
