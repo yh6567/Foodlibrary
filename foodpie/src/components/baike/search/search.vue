@@ -28,6 +28,7 @@
              this.besearched.push(this.searching);
              window.localStorage.setItem("searched",this.besearched.toString());
              this.searching = '';
+             this.$router.push({path:"/searchanswer"});
         },
           back(){
              this.$router.push({path:"/"});

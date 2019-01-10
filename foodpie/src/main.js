@@ -20,7 +20,10 @@ Vue.prototype.$bus = Bus;
 //引入observer非父子组件传值
 import observer from './common/js/observer.js'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6f12fd9dd3beae9cc080fee546e9fb45f3851a21
 
 import "./common/css/reset.css"
 
