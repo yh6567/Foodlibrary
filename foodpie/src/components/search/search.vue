@@ -17,8 +17,9 @@
       },
       methods:{
          writeSearched(){
-             if(!this.searching)return;
-             if(this.besearched.map((a)=>{if(a==this.searching)return}))return;
+             console.log(this.searching);
+             // if(!this.searching)return;
+             // if(this.besearched.map((a)=>{if(a==this.searching)return}))return;
              this.besearched.push(this.searching);
              console.log(this.besearched);
              this.searching = '';
