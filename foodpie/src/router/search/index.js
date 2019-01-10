@@ -1,4 +1,4 @@
-import search from '@/components/search/index'
+import search from '@/components/baike/search/index'
 
 
 export default
