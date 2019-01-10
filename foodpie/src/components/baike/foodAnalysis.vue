@@ -1,18 +1,23 @@
 <template>
   <div>
-    <div class="search">
-      <div class="back" @click="$router.push('/')">
-        <img src="../../assets/img/icon_fh@3x.png" alt>
-      </div>
+    <mt-header fixed>
+      <router-link to="/" slot="left">
+        <mt-button icon="back">对比详情</mt-button>
+        
+      </router-link>
+      
+    
+    </mt-header>
+    
       <div class="date">
         <input type="date">
       </div>
       <div>
 
-      </div>
+     
     </div>
-    <div>
-        <input type="text" placeholder="搜索">
+    <div class="search-input">
+        <i>√</i><input type="text" placeholder="请输入食物名称">
     </div>
   </div>
 </template>
@@ -26,15 +31,24 @@ export default {};
     display: flex;
     justify-content: space-between;
 }
-.back img {
-  width: 5vw;
-  height: 5vw;
-  margin: 2vw;
-}
+
+
 .date input{
     margin: 3vw;
     border: none;
     outline: none;
 
+}
+.search-input{
+  height: 10vw;
+  background: #f4f4f4;
+  margin: 2vw;
+  
+}
+.search-input input{
+  line-height: 10vw;
+  background: #f4f4f4;
+  border: none;
+  outline: none;
 }
 </style>

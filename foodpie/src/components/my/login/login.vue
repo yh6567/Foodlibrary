@@ -1,7 +1,7 @@
 <template>
 	<div class="myLogin">
 		<div class="loginTop">
-			<img @click="loginBack()" src="../../assets/img/icon-rili-1@2x.png" />
+			<img @click="loginBack()" src="../../../assets/img/icon-rili-1@2x.png" />
 			<p>登录</p>
 		</div>
 		<div class="loginInput">
@@ -39,15 +39,15 @@
 				loginNavs:[
 					{
 						name:"wechat",
-						src:require("../../assets/img/dl_icon_wx@2x.png")
+						src:require("../../../assets/img/dl_icon_wx@2x.png")
 					},
 					{
 						name:"qq",
-						src:require("../../assets/img/dl_icon_qq@2x.png")
+						src:require("../../../assets/img/dl_icon_qq@2x.png")
 					},
 					{
 						name:"weibo",
-						src:require("../../assets/img/dl_icon_wb@2x.png")
+						src:require("../../../assets/img/dl_icon_wb@2x.png")
 					},
 				]
 			}
@@ -71,10 +71,12 @@
 	.loginTop{
 		width: 100%;
 		height: 1.29rem;
-		border-bottom: .01rem solid rgba(240,240,240,1);
+		border-bottom: .01rem solid rgba(214,214,214,1);
 		overflow: hidden;
 	}
 	.loginTop>img{
+		width: .34rem;
+		height: .32rem;
 		margin-top: .71rem;
 		margin-left: .32rem;
 	}

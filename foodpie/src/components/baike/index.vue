@@ -4,7 +4,7 @@
             <h2>食物派</h2>
             <h3>查询食物信息</h3>
             <div class="search">
-                <i>💗</i>
+                <!-- <i>💗</i> -->
                 <input type="text" placeholder="搜索">
             </div>
         </header>
@@ -134,7 +134,7 @@ li dl dt img{
  #main h3{
       text-align: center;
       margin-top: 8vw;
-      line-height:2vw;
+      
       font-size: 4vw;
       font-weight: 400;
  }
@@ -155,13 +155,14 @@ li dl dt img{
 .search{
     margin: 2vw;
     border-radius: 3vw;
-    width: 92vw;
+   
     height: 8vw;
     font-size: 4vw;
     background: #fff;
 }
 .search input{
-    margin-top:2vw; 
+    margin:2vw 0 0 2vw;
+    display: inline-block; 
     border:none;
     outline:none;
     

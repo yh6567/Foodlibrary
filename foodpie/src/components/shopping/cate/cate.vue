@@ -21,14 +21,23 @@ export default{
         "知识",
         "美食"
       ],
-  		currentindex:0
+  		currentindex:{}
   	}
  },
- methods:{
+methods:{
 	Aclick(index){
 		this.currentindex=index;
+		if(this.currentindex==0){
+			this.observer.$emit('handle',0)
+			console.log(this.currentindex,"111")
+		}else{
+			
+			this.observer.$emit('handle',this.currentindex)
+//			console.log(this.currentindex)
+			
+		}
 	}
- }
+ },
  
 }
 </script>
