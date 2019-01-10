@@ -1,10 +1,9 @@
-	<template>
+<template>
   <div id="app">
 
     <router-view/>
-
     <FootNav />
-
+ 
   </div>
 </template>
 
@@ -13,12 +12,10 @@ import FootNav from "@/components/common/footnav"
 export default {
   name: 'App',
   components:{
-   'FootNav' : FootNav
+    FootNav
   }
 }
 </script>
 
-
-<style scoped>
-
+<style>
 </style>

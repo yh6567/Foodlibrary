@@ -6,8 +6,8 @@
 </template>
 
 <script>
-	import MyTop from "./myTop"
-	import MyNav from "./myNav";
+	import MyTop from "./myMain/myTop"
+	import MyNav from "./myMain/myNav";
 export default{
 	components:{
 		"MyTop-com":MyTop,

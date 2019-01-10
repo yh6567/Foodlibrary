@@ -3,10 +3,11 @@ import MyPic from "@/components/my/myPic";
 import MyCol from "@/components/my/myCollection";
 import MyUpload from "@/components/my/myUpload";
 import MyCompare from "@/components/my/myCompare";
-import Login from "@/components/my/login";
+import Login from "@/components/my/login/login";
 import ForgetPwd from "@/components/my/forgetPwd";
-import register from "@/components/my/register";
-
+import register from "@/components/my/login/register";
+import registerSuccess from "@/components/my/login/registerSuccess";
+import updateMsg from "@/components/my/login/updateMsg";
 export default 
        [
     {
@@ -55,4 +56,15 @@ export default
     	name:"register",
     	component:register
     },
+    {
+    	path:"/registerSuccess",
+    	name:"registerSuccess",
+    	component:registerSuccess
+    },
+    {
+    	path:"/updateMsg",
+    	name:"updateMsg",
+    	component:updateMsg
+    	
+    }
   ]

@@ -13,7 +13,7 @@
 import Cate from "./cate/cate.vue";
 import Page from "./page/index.vue";
 import Home from './evaluating/evaluating.vue';
-import Kap from './KAP/Kap.vue'
+import Kap from './kap/Kap.vue'
 export default {
   components: {
     "cate-com":Cate,
@@ -23,7 +23,6 @@ export default {
   },
   created(){
  	this.observer.$on('handle',(data)=>{
-   		console.log(data,'222')
  		this.index=data;
  		this.handleToggle(this.index)
  	})
@@ -41,21 +40,28 @@ export default {
 //				this.comName = name;
 	  methods:{
 	  	handleToggle(index) {
-	      switch (index){
-	      	 case 0:
-	          this.comName = "cate-com";
-	          break;
-	        case 1:
-	          this.comName = "Page-com";
-	          break;
-	        case 2:
-	          this.comName = "Home-com";
-	          break;
-	        case 3:
-	          this.comName = "Kap-com";
-	          break;
-//		      next();
-           }
+//	      switch (index){
+//	      	 case 0:
+//	          this.comName = "cate-com";
+//	          break;
+//	        case 1:
+//	          this.comName = "Page-com";
+//	          break;
+//	        case 2:
+//	          this.comName = "Home-com";
+//	          break;
+//	        case 3:
+//	          this.comName = "Kap-com";
+//	          break;
+				if(index==1){
+					this.comName = "cate-com";
+				}else if(index==2){
+					this.comName = "Home-com";
+				}else if(index==3){
+					this.comName = "Kap-com";
+				}else{
+        	   		this.comName = "Page-com";
+        	   }
          }
 	  }
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="min-height">
     <search-com/>
-    <searched-com/>
+    <searched-com v-show="searchedflag"/>
     <allsearch-com/>
   </div>
 </template>
@@ -23,8 +23,13 @@
       },
       mounted(){
 
-            console.log(this.$refs);
-
+      },
+      created(){
+          if(!window.localStorage.getItem("searched")){
+              this.searchedflag = false
+          }else {
+              this.searchedflag = true
+          }
       }
   }
 </script>
@@ -32,7 +37,7 @@
 <style lang="scss" scoped>
     .min-height{
       background: #F6F6F6;
-      min-height: 13.34rem;
-      overflow: hidden;
+      height: 13.34rem;
+      overflow-x: scroll;
     }
 </style>

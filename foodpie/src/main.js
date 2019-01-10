@@ -10,10 +10,11 @@ import axios from 'axios'
 import filters from "@/filters"
 import store from "./vuex"
 import "./common/js/flexble"
+import Bus from "./Bus"
+Vue.prototype.$bus = Bus;
 //引入observer非父子组件传值
 import observer from './common/js/observer.js'
 
-import "./common/js/flexble.js"
 import "./common/css/reset.css"
 
 Vue.use(MintUI)
