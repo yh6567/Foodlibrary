@@ -1,15 +1,16 @@
 <template>
     <div>
-        <div class="back" @click="$router.push('/')">
-            <img src="../../assets/img/icon_fh@3x.png" alt="">
-            <input type="file" name="" id="">
-          </div>
-          <mt-palette-button content="+">
-      <div class="my-icon-button"></div>
-      <!-- <div class="my-icon-button"></div>
-      <div class="my-icon-button"></div> -->
-    </mt-palette-button>
-        搜索分析
+     <mt-header fixed>
+      <router-link to="/" slot="left">
+        <mt-button icon="back" :title="title">{{title}}e</mt-button>
+        
+      </router-link>
+      <select slot="right">
+          <option value="1">全部</option>
+            <option v-for="i in foodFamilylist">{{i.name}}</option>
+      </select>
+    
+    </mt-header>
     </div>
 </template>
 
