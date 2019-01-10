@@ -13,7 +13,7 @@ import store from "./vuex"
 import "./common/js/flexble"
 
 
-import store from "./vuex";
+
 import Bus from "./Bus"
 Vue.prototype.$bus = Bus;
 
