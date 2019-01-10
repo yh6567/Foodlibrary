@@ -1,6 +1,6 @@
 import baike from "@/components/baike/index"
 import Analysis from "@/components/baike/foodAnalysis"
-// import search from "@/components/baike/searchAnalysis"
+import searchcompare from "@/components/baike/searchAnalysis"
 import sweep from "@/components/baike/sweepCode"
 import detail from "@/components/baike/detail"
 import echart from "@/components/baike/eachart"
@@ -27,6 +27,14 @@ export default
       path:"/sweep",
       name:'sweep',
       component:sweep,
+      meta:{
+        show:false
+      }
+    },
+    {
+      path:"/searchcompare",
+      name:'searchcompare',
+      component:searchcompare,
       meta:{
         show:false
       }

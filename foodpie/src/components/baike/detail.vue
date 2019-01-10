@@ -57,8 +57,10 @@ export default {
   mounted() {
     this.title = this.$route.params.i;
     //console.log(this.title);
-    this.$axios.post("http://localhost:3000/data").then((data)=>{
-       this.foodFamilylist=data;
+    this.$axios.get("http://localhost:3000/data").then((data)=>{
+       // console.log(data);
+        this.foodFamilylist=data;
+        
     })
   }
 };
