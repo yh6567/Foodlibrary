@@ -2,7 +2,7 @@
   <div id="app">
 
     <router-view/>
-    <FootNav/>
+    <FootNav />
   </div>
 </template>
 
@@ -17,4 +17,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>

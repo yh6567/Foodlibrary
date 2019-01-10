@@ -56,9 +56,9 @@ export default {
   },
   mounted() {
     this.title = this.$route.params.i;
-    console.log(this.title);
+    //console.log(this.title);
     this.$axios.get("http://localhost:3000/data").then((data)=>{
-        console.log(data);
+       // console.log(data);
         this.foodFamilylist=data;
         
     })
