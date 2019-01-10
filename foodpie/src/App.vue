@@ -3,10 +3,6 @@
 
     <router-view/>
     <FootNav />
-<<<<<<< HEAD
-=======
- 
->>>>>>> master
   </div>
 </template>
 
@@ -20,11 +16,6 @@ export default {
 }
 </script>
 
-<<<<<<< HEAD
-
 <style scoped>
 
-=======
-<style>
->>>>>>> master
 </style>
