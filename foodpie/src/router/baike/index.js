@@ -1,8 +1,9 @@
 import baike from "@/components/baike/index"
 import Analysis from "@/components/baike/foodAnalysis"
-import search from "@/components/baike/searchAnalysis"
+// import search from "@/components/baike/searchAnalysis"
 import sweep from "@/components/baike/sweepCode"
 import detail from "@/components/baike/detail"
+import echart from "@/components/baike/eachart"
 export default 
        [
     {
@@ -36,6 +37,14 @@ export default
       component:detail,
       meta:{
         show:false
+      }
+    },
+    {
+      path:"/echart",
+      name:'echart',
+      component:echart,
+      meta:{
+        show:true
       }
     }
   ]
