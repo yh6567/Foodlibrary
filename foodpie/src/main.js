@@ -8,18 +8,17 @@ import 'mint-ui/lib/style.css'
 import "@/assets/css/reset.css"
 import axios from 'axios'
 import filters from "@/filters"
-<<<<<<< HEAD
+
 import store from "./vuex";
 import Bus from "./Bus"
 Vue.prototype.$bus = Bus;
 import echarts from "echarts"
 Vue.prototype.$echarts = echarts;
-=======
-import store from "./vuex"
+
+
 import "./common/js/flexble"
 
 
->>>>>>> master
 import "./common/css/reset.css"
 
 Vue.use(MintUI)

@@ -1,6 +1,6 @@
 import baike from "@/components/baike/index"
 import Analysis from "@/components/baike/foodAnalysis"
-import search from "@/components/baike/searchAnalysis"
+//import search from "@/components/baike/searchAnalysis"
 import sweep from "@/components/baike/sweepCode"
 import detail from "@/components/baike/detail"
 export default 

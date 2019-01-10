@@ -5,7 +5,7 @@
             <h3>查询食物信息</h3>
             <div class="search">
                 <!-- <i>💗</i> -->
-                <input type="text" placeholder="搜索">
+                <input  @click="$router.push('/search')" type="text" placeholder="搜索">
             </div>
         </header>
        <nav>
