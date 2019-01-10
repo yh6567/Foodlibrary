@@ -5,17 +5,18 @@
             <h3>查询食物信息</h3>
             <div class="search">
                 <!-- <i>💗</i> -->
-                <input type="text" placeholder="搜索">
+                <input  @click="$router.push('/searchcompare')" type="text" placeholder="搜索">
             </div>
         </header>
        <nav>
-           <dl @click="$router.push('/analysis')">
+           <dl @click="handleanalysis()">
+               <!-- $router.push('/analysis') -->
                <dd>
                    <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
                 </dd>
                <dt>饮食分析</dt>
            </dl>
-            <dl @click="$router.push('/search')">
+            <dl @click="$router.push('/searchcompare')">
                <dd>
                    <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
                </dd>
@@ -69,13 +70,27 @@ export default {
         
     },
     methods:{
-        // getfoodFamilylist(){
-        //     $axios.get("")
-        // }
+      handleanalysis(){
+          if(!this.$store.state.baike.admin){
+             this.$router.push('/login')
+              
+          }else{
+              this.$router.push('/analysis')
+          }
+      }
 
     },
+    computed:{
+      
+    },
     mounted(){
-
+        
+        
+    //     this.$axios.get("http://localhost:3000/data").then((data)=>{
+    //    console.log(data);
+    //     this.foodFamilylist=data;
+        
+  // })
     }
 }
 </script>

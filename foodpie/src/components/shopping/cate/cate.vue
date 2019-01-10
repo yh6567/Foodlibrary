@@ -29,9 +29,7 @@ methods:{
 		this.currentindex=index;
 		if(this.currentindex==0){
 			this.observer.$emit('handle',0)
-			console.log(this.currentindex,"111")
 		}else{
-			
 			this.observer.$emit('handle',this.currentindex)
 //			console.log(this.currentindex)
 			

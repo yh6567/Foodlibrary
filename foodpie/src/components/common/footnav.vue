@@ -57,17 +57,14 @@ footer {
   justify-content: space-around;
   border-top: #ddd 1px solid;
 }
-dl{
-   display: flex; 
-   flex-direction: column;
-   justify-content: space-around;
-   align-items:center;
+.mint-tab-item-label{
+     font-size: 20px;
 }
-dl dt img{
+.mint-tab-item-icon{
     width: 10vw;
     height: 10vw;
 }
-.ac{
+.router-link-active{
     color: yellowgreen;
 }
 </style>
