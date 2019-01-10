@@ -9,8 +9,8 @@
         <div class="form">
         	<label class="tel">
         		<input type="text" placeholder="请输入手机号码"
-        			 v-model="username" />
-        		<input type="button" value="发送验证码" />
+        			 v-model="telphone" />
+        		<input type="button" value="发送验证码" @click="sendVcode()" />
         		<span></span>
         	</label>
         	
@@ -36,89 +36,108 @@
 
 <script> 
 	import { Toast } from 'mint-ui';
-//	import vue from "vue";
 export default {
     data(){
 		return {
-			username:"",
-			vcode:"",
-			password:"",
-			qpwd:"",
+			telphone:"",//用户名
+			vcode:"",//验证码
+			password:"",//密码
+			qpwd:"",//确认密码
+			//是否点击我同意
 			flagCheck:false,
-			flag:"",
 		}
 	},
 	created(){
-		this.$on("backR",(data)=>{
-			console.log(data)
-		})
+		
 	},
   	methods:{
-	  	//返回上一页面
+	  	//返回
 	  	loginBack(){
 	  		this.$router.back();
 	  	},
+	  	//协议点击函数
 	  	checkboxClick(){
 	  		this.flagCheck = !this.flagCheck;
+	  	},
+	  	//点击发送验证码函数
+	  	sendVcode(){
+	  		let reg = /^1[34578]\d{9}$/;
+	  		if(!reg.test(this.telphone)){
+	  			Toast({
+				  message: '手机号码格式错误',
+				  position: 'top',
+				  duration:3000,
+				  className:"telEffor"
+				});
+	  		}
 	  	},
 	  	//点击提交表单
 	  	loginClick(){
 	  		this.$axios({
 	  			method:"get",
-	  			url:"http://localhost:3000/register",
+	  			url:"http://localhost:3000/register_check?tel="+this.telphone,
 	  		}).then((data)=>{
-	  			//先进行表单验证
-	  			this.formYZ();
-				//是否点击了我同意
-				if(this.flagCheck == true){
-					//遍历数组，判断当前输入手机号是否存在
-					let len = data.length;
-					for(let i = 0 ; i< len ;i ++){
-						if(data[i].username==this.username){//用户名已注册
-							this.flag = false;
-							break;
-						}else{
-							this.flag = true
-						}
-					}
-					if(this.flag){
-						//跳转登录成功页面========？？？？？
-						
-						console.log(1)
-					}else{
-						Toast({
-						  message: '该手机号已经注册，请直接登录',
-						  position: 'top',
-						  className:"tan"
-						});
-					}
-				}
+	  			if(data.length!=0){//已注册
+	  				alert("该用户已注册")
+	  			}else{
+	  				//========验证码如何判断
+	  				let reg = /.{6,16}/;
+	  				if(!reg.test(this.password)){
+	  					alert("密码必须在6-16位之间");
+	  				}else{
+	  					if(this.password != this.qpwd){
+	  						alert("两次密码输入不一致");
+	  					}else{
+	  						if(!this.flagCheck){
+	  							alert("请点击我同意")
+	  						}else{
+	  							//信息传递到后端存储起来
+	  							this.sendMsg();
+	  							//跳转注册成功页面
+	  							this.$router.push({path:"/registerSuccess"});
+	  						}
+	  						
+	  					}
+	  				}
+	  			}
 	  		})
 	  	},
-	  	formYZ(){
-	  		let name = this.username;
-	  		let pwd = this.password;
-	  		let qpwd = this.qpwd;
-	  		let vcode = this.vcode;
-	  		
-	  	},
-		back(){
-			this.flag = false;
-			console.log(this.flag)
-		}
-			
-	  	
+	  	//数据发送 到后端
+	  	sendMsg(){
+	  		this.$axios({
+	  			method:"post",
+	  			url:"http://localhost:3000/register_check",
+	  			data:{
+	  				tel:this.telphone,
+	  				password:this.password,
+	  				vcode:this.vcode
+	  			}
+	  		}).then((res)=>{
+	  			//输出的是添加的那条信息
+	  			console.log(res)
+	  		})
+	  	}
   	}
 }
 </script>
 
 <style>
 	/*mint ui弹出框样式*/
+	/*1.手机号输入格式有误*/
+	.telEffor{
+		width: 7.5rem;
+		height: 1.5rem;
+		background: red !important;
+		font-size: 89px;
+		line-height: 1.5rem;
+		color: #000;
+	}
 	.tan{
 		width: 7.5rem;
 		height: 1.5rem;
 		background: #f7f7f7;
 	}
+	/*mint ui弹出框样式end*/
     .register{
         width: 7.5rem;
         height: 13.34rem;

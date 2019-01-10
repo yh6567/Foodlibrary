@@ -16,7 +16,8 @@ export default
       component: my , //组件名
       meta:{
       	show:true
-      }
+      },
+      props:true
     },
     {
     	path:"/myPic",
@@ -64,7 +65,7 @@ export default
     {
     	path:"/updateMsg",
     	name:"updateMsg",
-    	component:updateMsg
-    	
+    	component:updateMsg,
+    	props:true
     }
   ]
