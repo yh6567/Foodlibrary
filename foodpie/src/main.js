@@ -10,6 +10,7 @@ import axios from 'axios'
 import filters from "@/filters"
 import store from "./vuex"
 import "./common/js/flexble"
+<<<<<<< HEAD
 
 //import store from "./vuex";
 import Bus from "./Bus"
@@ -18,6 +19,12 @@ Vue.prototype.$bus = Bus;
 //引入observer非父子组件传值
 import observer from './common/js/observer.js'
 
+=======
+import Bus from "./Bus"
+Vue.prototype.$bus = Bus;
+//引入observer非父子组件传值
+import observer from './common/js/observer.js'
+>>>>>>> 32dea447cfcedc29523b4b189555f36dc20225f4
 
 import "./common/css/reset.css"
 

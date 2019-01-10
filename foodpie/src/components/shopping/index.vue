@@ -1,5 +1,6 @@
 <template>
     <div>
+<<<<<<< HEAD
 
        	<cate-com/>
        	<evaluating-com/>
@@ -7,18 +8,24 @@
        	<!-- <Page-com/> -->
        	<!-- <Kap-com/> -->
 
+=======
+>>>>>>> 32dea447cfcedc29523b4b189555f36dc20225f4
     	
     <cate-com/>
    	<component :is="comName"></component>
      <!--  	<cate-com/>
        	<Page-com/>
        	<Kap-com/>-->
+<<<<<<< HEAD
 
+=======
+>>>>>>> 32dea447cfcedc29523b4b189555f36dc20225f4
     </div>
 </template>
 
 <script>
 import Cate from "./cate/cate.vue";
+<<<<<<< HEAD
 
 // import Page from "./page/index.vue";
 import Home from './evaluating/evaluating.vue';
@@ -38,13 +45,20 @@ export default {
   }
 
 
+=======
+import Page from "./page/index.vue";
+import Home from './evaluating/evaluating.vue';
+import Kap from './kap/Kap.vue'
+export default {
+  components: {
+    "cate-com":Cate,
+>>>>>>> 32dea447cfcedc29523b4b189555f36dc20225f4
     "Page-com":Page,
     'Home-com':Home,
 	'Kap-com':Kap
   },
   created(){
  	this.observer.$on('handle',(data)=>{
-   		console.log(data,'222')
  		this.index=data;
  		this.handleToggle(this.index)
  	})
@@ -62,24 +76,34 @@ export default {
 //				this.comName = name;
 	  methods:{
 	  	handleToggle(index) {
-	      switch (index){
-	      	 case 0:
-	          this.comName = "cate-com";
-	          break;
-	        case 1:
-	          this.comName = "Page-com";
-	          break;
-	        case 2:
-	          this.comName = "Home-com";
-	          break;
-	        case 3:
-	          this.comName = "Kap-com";
-	          break;
-//		      next();
-           }
+//	      switch (index){
+//	      	 case 0:
+//	          this.comName = "cate-com";
+//	          break;
+//	        case 1:
+//	          this.comName = "Page-com";
+//	          break;
+//	        case 2:
+//	          this.comName = "Home-com";
+//	          break;
+//	        case 3:
+//	          this.comName = "Kap-com";
+//	          break;
+				if(index==1){
+					this.comName = "cate-com";
+				}else if(index==2){
+					this.comName = "Home-com";
+				}else if(index==3){
+					this.comName = "Kap-com";
+				}else{
+        	   		this.comName = "Page-com";
+        	   }
          }
 	  }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 32dea447cfcedc29523b4b189555f36dc20225f4
 }
 </script>
 
