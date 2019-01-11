@@ -13,7 +13,7 @@
 import Cate from "./cate/cate.vue";
 import Page from "./page/index.vue";
 import Home from './evaluating/evaluating.vue';
-import Kap from './kap/Kap.vue'
+import Kap from './kap/kap.vue'
 import Index from "./index/index.vue";
 export default {
   components: {
