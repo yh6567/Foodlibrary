@@ -9,7 +9,8 @@ import "@/assets/css/reset.css"
 import axios from 'axios'
 import filters from "@/filters"
 import store from "./vuex"
-import "./common/js/flexble"
+import "./common/js/flexble";
+import $judgecode from "./common/js/countdown";
 import Bus from "./Bus"
 Vue.prototype.$bus = Bus;
 //引入observer非父子组件传值

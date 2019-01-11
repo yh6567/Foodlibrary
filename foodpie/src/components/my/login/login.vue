@@ -185,4 +185,8 @@
 		padding: 0 1.65rem;
 		justify-content: space-between;
 	}
+	.otherLogin>ul img{
+		width: .84rem;
+		height: .84rem;
+	}
 </style>
