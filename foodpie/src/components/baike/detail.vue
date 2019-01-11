@@ -7,7 +7,7 @@
       </router-link>
       <select slot="right">
           <option value="1">全部</option>
-            <option v-for="i in foodFamilylist">{{i.name}}</option>
+            <option v-for="i in foodFamilylist">{{i.foodname}}</option>
       </select>
     
     </mt-header>
@@ -57,8 +57,8 @@ export default {
   mounted() {
     this.title = this.$route.params.i;
     //console.log(this.title);
-    this.$axios.get("http://localhost:3000/data").then((data)=>{
-       // console.log(data);
+    this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/select#!method=get").then(({data})=>{
+        console.log(data);
         this.foodFamilylist=data;
         
     })

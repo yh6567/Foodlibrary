@@ -12,6 +12,7 @@ module.exports = {
 		assetsPublicPath: '/',
 		proxyTable: {
 
+<<<<<<< HEAD
 			  
 			"/api": {    
 				target: "http://localhost:3000",
@@ -28,6 +29,24 @@ module.exports = {
 				}  
 			}
 		},
+=======
+    	"/api":{
+    		target:"http://localhost:3000",
+    		changeOrigin:true,
+    		pathRewrite:{
+    			"^/api":""
+        }
+      },
+        "/mo":{
+          target:"https://www.easy-mock.com",
+          changeOrigin:true,
+          pathRewrite:{
+            "^/mo":""
+          }
+        
+    	}
+    },
+>>>>>>> master
 
 		// Various Dev Server settings
 		host: 'localhost', // can be overwritten by process.env.HOST
