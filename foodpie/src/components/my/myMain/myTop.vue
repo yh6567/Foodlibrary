@@ -3,7 +3,7 @@
 		 <h2 class="username">我的</h2>
 		<div class="user_hpic"><img src="../../../assets/img/wd_dl_tx@2x.png" /></div>
 		<p v-show="myUsername">{{username}}</p>
-		<router-link class="login_click" 
+		<router-link class="login_click" @click="loginClick()"
 			:to="{name:loginTit=='点击登录'?'login':'updateMsg'}" 
 		>{{loginTit}}</router-link>
 	</div>
@@ -19,9 +19,9 @@
 				myUsername:true
 			}
 		},
-		/*created(){
-			this.uptClick()
-		},*/
+		created(){
+			
+		},
 		methods:{
 			/*uptClick(){
 				this.$bus.$emit("handleUpt",this.loginTit)

@@ -12,7 +12,7 @@
 		<div class="regSMain">
 			<img src="../../../assets/img/icon_zccg@2x.png" />
 			<p>注册成功</p>
-			<input type="button" value="直接登录" />
+			<input type="button" value="直接登录" @click="login()" />
 		</div>
 	</div>
 </template>
@@ -26,7 +26,9 @@
 			}
 		},
 		methods:{
-			
+			login(){
+				this.$router.push({path:"/login"})
+			}
 		}
 	}
 </script>

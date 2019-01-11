@@ -5,14 +5,14 @@
 			<p>登录</p>
 		</div>
 		<div class="loginInput">
-			<input type="text" placeholder="手机" /><br />
+			<input type="text" placeholder="手机" v-model="telphone" /><br />
 			<!-- <span>手机号</span> -->
-			<input type="password" placeholder="密码" />
+			<input type="password" placeholder="密码" v-model="password" />
 			<div class="forgetPwd">
 				<router-link :to="{name:'forgetPwd'}">忘记密码？</router-link>
 			</div>
-			<div class="loginClick">
-				<router-link :to="{name:'login'}">登录</router-link>
+			<div class="loginClick" @click="login()">
+				<router-link to="">登录</router-link>
 			</div>
 			<div class="register">
 				<router-link :to="{name:'register'}">立即注册</router-link>
@@ -33,6 +33,7 @@
 </template>
 
 <script>
+	import { Toast } from 'mint-ui';
 	export default{
 		data(){
 			return {
@@ -48,15 +49,52 @@
 					{
 						name:"weibo",
 						src:require("../../../assets/img/dl_icon_wb@2x.png")
-					},
-				]
+					}
+				],
+				telphone:"",
+				password:""
 			}
 		},
 		methods:{
 			loginBack(){
 				this.$router.back();
+			},
+			login(){
+				let reg = /^1[34578]\d{9}$/;
+		  		if(!reg.test(this.telphone)){
+		  			Toast({
+					  message: '手机号码格式错误',
+					  position: 'top',
+					  duration:3000,
+					  //这里的样式是在register中写的
+					  className:"telEffor"
+					});
+		  		}else{
+					//调用requestMsg，返回结果判断是否登录
+					this.requestMsg();
+				}
+			},
+			//根据用户名密码请求数据函数
+			requestMsg(){
+				this.$axios({
+					method:"get",
+					url:"http://localhost:3000/login_check?tel="+this.telphone,
+				}).then((res)=>{
+					if(res.length != 0){//已经注册验证用户名密码是否一致
+						if(res[0].tel == this.telphone && res[0].password == this.password){
+							//登录成功，跳转到my页面，并把手机号带过去
+							this.$bus.$emit("sendTel",res);
+							this.$router.push({path:"/my"});
+						}else{
+							alert("手机号或密码错误")
+						}
+					}else{//该手机号未注册，请点击立即注册
+						
+					}
+				})
 			}
 		}
+		
 	}
 </script>
 
@@ -86,7 +124,6 @@
 		top: .69rem;
 		font-size: .34rem;
 		color: rgba(17,17,17,1);
-		
 	}
 	.loginInput{
 		padding-left: .32rem;
