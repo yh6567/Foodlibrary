@@ -26,7 +26,7 @@ export default{
 	},
 	methods:{
 		page(){
-			this.$router.push({ path: '/page' })
+			this.$router.push({ path: '/evaluating' })
 		}
 	}
 }
