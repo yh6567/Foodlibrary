@@ -4,7 +4,7 @@ import MyCol from "@/components/my/myCollection";
 import MyUpload from "@/components/my/myUpload";
 import MyCompare from "@/components/my/myCompare";
 import Login from "@/components/my/login/login";
-import ForgetPwd from "@/components/my/forgetPwd";
+import ForgetPwd from "@/components/my/login/forgetPwd";
 import register from "@/components/my/login/register";
 import registerSuccess from "@/components/my/login/registerSuccess";
 import updateMsg from "@/components/my/login/updateMsg";

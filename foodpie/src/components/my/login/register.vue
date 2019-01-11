@@ -29,7 +29,7 @@
         		<input type="checkbox" :checked="flagCheck" @click="checkboxClick()" />
         		<span>我已同意并阅读&lt;&lt;食物派&gt;&gt;用户协议</span>
         	</p>
-        	<input type="button" value="注册" @click="loginClick()" />
+        	<input type="button" value="注册" @click="registerClick()" />
         </div>
     </div>
 </template>
@@ -72,34 +72,35 @@ export default {
 	  		}
 	  	},
 	  	//点击提交表单
-	  	loginClick(){
+	  	registerClick(){
 	  		this.$axios({
 	  			method:"get",
 	  			url:"http://localhost:3000/register_check?tel="+this.telphone,
-	  		}).then((data)=>{
-	  			if(data.length!=0){//已注册
-	  				alert("该用户已注册")
-	  			}else{
-	  				//========验证码如何判断
-	  				let reg = /.{6,16}/;
-	  				if(!reg.test(this.password)){
-	  					alert("密码必须在6-16位之间");
-	  				}else{
-	  					if(this.password != this.qpwd){
-	  						alert("两次密码输入不一致");
-	  					}else{
-	  						if(!this.flagCheck){
-	  							alert("请点击我同意")
-	  						}else{
-	  							//信息传递到后端存储起来
-	  							this.sendMsg();
-	  							//跳转注册成功页面
-	  							this.$router.push({path:"/registerSuccess"});
-	  						}
+	  		}).then((res)=>{
+				  console.log(res);
+	  			 if(res.length!=0){//已注册
+	  			 	alert("该用户已注册")
+	  			 }else{
+	  			 	//========验证码如何判断
+	  			 	let reg = /.{6,16}/;
+	  			 	if(!reg.test(this.password)){
+	  			 		alert("密码必须在6-16位之间");
+	  			 	}else{
+	  			 		if(this.password != this.qpwd){
+	  			 			alert("两次密码输入不一致");
+	  			 		}else{
+	  			 			if(!this.flagCheck){
+	  			 				alert("请点击我同意")
+	  			 			}else{
+	  			 				//信息传递到后端存储起来
+	  			 				this.sendMsg();
+	  			 				//跳转注册成功页面
+	  			 				this.$router.push({path:"/registerSuccess"});
+	  			 			}
 	  						
-	  					}
-	  				}
-	  			}
+	  			 		}
+	  			 	}
+	  			 }
 	  		})
 	  	},
 	  	//数据发送 到后端
@@ -158,19 +159,18 @@ export default {
     }
     .register>.registerTop img{
     	display: inline-block;
+    	margin-left: .32rem;
+    	width: .34rem;
+    	height: .32rem;
+    }
+    .register>.registerTop span{
+     	font-size: .34rem;
     }
     .register>.registerTop>p{
     	display: inline-block;
-    }
-    .register>.registerTop>img{
-    	margin-left: .32rem;
-    	margin-right: .15rem;
-    }
-    .register>.registerTop>span{
-    }
-    .register>.registerTop>p{
     	margin-left: 1.63rem;
     }
+
     .form{
     	width: 100%;
     	height: auto;
