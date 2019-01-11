@@ -5,7 +5,7 @@
             <h3>查询食物信息</h3>
             <div class="search">
                 <!-- <i>💗</i> -->
-                <input  @click="$router.push('/searchcompare')" type="text" placeholder="搜索">
+                <input  @click="$router.push('/search')" type="text" placeholder="搜索">
             </div>
         </header>
        <nav>
@@ -72,8 +72,7 @@ export default {
     methods:{
       handleanalysis(){
           if(!this.$store.state.baike.admin){
-             this.$router.push('/login')
-              
+             this.$router.push('/login')    
           }else{
               this.$router.push('/analysis')
           }
@@ -86,11 +85,7 @@ export default {
     mounted(){
         
         
-    //     this.$axios.get("http://localhost:3000/data").then((data)=>{
-    //    console.log(data);
-    //     this.foodFamilylist=data;
-        
-  // })
+
     }
 }
 </script>

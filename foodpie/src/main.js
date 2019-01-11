@@ -8,7 +8,7 @@ import 'mint-ui/lib/style.css'
 import "@/assets/css/reset.css"
 import axios from 'axios'
 import filters from "@/filters"
-<<<<<<< HEAD
+
 
 import store from "./vuex"
 import "./common/js/flexble"
@@ -21,14 +21,7 @@ Vue.prototype.$bus = Bus;
 //引入observer非父子组件传值
 import observer from './common/js/observer.js'
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6f12fd9dd3beae9cc080fee546e9fb45f3851a21
-=======
-
-import store from "./vuex";
-import Bus from "./Bus"
 Vue.prototype.$bus = Bus;
 import echarts from "echarts"
 Vue.prototype.$echarts = echarts;
@@ -36,7 +29,7 @@ Vue.prototype.$echarts = echarts;
 
 import "./common/js/flexble"
 
->>>>>>> wb
+
 
 import "./common/css/reset.css"
 
