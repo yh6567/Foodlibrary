@@ -70,7 +70,9 @@ export default{
 		this.$bus.$on("sendTel",(data)=>{
 			//从login中传过来的手机号，用户头像，用户昵称(返回的是数组)
 			this.user_hpic = data[0].user_hpic;
-			this.nickname = data[0].nickname
+			this.nickname = data[0].nickname;
+			console.log(this.nickname);
+			console.log(this.user_hpic);
 //			console.log(data[0].nickname)
 		})
 	}
