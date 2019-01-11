@@ -63,7 +63,6 @@
 			<div class="control-right">
 				<img src="../../../assets/img/gc-zs-1.png"/>
 			</div>
-			
 		</div>
 	</div>
 </template>
@@ -76,7 +75,7 @@
 	},
 	methods:{
 		kap(){
-			this.$router.push({ path: '/kap' })
+			this.$router.push({ path: '/page' })
 		}
 	}
 }

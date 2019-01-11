@@ -18,7 +18,7 @@ export default
       name: 'cate',
       component: cate,
       meta:{
-        show:true
+        show:false
       }
     },
     {
@@ -26,7 +26,7 @@ export default
       name: 'evaluating',
       component: evaluating,
       meta:{
-        show:true
+        show:false
       }
     },
      {
@@ -34,7 +34,7 @@ export default
       name: 'kap',
       component: kap,
       meta:{
-        show:true
+        show:false
       }
     },
     {
@@ -42,7 +42,7 @@ export default
       name: 'page',
       component: page,
       meta:{
-        show:true
+        show:false
       }
     }
   ]
