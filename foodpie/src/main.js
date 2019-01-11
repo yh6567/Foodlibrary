@@ -8,26 +8,15 @@ import 'mint-ui/lib/style.css'
 import "@/assets/css/reset.css"
 import axios from 'axios'
 import filters from "@/filters"
-
-
 import store from "./vuex"
 import "./common/js/flexble"
-
 import Bus from "./Bus"
 Vue.prototype.$bus = Bus;
-
 //引入observer非父子组件传值
 import observer from './common/js/observer.js'
-
 import echarts from "echarts"
 Vue.prototype.$echarts = echarts;
-
-
-import "./common/js/flexble"
-import "./common/css/reset.css"
-
 Vue.use(MintUI)
-
 for(var key in filters){
   Vue.filter(key,filters[key]);
 }

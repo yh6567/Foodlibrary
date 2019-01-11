@@ -17,14 +17,15 @@ module.exports = {
     		changeOrigin:true,
     		pathRewrite:{
     			"^/api":""
-        },
+        }
+      },
         "/mo":{
-          target:"",
+          target:"https://www.easy-mock.com",
           changeOrigin:true,
           pathRewrite:{
-            "^/api":""
+            "^/mo":""
           }
-        }
+        
     	}
     },
 

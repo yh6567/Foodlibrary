@@ -101,7 +101,7 @@
 		padding-left: 1.09rem;
 		color: #c1c1c1;
 		font-size: 0.18rem;
-		background: url(../../../assets/img/gc-pc-yj1.png) no-repeat 0.8rem 0.1rem;
+		background: 'url(../../../assets/img/gc-pc-yj1.png)' no-repeat 0.8rem 0.1rem;
 	}
 	#intellectual>.control>.control-left>.control-left-school{
 		font-size: 0.18rem;
