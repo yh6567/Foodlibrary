@@ -7,8 +7,8 @@
 		</div>
 		<div class="form">
 			<label class="tel">
-        		<input type="text" placeholder="请输入手机号码"
-        			 v-model="telphone" />
+        		<input type="text" placeholder="请输入手机号码" v-model="telphone"
+        			@click="judgetel"  />
         		<div class="sendVcode" @click="send()">
         			<span v-show="!flag">{{second}}s后重新发送</span>
         			<p v-show="flag">{{sendVcode}}</p>
@@ -58,9 +58,6 @@
 
 			}
 		},
-		mounted() {
-			this.$judgecode.judgecode(this.flag,this.second,this.timer);
-		},
 		methods: {
 			//返回
 			loginBack() {
@@ -69,6 +66,27 @@
 			//协议点击函数
 			checkboxClick() {
 				this.flagCheck = !this.flagCheck;
+			},
+			judgetel() {
+				this.$axios({
+					method: "post",
+					url: "/mo/mock/5c356fc6879a3554aca75b8b/api/login_blur",
+					data: {
+						telphone: this.telphone
+					}
+				}).then((res) => {
+					console.log(res);
+					if(res.flag == 1) {
+						//用户存在，不做操作
+					} else if(res.flag == 0) {
+						//用户不存在，提示用户，该手机号还未注册，请先点击立即注册
+						Toast({
+							message: '该手机号还未注册，请先点击立即注册',
+							position: 'middle',
+							duration: 5000
+						});
+					}
+				})
 			},
 			//点击发送验证码函数
 			send() {
@@ -81,12 +99,11 @@
 						className: "telEffor"
 					});
 				} else {
-					//发送验证码接口----倒计时
+					//发送验证码接口,发送手机号，得到验证码----倒计时
 					if(this.flag) {
 						this.flag = false;
 						let interval = setInterval(() => {
 							//把second存储在本地
-							this.setStorage(this.second);
 							if(this.second-- <= 0) {
 								this.second = 60;
 								this.flag = true;
@@ -94,49 +111,10 @@
 							}
 						}, 1000)
 					}
-					console.log(this.second)
 				}
 			},
-			//存储本地数据
-			setStorage(parm) {
-				localStorage.setItem("delay", parm);
-				//存储当前时间是多少秒
-				localStorage.setItem("_time", new Date().getTime());
-			},
-			getStorage() {
-				let localDelay = {};
-				localDelay.delay = localStorage.getItem("delay");
-				localDelay.sec = localStorage.getItem("_time");
-				return localDelay;
-			},
-			/*judgeCode() {   
-				//获取本地存储的倒计时数据---秒和当前时间秒数
-				let localDelay = this.getStorage();  
-				//新时间减去旧时间的秒数
-				let secTime = parseInt((new Date().getTime() - localDelay.sec) / 1000);        
-				console.log(localDelay);
-				if(secTime <= 0) {
-					this.flag = true;
-					console.log("已过期");
-				} else {
-					this.flag = false;
-					//second-已经过去的秒数
-					let _delay = localDelay.delay - secTime;
-					this.second = _delay;
-					this.timer = setInterval(() => {
-						if(_delay > 1) {
-							_delay--;
-							this.setStorage(_delay);
-							this.second = _delay;
-							this.flag = false;
-						} else {
-							this.flag = true;
-							clearInterval(this.timer);
-						}
-					}, 1000);
-				}
-			},
-*/
+			
+
 			//点击提交表单
 			loginClick() {
 				this.$axios({
@@ -231,6 +209,8 @@
 	
 	.register>.registerTop img {
 		display: inline-block;
+		width: .34rem;
+		height: .32rem;
 	}
 	
 	.register>.registerTop>p {
@@ -283,7 +263,7 @@
 	}
 	
 	.form>.tel>input:nth-child(1) {
-		width: 4.74rem;
+		width: 4.5rem;
 		display: block;
 		float: left;
 	}
@@ -292,12 +272,12 @@
 		width: 2.1rem;
 		height: .88rem;
 		display: block;
-		float: left;
+		float: right;
 		border-left: 0;
 		color: rgba(160, 159, 159, 1);
-		background: #FFFFFF;
-		border: .02rem solid rgba(214, 214, 214, 1);
-		border-left: none;
+		background: rgba(235, 139, 78, 1);
+		border-radius: .04rem;
+		border: none;
 		line-height: .88rem;
 		text-align: center;
 		font-size: .26rem;
@@ -306,8 +286,11 @@
 	
 	.form>.tel>.sendVcode>p {
 		display: inline-block;
+		color: #fff;
 	}
-	
+	.form>.tel>.sendVcode>span{
+		color: #fff;
+	}
 	.form>p>span {
 		font-size: .24rem;
 		color: rgba(17, 17, 17, 1);
@@ -326,6 +309,7 @@
 		width: 6.86rem;
 		height: .88rem;
 		margin-top: .92rem;
+		border: none;
 		background: rgba(235, 139, 78, 1);
 		border-radius: .04rem;
 		font-size: .28rem;
