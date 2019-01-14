@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81bd9577-3320-4c11-ad54-1fcd3906d41a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodpie/src/components/baike/search/allsearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/search/allsearch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foodpie/src/components/baike/search/searched.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/search/searched.vue" afterDir="false" />
-    </list>
+    <list default="true" id="81bd9577-3320-4c11-ad54-1fcd3906d41a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -263,6 +258,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14094433" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
