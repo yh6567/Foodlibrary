@@ -7,8 +7,8 @@
 		</div>
 		<div class="form">
 			<label class="tel">
-        		<input type="text" placeholder="请输入手机号码" v-model="telphone"
-        			@click="judgetel"  />
+        		<input type="text" placeholder="请输入手机号码" v-model="telphone" />
+        			  
         		<div class="sendVcode" @click="send()">
         			<span v-show="!flag">{{second}}s后重新发送</span>
         			<p v-show="flag">{{sendVcode}}</p>
@@ -67,102 +67,116 @@
 			checkboxClick() {
 				this.flagCheck = !this.flagCheck;
 			},
-			judgetel() {
-				this.$axios({
-					method: "post",
-					url: "/mo/mock/5c356fc6879a3554aca75b8b/api/login_blur",
-					data: {
-						telphone: this.telphone
-					}
-				}).then((res) => {
-					console.log(res);
-					if(res.flag == 1) {
-						//用户存在，不做操作
-					} else if(res.flag == 0) {
-						//用户不存在，提示用户，该手机号还未注册，请先点击立即注册
-						Toast({
-							message: '该手机号还未注册，请先点击立即注册',
-							position: 'middle',
-							duration: 5000
-						});
-					}
-				})
-			},
+
 			//点击发送验证码函数
 			send() {
 				let reg = /^1[34578]\d{9}$/;
 				if(!reg.test(this.telphone)) {
 					Toast({
 						message: '手机号码格式错误',
-						position: 'top',
-						duration: 3000,
-						className: "telEffor"
+						position: 'middle',
+						duration: 3000
 					});
 				} else {
 					//发送验证码接口,发送手机号，得到验证码----倒计时
-					if(this.flag) {
-						this.flag = false;
-						let interval = setInterval(() => {
-							//把second存储在本地
-							if(this.second-- <= 0) {
-								this.second = 60;
-								this.flag = true;
-								clearInterval(interval);
+					//请求数据，判断用户是否存在
+					this.$axios({
+						method: "post",
+						url: "/mo/mock/5c356fc6879a3554aca75b8b/api/sendVcode#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
+						data: {
+							telphone: this.telphone
+						}
+					}).then((res) => {
+						if(res.flag == 1) {
+							//用户没有注册，可以进行注册
+							if(this.flag) {
+								this.flag = false;
+								let interval = setInterval(() => {
+									if(this.second-- <= 0) {
+										this.second = 60;
+										this.flag = true;
+										clearInterval(interval);
+									}
+								}, 1000)
 							}
-						}, 1000)
-					}
+						} else if(res.flag == 0 ){
+							Toast({
+								message: '该手机号已经注册，请直接登录',
+								position: 'middle',
+								duration: 3000
+							});
+						}else if(res.flag == 2){
+							Toast({
+								message: '服务器繁忙，请重试',
+								position: 'middle',
+								duration: 3000
+							});
+						}
+					})
 				}
 			},
-			
 
 			//点击提交表单
 			loginClick() {
 				this.$axios({
-					method: "get",
-					url: "http://localhost:3000/register_check?tel=" + this.telphone,
-				}).then((data) => {
-					if(data.length != 0) { //已注册
-						alert("该用户已注册")
-					} else {
-						//========验证码如何判断
-						let reg = /.{6,16}/;
-						if(!reg.test(this.password)) {
-							alert("密码必须在6-16位之间");
-						} else {
-							if(this.password != this.qpwd) {
-								alert("两次密码输入不一致");
-							} else {
-								if(!this.flagCheck) {
-									alert("请点击我同意")
-								} else {
-									//信息传递到后端存储起来
-									this.sendMsg();
-									//跳转注册成功页面
-									this.$router.push({
-										path: "/registerSuccess"
-									});
-								}
-
-							}
-						}
-					}
-				})
-			},
-			//数据发送 到后端
-			sendMsg() {
-				this.$axios({
 					method: "post",
-					url: "http://localhost:3000/register_check",
-					data: {
-						tel: this.telphone,
-						password: this.password,
-						vcode: this.vcode
+					url: "/mo/mock/5c356fc6879a3554aca75b8b/api/register_check#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
+					data:{
+						telphone:this.telphone,
+						password:this.password,
+						vcode:this.vcode
 					}
 				}).then((res) => {
-					//输出的是添加的那条信息
-					console.log(res)
+					if(res.flag ==0 ) { //已注册
+						Toast({
+							message: '注册失败,请重试',
+							position: 'middle',
+							duration: 3000
+						});
+					} else if(res.flag==1){//成功注册
+						//验证码不能为空
+						if(this.vcode==""){
+							Toast({
+								message: '验证码不能为空',
+								position: 'middle',
+								duration: 3000
+							});
+						}else{
+							let reg = /.{6,16}/;
+							if(!reg.test(this.password)) {
+								Toast({
+									message: '密码必须在6-16位之间',
+									position: 'middle',
+									duration: 3000
+								});
+							} else {
+								if(this.password != this.qpwd) {
+									Toast({
+										message: '两次密码输入不一致',
+										position: 'middle',
+										duration: 3000
+									});
+								} else {
+									if(!this.flagCheck) {
+										Toast({
+											message: '请点击我同意',
+											position: 'middle',
+											duration: 3000
+										});
+									} else {
+										//注册成功
+										//跳转注册成功页面
+										this.$router.push({path: "/registerSuccess"});
+									}
+	
+								}
+							}
+						}
+						
+					}
 				})
 			}
+			
 		}
 	}
 </script>
@@ -288,9 +302,11 @@
 		display: inline-block;
 		color: #fff;
 	}
-	.form>.tel>.sendVcode>span{
+	
+	.form>.tel>.sendVcode>span {
 		color: #fff;
 	}
+	
 	.form>p>span {
 		font-size: .24rem;
 		color: rgba(17, 17, 17, 1);

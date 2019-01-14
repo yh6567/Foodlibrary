@@ -1,8 +1,10 @@
 import my from "@/components/my/index";
+
+import Cs from "@/components/my/cs";
+
 import MyPic from "@/components/my/myPic";
 import MyCol from "@/components/my/myCollection";
 import MyUpload from "@/components/my/myUpload";
-import MyCompare from "@/components/my/myCompare";
 import Login from "@/components/my/login/login";
 import ForgetPwd from "@/components/my/login/forgetPwd";
 import register from "@/components/my/login/register";
@@ -10,6 +12,12 @@ import registerSuccess from "@/components/my/login/registerSuccess";
 import updateMsg from "@/components/my/login/updateMsg";
 export default 
        [
+       {
+       	path:"/cs",
+       	component:Cs,
+       	name:"cs"
+       },
+       
     {
       path: '/my', //路径
       name: 'my', //名字
@@ -33,11 +41,6 @@ export default
     	path:"/myUpload",
     	name:"myUpload",
     	component:MyUpload
-    },
-    {
-    	path:"/myCompare",
-    	name:"myCompare",
-    	component:MyCompare
     },
     {
     	path:"/login",

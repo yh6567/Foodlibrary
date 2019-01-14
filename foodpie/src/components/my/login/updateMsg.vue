@@ -19,6 +19,36 @@
 		<div class="logoff" v-show="flagOther" @click="logoff()">
 			<input type="button" value="退出登录" />
 		</div>
+		
+		<!--1.修改性别-->
+		<div class="uptSex" v-show="uptSex">
+			<div>
+				<p @click="cancelSex()">取消</p><p @click="confirmSex()">确定</p>
+			</div>
+			<mt-picker :slots="slotsSex" @change="changeSex"></mt-picker>
+		</div>
+		<!--2.修改年龄-->
+		<div class="uptSex" v-show="uptAge">
+			<div>
+				<p @click="cancelAge()">取消</p><p @click="confirmAge()">确定</p>
+			</div>
+			<mt-picker :slots="slotsAge" @change="changeAge"></mt-picker>
+		</div>
+		<!--3.修改身高-->
+		<div class="uptSex" v-show="uptHeight">
+			<div>
+				<p @click="cancelHeight()">取消</p><p @click="confirmHeight()">确定</p>
+			</div>
+			<mt-picker :slots="slotsHeight" @change="changeHeight"></mt-picker>
+		</div>
+		<!--4.修改体重-->
+		<div class="uptSex" v-show="uptWeight">
+			<div>
+				<p @click="cancelWeight()">取消</p><p @click="confirmWeight()">确定</p>
+			</div>
+			<mt-picker :slots="slotsWeight" @change="changeWeight"></mt-picker>
+		</div>
+		
 		<div class="uptName" v-show="uptNameFlag">
 			<div>
 				<img src="../../../assets/img/icon-rili-1@2x.png" @click="imgback()" />
@@ -31,10 +61,12 @@
 </template>
 
 <script>
-	import {Toast} from "mint-ui";
+	import {Toast,Picker} from "mint-ui";
 	export default{
 		data(){
 			return {
+				//手机号
+				telphone:"",
 				//用户头像
 				user_hpic:"require('../../../assets/img/wd_dl_tx@2x.png')",
 				loginTit:"",
@@ -75,31 +107,111 @@
 				flagOther:true,
 				//修改昵称页面最初不显示
 				uptNameFlag:false,
-				clickLog:"点击登录"
+				clickLog:"点击登录",
+				//1.性别的修改
+				slotsSex: [
+			        {
+			          flex: 1,
+			          values: ['男', '女'],
+			          className: 'slot1',
+			          textAlign: 'center'
+			        }
+		     	],
+		     	uptSex:false,
+		     	selectSex:"",
+		     	//2.年龄的修改
+		     	slotsAge: [
+			        {
+			          flex: 1,
+			          values: "",
+			          className: 'slot1',
+			          textAlign: 'center'
+			        }
+		     	],
+		     	uptAge:false,
+		     	selectAge:"",
+		     	//3.身高的修改
+		     	slotsHeight: [
+			        {
+			          flex: 1,
+			          values: "",
+			          className: 'slot1',
+			          textAlign: 'center'
+			        }
+		     	],
+		     	uptHeight:false,
+		     	selectHeight:"",
+		     	//4.体重的修改
+		     	slotsWeight: [
+			        {
+			          flex: 1,
+			          values: "",
+			          className: 'slot1',
+			          textAlign: 'center'
+			        },
+			        {
+			          flex: 1,
+			          values: "",
+			          className: 'slot2',
+			          textAlign: 'center'
+			        }
+		     	],
+		     	uptWeight:false,
+		     	selectWeight:"",
+		     	
 			}
 		},
 		created(){
-			this.telphone = JSON.parse(localStorage.getItem("user")).telphone;
-			this.$axios({
-				method:"post",
-				url:"/mo/mock/5c356fc6879a3554aca75b8b/api/userinfo_update#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
-				data:{
-					telphone:this.telphone
-				}
-			}).then((res)=>{
-				if(res.flag==1){
-					//请求成功，返回结果渲染到页面上
-					let result = res.result;
-					this.user_hpic = res.user_hpic;
-					this.navs[0].con = result.nickname;
-					this.navs[1].con = result.gender;
-					this.navs[2].con = result.age;
-					this.navs[3].con = result.height;
-					this.navs[4].con = result.weight;
-				}else if(res.flag ==0){
-					//请求失败，显示默认项
-				}
-			})
+			//本地是否存储了数据---存储 了就请求数据
+			if(localStorage.getItem("user")){
+				this.telphone = JSON.parse(localStorage.getItem("user")).telphone;
+				this.$axios({
+					method:"post",
+					url:"/mo/mock/5c356fc6879a3554aca75b8b/api/userinfo_update#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
+					data:{
+						telphone:this.telphone
+					}
+				}).then((res)=>{
+					if(res.flag==1){
+						//请求成功，返回结果渲染到页面上
+						let result = res.result;
+						this.user_hpic = res.user_hpic;
+						this.navs[0].con = result.nickname;
+						this.navs[1].con = result.gender;
+						this.navs[2].con = result.age;
+						this.navs[3].con = result.height;
+						this.navs[4].con = result.weight;
+					}else if(res.flag ==0){
+						//请求失败，显示默认项
+					}
+				})
+			}else{
+				
+			}
+			//1.年龄范围
+			let arr = [];
+			for(var i = 0 ; i<=100 ; i ++){
+				arr.push(i);
+			}
+			this.slotsAge[0].values = arr;
+			//2.身高范围
+			let arrHeight = [];
+			for(var i = 140 ; i <= 230 ; i ++ ){
+				arrHeight.push(i+"cm");
+			}
+			this.slotsHeight[0].values = arrHeight;
+			//3.体重范围
+			let arrWeight1 = [];
+			for(var i = 30 ; i<=150 ; i ++){
+				arrWeight1.push(i);
+			}
+			this.slotsWeight[0].values = arrWeight1;
+			
+			let arrWeight2 = [];
+			for(var i = 0 ; i<=9 ; i ++){
+				arrWeight2.push("."+i+"kg");
+			}
+			this.slotsWeight[1].values = arrWeight2;
 		},
 		methods:{
 			uptback(){
@@ -107,6 +219,7 @@
 			},
 			uptClick(index){
 				let name = this.navs[index].name;
+				//更改用户名
 				if(name == "MsgUsername"){
 					this.UserName = this.navs[index].con;
 					//修改用户名，隐藏所有
@@ -115,6 +228,19 @@
 					})
 					this.flagOther = false;
 					this.uptNameFlag = true;
+				//1.更改性别
+				}else if(name == "MsgSex"){
+					//显示更改性别的框，点击取消返回，点击确定，返回并更改性别
+					this.uptSex = true;
+				//2.更改年龄
+				}else if(name == "MsgAge"){
+					this.uptAge = true;
+				//更改身高
+				}else if(name == "MsgHeight"){
+					this.uptHeight = true;
+				//更改体重
+				}else if(name == "MsgWeight"){
+					this.uptWeight = true;
 				}
 				
 			},
@@ -149,6 +275,66 @@
 					}
 				})
 			},
+			//1.修改性别
+			changeSex(picker, values) {
+			    if (values[0] > values[1]) {
+			        picker.setSlotValue(1, values[0]);
+			    }
+			    this.selectSex = values[0];
+		    },
+		   //取消修改性别
+		    cancelSex(){
+		   		this.uptSex = false;
+		    },
+		    //性别点击确定
+		    confirmSex(){
+		    	this.navs[1].con = this.selectSex; 
+		   		this.uptSex = false;
+		    },
+		    //2.修改年龄
+			changeAge(picker, values) {
+			    if (values[0] > values[1]) {
+			        picker.setSlotValue(1, values[0]);
+			    }
+			    this.selectAge = values[0];
+		    },
+		    cancelAge(){
+		   		this.uptAge = false;
+		    },
+		    confirmAge(){
+		    	this.navs[2].con = this.selectAge; 
+		   		this.uptAge = false;
+		    },
+		    //3.修改身高=======????怎么让开始的默认值在中间某个位置
+			changeHeight(picker, values) {
+			    if (values[0] > values[1]) {
+			        picker.setSlotValue(1, values[0]);
+			        
+			    }
+			    this.selectHeight = values[0];
+		    },
+		    cancelHeight(){
+		   		this.uptHeight = false;
+		    },
+		    confirmHeight(){
+		    	this.navs[3].con = this.selectHeight; 
+		   		this.uptHeight = false;
+		    },
+		    //4.修改体重
+			changeWeight(picker, values) {
+			    if (values[0] > values[1]) {
+			        picker.setSlotValue(1, values[0]);
+			    }
+			    this.selectWeight = values[0]+values[1];
+		    },
+		    cancelWeight(){
+		   		this.uptWeight = false;
+		    },
+		    confirmWeight(){
+		    	this.navs[4].con = this.selectWeight; 
+		   		this.uptWeight = false;
+		    },
+		    
 			//退出登录----myMain/myTop中loginTit修改为"点击登录"
 			logoff(){
 				localStorage.removeItem("user");
@@ -299,6 +485,29 @@
 				padding: .4rem;
 				border-bottom: .02rem solid rgba(214,214,214,1);
 				margin: 0 auto;
+			}
+		}
+		.uptSex{
+			width: 100%;
+			height: 4.5rem;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			div:nth-child(1){
+				width: 100%;
+				height: .78rem;
+				line-height: .78rem;
+				background: #f7f7f7;
+				border-bottom: .02rem solid rgba(240,240,240,1);
+				p:nth-child(1){
+					float: left;
+					margin-left: .32rem;
+				}
+				p:nth-child(2){
+					float: right;
+					margin-right: .32rem;
+				}
 			}
 		}
 	}
