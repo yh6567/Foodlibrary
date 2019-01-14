@@ -30,9 +30,8 @@
                 </div>
                 <div class="conter_buttom_like">
                     <div class="conter_buttom_left">
-                        <p><span>+99</span></p>
-                           
-                </div>
+                        <p><span>+99</span></p>    
+                     </div>
             </div> 
             </div>
         </div>
