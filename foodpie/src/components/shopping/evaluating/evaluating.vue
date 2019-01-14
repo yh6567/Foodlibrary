@@ -43,7 +43,7 @@ export default{
 		width: 6.86rem;
 		height: 3.8rem;
 		margin: 0.28rem 0.3rem 0.28rem;
-		background: url(../../../assets/img/ms_pc@2x.png) no-repeat;
+		background: url(../../../assets/img/ms_pc@2x.png) no-repeat 100% 100%;
 		border-radius: 5px;
 		overflow: hidden;
 	}

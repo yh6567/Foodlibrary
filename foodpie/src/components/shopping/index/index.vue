@@ -1,6 +1,19 @@
 <template>
 	<div id="intellectual">
-		<div class="control" @click="kap">
+		<div class="control" @click="skip">
+			<div class="control-left">
+				<p class="control-left-text">
+					控制食欲、告别情绪性暴食，你只需要7步
+				</p> 	
+				<span class="control-left-school">薄荷健康学院</span>
+				<span class="control-left-number">95636</span>
+			</div>
+			<div class="control-right">
+				<img src="../../../assets/img/gc-zs-1.png"/>
+			</div>
+			
+		</div>
+		<div class="control" @click="skip()">
 			<div class="control-left">
 				<p class="control-left-text">
 					控制食欲、告别情绪性暴食，你只需要7步
@@ -13,20 +26,7 @@
 			</div>
 			
 		</div>
-		<div class="control" @click="kap">
-			<div class="control-left">
-				<p class="control-left-text">
-					控制食欲、告别情绪性暴食，你只需要7步
-				</p>
-				<span class="control-left-school">薄荷健康学院</span>
-				<span class="control-left-number">95636</span>
-			</div>
-			<div class="control-right">
-				<img src="../../../assets/img/gc-zs-1.png"/>
-			</div>
-			
-		</div>
-		<div class="control" @click="kap">
+		<div class="control" @click="skip()">
 			<div class="control-left">
 				<p class="control-left-text">
 					控制食欲、告别情绪性暴食，你只需要7步
@@ -74,8 +74,8 @@
 		}
 	},
 	methods:{
-		kap(){
-			this.$router.push({ path: '/page' })
+		skip(){
+			this.$router.push({ path: '/evaluating' })
 		}
 	}
 }

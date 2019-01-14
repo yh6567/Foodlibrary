@@ -1,7 +1,7 @@
 import shopping from "@/components/shopping/index"
 import cate from '@/components/shopping/cate/cate_son.vue'
 import evaluating from '@/components/shopping/evaluating/evaluating_son.vue'
-import kap from "@/components/shopping/kap/kap_son.vue"
+import kap from "@/components/shopping/KAP/kap_son.vue"
 import page from "@/components/shopping/page/page_son.vue"
 export default
        [
