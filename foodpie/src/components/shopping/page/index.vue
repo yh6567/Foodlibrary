@@ -1,7 +1,7 @@
 <template>
 	<div id="page">
 		<div id="pox">
-			<div class="pox_img">
+			<div class="pox_img" @click="page">
 				<img src="../../../assets/img/gc_tp_1.png" />
 				<div class="text_title">
 					<p>美食炒蛋</p>
@@ -30,6 +30,17 @@
 </template>
 
 <script>
+export default{
+	data(){
+		return{
+		}
+	},
+	methods:{
+		page(){
+			this.$router.push({ path: '/cate' })
+		}
+	}
+}
 </script>
 
 <style scoped>

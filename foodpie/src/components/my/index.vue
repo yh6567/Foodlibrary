@@ -19,29 +19,22 @@
 				</li>
 			</ul>
 		</div>
-    	<!--<MyTop-com></MyTop-com>
-		<MyNav-com></MyNav-com>-->
     </div>
 </template>
 
 <script>
-	/*import MyTop from "./myMain/myTop"
-	import MyNav from "./myMain/myNav";*/
 export default{
-	/*components:{
-		"MyTop-com":MyTop,
-		"MyNav-com":MyNav
-	},*/
 	data(){
 		return {
 			//用户手机号			
 			telphone:""	,
 			//用户头像
-			user_hpic:require("../../assets/img/wd_dl_tx@2x.png"),
+			user_hpic:require('../../assets/img/wd_dl_tx@2x.png'),
 			//用户昵称
-			nickname:"西元前的爱",
-			loginTit:"修改个人资料",
-			myUsername:true,
+			nickname:"",
+			loginTit:"点击登录",
+			//是否登录，登录----显示昵称，否则隐藏
+			myUsername:"",
 			myNavs:[
 				{
 					src:require("../../assets/img/wd_icon_zp@2x.png"),
@@ -67,12 +60,16 @@ export default{
 		}
 	},
 	created(){
-		this.$bus.$on("sendTel",(data)=>{
-			//从login中传过来的手机号，用户头像，用户昵称(返回的是数组)
-			this.user_hpic = data[0].user_hpic;
-			this.nickname = data[0].nickname
-//			console.log(data[0].nickname)
-		})
+		let  userMsg = JSON.parse(localStorage.getItem("user"));
+		if(userMsg){
+			this.myUsername = true;
+			this.nickname = userMsg[0].nickname;
+			this.user_hpic = userMsg[0].user_hpic;
+			this.loginTit="修改个人资料";
+			console.log(userMsg[0].user_hpic)
+		}else{
+			this.myUsername = false;
+		}
 	}
 }
 
