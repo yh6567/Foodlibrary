@@ -40,6 +40,7 @@ export default {
             })
             this.allsearched.push(a);
             window.localStorage.setItem("searched",this.allsearched.toString());
+            this.$router.push({path:"/searchanswer"});
         }
     },
     created(){

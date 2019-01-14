@@ -28,6 +28,7 @@
               })
               this.touchbesearched.push(a);
               window.localStorage.setItem("searched",this.touchbesearched.toString());
+              this.$router.push({path:"/searchanswer"});
           }
       }
   }
