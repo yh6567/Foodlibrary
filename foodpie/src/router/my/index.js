@@ -3,10 +3,11 @@ import MyPic from "@/components/my/myPic";
 import MyCol from "@/components/my/myCollection";
 import MyUpload from "@/components/my/myUpload";
 import MyCompare from "@/components/my/myCompare";
-import Login from "@/components/my/login";
-import ForgetPwd from "@/components/my/forgetPwd";
-import register from "@/components/my/register";
-
+import Login from "@/components/my/login/login";
+import ForgetPwd from "@/components/my/login/forgetPwd";
+import register from "@/components/my/login/register";
+import registerSuccess from "@/components/my/login/registerSuccess";
+import updateMsg from "@/components/my/login/updateMsg";
 export default 
        [
     {
@@ -15,7 +16,8 @@ export default
       component: my , //组件名
       meta:{
       	show:true
-      }
+      },
+      props:true
     },
     {
     	path:"/myPic",
@@ -55,4 +57,15 @@ export default
     	name:"register",
     	component:register
     },
+    {
+    	path:"/registerSuccess",
+    	name:"registerSuccess",
+    	component:registerSuccess
+    },
+    {
+    	path:"/updateMsg",
+    	name:"updateMsg",
+    	component:updateMsg,
+    	props:true
+    }
   ]

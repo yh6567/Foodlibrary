@@ -1,19 +1,19 @@
 <template>
-  <div id="app">
+	<div id="app">
 
-    <router-view/>
-    <FootNav />
-  </div>
+		<router-view/>
+		<FootNav />
+	</div>
 </template>
 
 <script>
-import FootNav from "@/components/common/footnav"
-export default {
-  name: 'App',
-  components:{
-    FootNav
-  }
-}
+	import FootNav from "@/components/common/footnav"
+	export default {
+		name: 'App',
+		components: {
+			FootNav
+		}
+	}
 </script>
 
 <style scoped>

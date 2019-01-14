@@ -10,12 +10,13 @@ import axios from 'axios'
 import filters from "@/filters"
 import store from "./vuex"
 import "./common/js/flexble"
-
-
-import "./common/css/reset.css"
-
+import Bus from "./Bus"
+Vue.prototype.$bus = Bus;
+//引入observer非父子组件传值
+import observer from './common/js/observer.js'
+import echarts from "echarts"
+Vue.prototype.$echarts = echarts;
 Vue.use(MintUI)
-
 for(var key in filters){
   Vue.filter(key,filters[key]);
 }
@@ -25,8 +26,8 @@ axios.interceptors.response.use(({data})=>{
 }) //axios拦截 .then返回的就是data数据本身；
 
 Vue.prototype.$axios =axios; //axios调用接口在vue原型上
-
-Vue.config.productionTip = false
+Vue.prototype.observer = observer; //非父子传值
+Vue.config.productionTip = false; //
 
 /* eslint-disable no-new */
 new Vue({

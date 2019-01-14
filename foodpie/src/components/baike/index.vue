@@ -4,18 +4,19 @@
             <h2>食物派</h2>
             <h3>查询食物信息</h3>
             <div class="search">
-                <i>💗</i>
-                <input type="text" placeholder="搜索">
+                <!-- <i>💗</i> -->
+                <input  @click="$router.push('/search')" type="text" placeholder="搜索">
             </div>
         </header>
        <nav>
-           <dl @click="$router.push('/analysis')">
+           <dl @click="handleanalysis()">
+               <!-- $router.push('/analysis') -->
                <dd>
                    <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
                 </dd>
                <dt>饮食分析</dt>
            </dl>
-            <dl @click="$router.push('/search')">
+            <dl @click="$router.push('/searchcompare')">
                <dd>
                    <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
                </dd>
@@ -69,12 +70,21 @@ export default {
         
     },
     methods:{
-        // getfoodFamilylist(){
-        //     $axios.get("")
-        // }
+      handleanalysis(){
+          if(!this.$store.state.baike.admin){
+             this.$router.push('/login')    
+          }else{
+              this.$router.push('/analysis')
+          }
+      }
 
     },
+    computed:{
+      
+    },
     mounted(){
+        
+        
 
     }
 }
@@ -134,7 +144,7 @@ li dl dt img{
  #main h3{
       text-align: center;
       margin-top: 8vw;
-      line-height:2vw;
+      
       font-size: 4vw;
       font-weight: 400;
  }
@@ -155,13 +165,14 @@ li dl dt img{
 .search{
     margin: 2vw;
     border-radius: 3vw;
-    width: 92vw;
+   
     height: 8vw;
     font-size: 4vw;
     background: #fff;
 }
 .search input{
-    margin-top:2vw; 
+    margin:2vw 0 0 2vw;
+    display: inline-block; 
     border:none;
     outline:none;
     
