@@ -4,6 +4,7 @@ import searchcompare from "@/components/baike/searchAnalysis"
 import sweep from "@/components/baike/sweepCode"
 import detail from "@/components/baike/detail"
 import echart from "@/components/baike/eachart"
+import test from "@/components/baike/test"
 export default 
        [
     {
@@ -51,6 +52,14 @@ export default
       path:"/echart",
       name:'echart',
       component:echart,
+      meta:{
+        show:true
+      }
+    },
+    {
+      path:"/test",
+      name:'test',
+      component:test,
       meta:{
         show:true
       }

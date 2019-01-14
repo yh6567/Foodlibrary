@@ -71,7 +71,7 @@ export default {
     },
     methods:{
       handleanalysis(){
-          if(!this.$store.state.baike.admin){
+          if(!this.$store.state.baike.adminName){
              this.$router.push('/login')    
           }else{
               this.$router.push('/analysis')
