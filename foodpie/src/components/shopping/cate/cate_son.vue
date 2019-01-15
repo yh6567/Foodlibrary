@@ -31,6 +31,7 @@
                 <div class="conter_buttom_like">
                     <div class="conter_buttom_left">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <p><span>+99</span></p>    
                      </div>
 =======
@@ -40,6 +41,11 @@
                         <p><span>+99</span></p>     
                     </div>
 >>>>>>> yuanyuan
+=======
+                        <p><span>+99</span></p>
+                           
+                </div>
+>>>>>>> zhou
             </div> 
             </div>
         </div>
@@ -175,9 +181,12 @@ export default{
     height: 1.2rem;
     margin-top:.65rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     float: left;
 >>>>>>> yuanyuan
+=======
+>>>>>>> zhou
     background: url(../../../assets/img/icon_dz@3x.png) no-repeat 40%;
 }
 .conter_buttom_left>p{
@@ -186,6 +195,7 @@ export default{
     font-size: 26px;
     margin-left: .5rem;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 .conter_buttom_right>p{
@@ -201,4 +211,6 @@ export default{
     margin-left: .5rem;
 }
 >>>>>>> yuanyuan
+=======
+>>>>>>> zhou
 </style>

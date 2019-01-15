@@ -1,9 +1,13 @@
 <template>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> zhou
 <div>
     <h2>
         这是evaluating——con
     </h2>
+<<<<<<< HEAD
 =======
 <div>   
     <div id="evaluating">
@@ -60,6 +64,8 @@
     
      </div>
 >>>>>>> yuanyuan
+=======
+>>>>>>> zhou
 </div>
 </template>
 
