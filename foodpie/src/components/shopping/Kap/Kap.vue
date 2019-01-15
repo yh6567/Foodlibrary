@@ -75,7 +75,7 @@
 	},
 	methods:{
 		kap(){
-			$router.push({ path: '/page' })
+			// $router.push({ path: '/page' })
 		}
 	}
 }
