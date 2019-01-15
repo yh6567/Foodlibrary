@@ -26,6 +26,10 @@
 			}
 		},
 		methods:{
+			back(){
+				this.$router.back();
+			},
+			
 			login(){
 				this.$router.push({path:"/login"})
 			}

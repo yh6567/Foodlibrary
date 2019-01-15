@@ -29,7 +29,7 @@
 </template>
 
 <script>
-	import {Toast} from "mint-ui";
+	import { Toast, MessageBox } from "mint-ui";
 	export default {
 		data() {
 			return {
@@ -39,16 +39,16 @@
 				second: 60,
 				//发送验证码的倒计时显示否
 				flag: true,
-				telphone:"",
-				vcode:"",
-				password:"",
-				qpwd:"",
-				flagTel:null
+				telphone: "",
+				vcode: "",
+				password: "",
+				qpwd: "",
+				flagTel: null
 			}
 		},
-		methods:{
+		methods: {
 			//返回上一页面
-			loginBack(){
+			loginBack() {
 				this.$router.back()
 			},
 			//点击发送验证码函数
@@ -65,14 +65,14 @@
 					if(this.flag) {
 						//忘记密码的发送验证码接口，传送telphone，不返回
 						this.$axios({
-							method:"post",
-							url:"/mo/mock/5c356fc6879a3554aca75b8b/api/sendVcode#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
-							data:{
-								telphone:this.telphone
+							method: "post",
+							url: "/mo/mock/5c356fc6879a3554aca75b8b/api/sendVcode#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
+							data: {
+								telphone: this.telphone
 							}
-						}).then((res)=>{
+						}).then((res) => {
 							//已经注册，可以继续
-							if(res.flag==1){
+							if(res.flag == 1) {
 								this.flag = false;
 								let interval = setInterval(() => {
 									//把second存储在本地
@@ -82,60 +82,66 @@
 										clearInterval(interval);
 									}
 								}, 1000)
-							//没有注册，滚去注册
-							}else if(res.flag ==0){
+								//没有注册，滚去注册
+							} else if(res.flag == 0) {
 								Toast({
 									message: '该手机号还未注册 ，请先去注册',
 									position: 'middle',
 									duration: 3000
 								});
-							//服务器繁忙，一会的
-							}else if(res.flag == 3){
+								//服务器繁忙，一会的
+							} else if(res.flag == 3) {
 								Toast({
 									message: '服务器繁忙，请重试',
 									position: 'middle',
 									duration: 3000
 								});
 							}
-							
+
 						})
-						
+
 					}
-					
-				}	
+
+				}
 			},
 			//修改密码的提交
-			updatePwd(){
+			updatePwd() {
 				let reg = /[A-Za-z0-9\.]{6,16}/;
-				if(reg.test(this.password)){
-					if(this.password == this.qpwd){
+				if(reg.test(this.password)) {
+					if(this.password == this.qpwd) {
 						//手机号和 新密码发送给后端
 						this.$axios({
-							method:"post",
-							url:"/mo/mock/5c356fc6879a3554aca75b8b/api/forget_password#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
-							data:{
-								telphone:this.telphone,
-								password:this.password,
-								vcode:this.vcode
+							method: "post",
+							url: "/mo/mock/5c356fc6879a3554aca75b8b/api/forget_password#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
+							data: {
+								telphone: this.telphone,
+								password: this.password,
+								vcode: this.vcode
 							}
-						}).then((res)=>{
+						}).then((res) => {
 							//返回数据，判断是否修改成功
 							//修改成功跳转登陆，
-							if(res.flag == 1){
-								this.$router.push({path:"/login"});
-							}else if(res.flag==0){
+							if(res.flag == 1) {
+								MessageBox.alert('修改成功').then(action => {
+									this.$router.push({path:"/login"})
+								});
+							} else if(res.flag == 0) {
 								//否则提示修改失败,请重试
-								alert("服务器繁忙，请重试");
+								Toast({
+									message: '服务器繁忙，请重试',
+									position: 'middle',
+									duration: 3000
+								});
 							}
 						})
-					}else{
+					} else {
 						Toast({
 							message: '两次密码输入不一致',
 							position: 'middle',
 							duration: 3000
 						});
 					}
-				}else{
+				} else {
 					Toast({
 						message: '密码必须在6-16位之间',
 						position: 'middle',
@@ -168,7 +174,7 @@
 				width: .34rem;
 				height: .32rem;
 			}
-			span{
+			span {
 				font-size: .34rem;
 			}
 			p {
