@@ -30,8 +30,16 @@
                 </div>
                 <div class="conter_buttom_like">
                     <div class="conter_buttom_left">
+<<<<<<< HEAD
                         <p><span>+99</span></p>    
                      </div>
+=======
+                        <p><span>+99</span></p>     
+                    </div>
+                     <div class="conter_buttom_right">
+                        <p><span>+99</span></p>     
+                    </div>
+>>>>>>> yuanyuan
             </div> 
             </div>
         </div>
@@ -166,6 +174,10 @@ export default{
     width: 30%;
     height: 1.2rem;
     margin-top:.65rem;
+<<<<<<< HEAD
+=======
+    float: left;
+>>>>>>> yuanyuan
     background: url(../../../assets/img/icon_dz@3x.png) no-repeat 40%;
 }
 .conter_buttom_left>p{
@@ -174,4 +186,19 @@ export default{
     font-size: 26px;
     margin-left: .5rem;
 }
+<<<<<<< HEAD
+=======
+.conter_buttom_right>p{
+    float: right;
+    width: 30%;
+    height: 1.2rem;
+    margin-top:.65rem;
+}
+.conter_buttom_right>p{
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 26px;
+    margin-left: .5rem;
+}
+>>>>>>> yuanyuan
 </style>

@@ -13,7 +13,7 @@
 			</div>
 			
 		</div>
-		<div class="control" @click="kap">
+		<div class="control" @click="kap()">
 			<div class="control-left">
 				<p class="control-left-text">
 					控制食欲、告别情绪性暴食，你只需要7步
@@ -26,7 +26,7 @@
 			</div>
 			
 		</div>
-		<div class="control" @click="kap">
+		<div class="control" @click="kap()">
 			<div class="control-left">
 				<p class="control-left-text">
 					控制食欲、告别情绪性暴食，你只需要7步
@@ -75,7 +75,7 @@
 	},
 	methods:{
 		kap(){
-			this.$router.push({ path: '/page' })
+			$router.push({ path: '/page' })
 		}
 	}
 }
