@@ -41,6 +41,22 @@
                         <li><img src="../../../assets/img/yuanxing@2x.png">年龄</li>
                     </ul>
                 </div>
+                <div class="page_conter_img">
+                    <img src="../../../assets/img/zs_icon_1@2x.png" >
+                </div>
+                <div class="nutrition_describe">
+                    <h3>营养师团</h3>
+                    <p>耳根继《仙逆》《求魔》《我欲封天》《一念永恒》后，创作的第五部长篇小说《三寸人间》。
+本站提示：各位书友要是觉得《三寸人间》还不错的话请不要忘记向您QQ群和微博里的</p>
+                    <p>三寸人间</p>
+                </div>
+                
+            </div>
+            <div>
+                <ul class="foot">
+                 <li class="share">分享</li>
+                 <li class="collect">收藏</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -71,12 +87,16 @@ export default {
 #page_son>.page_son{
     height: 10rem;
 }
-#page_son>.page_son>.head_page{
+.perch{
+    height:.8rem ;
+}
+#page_son>.page_son>.perch>.head_page{
     position:fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9;
+    background: #fff;
     }
 #page_son>.page_son>.perch>.head_page>p{
     display: block;
@@ -114,11 +134,12 @@ export default {
 .conner_page_son{
     height: 100%;
     width: 100%; 
-    background: #f6f6f6; 
+
 }
 .conner_middle{
   padding-left:20px;
   padding-right:20px; 
+  background: #f6f6f6; 
 }
 .conner_page_son>.conner_middle>.conner_text{
     font-size: 24px;
@@ -180,5 +201,49 @@ export default {
     margin-top: .25rem;
     float: left;
     margin-right: 10px;
+}
+.page_conter_img{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+}
+.page_conter_img>img{
+    width: 100%;
+    height: 100%;
+}
+.nutrition_describe{
+    margin-top: .2rem;
+}
+.nutrition_describe>h3{
+    text-align: center;
+    line-height: .5rem;
+    font-size: 30px;
+}
+.nutrition_describe>p{
+    text-indent: .3rem;
+}
+.foot {
+  height: 0.96rem;
+  border-top: 1px solid #f0f0f0;
+  background: #fff;
+}
+.foot > li {
+  list-style: none;
+  font-size: 0.26rem;
+  color: #111111;
+  display: block;
+  float: left;
+  height: 0.96rem;
+  width: 50%;
+  text-align: center;
+  line-height: 0.96rem;
+}
+.foot > .share {
+  text-indent: 0.8rem;
+  background: url(../../../assets/img/icon-fx@2x.png) no-repeat 1.6rem 0.36rem;
+}
+.foot > .collect {
+  text-indent: -0.4rem;
+  background: url(../../../assets/img/icon-sc@2x.png) no-repeat 1rem 0.36rem;
 }
 </style>

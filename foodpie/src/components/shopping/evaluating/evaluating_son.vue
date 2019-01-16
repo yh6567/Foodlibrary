@@ -2,10 +2,12 @@
   <div class="app">
     <div id="evaluating">
       <div class="inside">
-        <div class="head_evaluating">
-          <!-- <img src="../../../assets/img/icon_fh.png"> -->
-          咨询详情
+        <div class="head_nav_evaluating">
+          <div class="head_evaluating">
+                <p><img src="../../../assets/img/icon_fh@2x.png" @click="$router.push('/shopping')"><span>咨询详情</span> </p>
+            </div>
         </div>
+           
         <div class="wrapper box" ref="box">
           <div class="content">
             <div class="rankingTitle">各类海鲜蛋白质含量排行榜</div>
@@ -78,6 +80,42 @@ export default {
 .inside {
   height: 100%;
 }
+.head_nav_evaluating{
+  height: .8rem;
+  background: #fff;
+  z-index: 999;
+}
+.head_evaluating{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background: #fff;
+    }
+.head_evaluating>p{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.head_evaluating>p>img{
+    float: left;
+    margin-top: .2rem;
+    width: .32rem;
+    height: .32rem;
+    margin-left: 20px;
+}
+.head_evaluating>p>span{
+    font-size: 34px;
+    line-height: .86rem;
+    text-align: center;
+    display: block;
+}
+/* .head_evaluating>p>img{
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+} */
 .head_head_evaluating{
   height: 0.86rem;
   line-height: 0.86rem;

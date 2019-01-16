@@ -3,6 +3,7 @@ import cate from '@/components/shopping/cate/cate_son.vue'
 import evaluating from '@/components/shopping/evaluating/evaluating_son.vue'
 import kap from "@/components/shopping/KAP/kap_son.vue"
 import page from "@/components/shopping/page/page_son.vue"
+// let evaluating = resolve=>require(["@/compoinents/shopping/evaluating/evaluating_son.vue"],resolve)
 export default
        [
     {
