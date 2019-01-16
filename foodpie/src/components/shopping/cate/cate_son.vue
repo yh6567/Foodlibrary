@@ -49,7 +49,8 @@ export default{
                 "美食炒蛋",
                 "美食炒蛋",
                 "美食炒蛋"
-            ]
+            ],
+            page:{}
 		}
 	},
 	methods:{
@@ -61,12 +62,11 @@ export default{
         }
     },
     mounted(){
-        this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/register_check#!method=get")
-        .then(({data})=>{
-            console.log(data[0].id);
-            
-        })
-    }
+      this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get").then((data)=>{
+        this.page=data.cate_son.cate_son[0];
+        console.log(this.page)
+    })
+     }
 }
 </script>
 

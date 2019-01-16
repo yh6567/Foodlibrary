@@ -1,4 +1,4 @@
-import shopping from "@/components/shopping/index"
+//import shopping from "@/components/shopping/index"
 import cate from '@/components/shopping/cate/cate_son.vue'
 import evaluating from '@/components/shopping/evaluating/evaluating_son.vue'
 import kap from "@/components/shopping/KAP/kap_son.vue"
@@ -9,7 +9,7 @@ export default
     {
       path: '/shopping',
       name: 'shopping',
-      component: shopping,
+      component: () =>import ("@/components/shopping/index"),
       meta:{
         show:true
       }
@@ -17,7 +17,7 @@ export default
     {
       path: '/cate',
       name: 'cate',
-      component: cate,
+      component: () =>import ("@/components/shopping/cate/cate_son.vue"),
       meta:{
         show:false
       }
@@ -25,7 +25,7 @@ export default
     {
       path: '/evaluating',
       name: 'evaluating',
-      component: evaluating,
+      component: () =>import ("@/components/shopping/evaluating/evaluating_son.vue"),
       meta:{
         show:false
       }
@@ -33,7 +33,7 @@ export default
      {
       path: '/kap',
       name: 'kap',
-      component: kap,
+      component:() =>import ("@/components/shopping/KAP/kap_son.vue"),
       meta:{
         show:false
       }
@@ -41,7 +41,7 @@ export default
     {
       path: '/page',
       name: 'page',
-      component: page,
+      component: () =>import ("@/components/shopping/page/page_son.vue"),
       meta:{
         show:false
       }
