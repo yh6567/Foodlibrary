@@ -62,7 +62,6 @@ export default {
         this.foodFamilylist=data;
         
     })
-  }
 };
 </script>
 

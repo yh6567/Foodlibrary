@@ -30,16 +30,11 @@
                 </div>
                 <div class="conter_buttom_like">
                     <div class="conter_buttom_left">
-<<<<<<< HEAD
                         <p><span>+99</span></p>    
-                     </div>
-=======
-                        <p><span>+99</span></p>     
                     </div>
                      <div class="conter_buttom_right">
                         <p><span>+99</span></p>     
                     </div>
->>>>>>> yuanyuan
             </div> 
             </div>
         </div>
@@ -66,11 +61,17 @@ export default{
         }
     },
     mounted(){
-        this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/register_check#!method=get")
-        .then(({data})=>{
-            console.log(data[0].id);
-            
-        })
+    	//https://www.easy-mock.com/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get
+    	 this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cateson#!method=get").then(({data})=>{
+        console.log(data);
+        
+        
+    })
+//      this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get")
+//      .then((data)=>{
+//          console.log(data);
+//          
+//      })
     }
 }
 </script>
