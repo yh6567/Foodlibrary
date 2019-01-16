@@ -1,10 +1,4 @@
 <template>
-
-<div>
-    <h2>
-        这是evaluating——con
-    </h2>
-
   <div class="app">
     <div id="evaluating">
       <div class="inside">
@@ -53,8 +47,6 @@
         </div>
        
     </div> 
-    
-     </div>
 
     </div>
 </template>
