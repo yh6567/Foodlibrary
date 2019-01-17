@@ -1,7 +1,19 @@
 <template>
 	<div id="page">
-		<div id="pox">
+		<div class="pox" v-for="(item,index) in arr">
 			<div class="pox_img" @click="page">
+				<img :src="item.indexImg" />
+				<div class="text_title">
+					<p>{{item.shoppingTxt}}</p>
+					<p>{{item.shoppingTxt}}</p>
+				</div>
+				<div class="like">
+					<img src="../../../assets/img/gc_sy-tx-1.png"/>
+					<div class="nickname">{{item.shoppingUname}}</div>
+					<div class="like_img_rinth"><img src="../../../assets/img/icon_dz.png"/><span>{{item.likeNum}}</span></div>
+				</div>
+			</div>
+			<!-- <div class="pox_img">
 				<img src="../../../assets/img/gc_tp_1.png" />
 				<div class="text_title">
 					<p>美食炒蛋</p>
@@ -12,19 +24,7 @@
 					<div class="nickname">昵称</div>
 					<div class="like_img_rinth"><img src="../../../assets/img/icon_dz.png"/><span>+99</span></div>
 				</div>
-			</div>
-			<div class="pox_img">
-				<img src="../../../assets/img/gc_tp_1.png" />
-				<div class="text_title">
-					<p>美食炒蛋</p>
-					<p>美好的一天，全在笑脸上</p>
-				</div>
-				<div class="like">
-					<img src="../../../assets/img/gc_sy-tx-1.png"/>
-					<div class="nickname">昵称</div>
-					<div class="like_img_rinth"><img src="../../../assets/img/icon_dz.png"/><span>+99</span></div>
-				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </template>
@@ -33,13 +33,20 @@
 export default{
 	data(){
 		return{
+			arr:[]
 		}
 	},
 	methods:{
 		page(){
 			this.$router.push({ path: '/cate' })
 		}
-	}
+	},
+	mounted(){
+      this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/eating_commend#!method=get").then((data)=>{
+        this.arr=data.eating.commend;
+        console.log(this.arr)
+    })
+     }
 }
 </script>
 
@@ -47,9 +54,6 @@ export default{
 	#page{
 		background: #f6f6f6;
 		overflow: hidden;
-	}
-	#pox{
-	
 	}
 	.pox_img{
 		float: left;

@@ -1,67 +1,15 @@
 <template>
 	<div id="intellectual">
-		<div class="control" @click="skip">
+		<div class="control"  v-for="(item,index) in arr">
 			<div class="control-left">
 				<p class="control-left-text">
-					控制食欲、告别情绪性暴食，你只需要7步
-				</p> 	
-				<span class="control-left-school">薄荷健康学院</span>
-				<span class="control-left-number">95636</span>
-			</div>
-			<div class="control-right">
-				<img src="../../../assets/img/gc-zs-1.png"/>
-			</div>
-			
-		</div>
-		<div class="control" @click="skip()">
-			<div class="control-left">
-				<p class="control-left-text">
-					控制食欲、告别情绪性暴食，你只需要7步
+					{{item.knoTxt}}
 				</p>
-				<span class="control-left-school">薄荷健康学院</span>
-				<span class="control-left-number">95636</span>
+				<span class="control-left-school">{{item.konTitle}}</span>
+				<span class="control-left-number">{{item.readNum}}</span>
 			</div>
 			<div class="control-right">
-				<img src="../../../assets/img/gc-zs-1.png"/>
-			</div>
-			
-		</div>
-		<div class="control" @click="skip()">
-			<div class="control-left">
-				<p class="control-left-text">
-					控制食欲、告别情绪性暴食，你只需要7步
-				</p>
-				<span class="control-left-school">薄荷健康学院</span>
-				<span class="control-left-number">95636</span>
-			</div>
-			<div class="control-right">
-				<img src="../../../assets/img/gc-zs-1.png"/>
-			</div>
-			
-		</div>
-		<div class="control">
-			<div class="control-left">
-				<p class="control-left-text">
-					控制食欲、告别情绪性暴食，你只需要7步
-				</p>
-				<span class="control-left-school">薄荷健康学院</span>
-				<span class="control-left-number">95636</span>
-			</div>
-			<div class="control-right">
-				<img src="../../../assets/img/gc-zs-1.png"/>
-			</div>
-			
-		</div>
-		<div class="control">
-			<div class="control-left">
-				<p class="control-left-text">
-					控制食欲、告别情绪性暴食，你只需要7步
-				</p>
-				<span class="control-left-school">薄荷健康学院</span>
-				<span class="control-left-number">95636</span>
-			</div>
-			<div class="control-right">
-				<img src="../../../assets/img/gc-zs-1.png"/>
+				<img :src="item.eyeImg"/>
 			</div>
 		</div>
 	</div>
@@ -71,13 +19,20 @@
 	export default{
 	data(){
 		return{
+			arr:[]
 		}
 	},
 	methods:{
 		skip(){
 			this.$router.push({ path: '/evaluating' })
 		}
-	}
+	},
+	mounted(){
+      this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/kno#!method=get").then((data)=>{
+        this.arr=data.kon.kno;
+        console.log(this.arr)
+    })
+     }
 }
 </script>
 
@@ -117,7 +72,8 @@
 		color: #c1c1c1;
 	}
 	#intellectual>.control>.control-right{
-		width: 3.24rem;
+		width: 2.9rem;
+		height: 1.8rem;
 		float: right;
 		padding-top: 0.36rem;
 		padding-right: 0.13rem;

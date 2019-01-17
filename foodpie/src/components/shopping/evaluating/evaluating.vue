@@ -1,19 +1,9 @@
 <template>
 	<div id="evaluating">
-		<div class="rank" @click="page">
+		<div class="rank" @click="page" v-for="(itme,index) in arr">
 			<p class="nice">/NICE健康/</p>
-			<p class="various">各类海鲜蛋白质含量排行</p>
-			<p class="number">169559人阅读</p>
-		</div> 
-		<div class="rank"  @click="page">
-			<p class="nice">/NICE健康/</p>
-			<p class="various">各类海鲜蛋白质含量排行</p>
-			<p class="number">169559人阅读</p>
-		</div> 
-		<div class="rank">
-			<p class="nice">/NICE健康/</p>
-			<p class="various">各类海鲜蛋白质含量排行</p>
-			<p class="number">169559人阅读</p>
+			<p class="various">{{itme.evaTxt}}</p>
+			<p class="number">{{itme.readNum}}{{itme.tvaTitle}}</p>
 		</div> 
 	</div>
 </template>
@@ -22,13 +12,20 @@
 export default{
 	data(){
 		return{
+			arr:""
 		}
 	},
 	methods:{
 		page(){
 			this.$router.push({ path: '/evaluating' })
 		}
-	}
+	},
+	 mounted(){
+      this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/shoppingevaluating#!method=get").then((data)=>{
+        this.arr=data.evaluating.profile;
+        console.log(this.arr)
+    })
+     }
 }
 </script>
 
@@ -64,5 +61,6 @@ export default{
 		font-size: 0.2rem;
 		text-indent: 0.8rem;
 		background: url(../../../assets/img/gc-pc-yj.png) no-repeat 2.77rem 0;
+		background-size:16px 10px; 
 	}
 </style>

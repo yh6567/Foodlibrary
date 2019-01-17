@@ -2,9 +2,9 @@
     <div id="cate_son">
         <div class="cate_son">
             <nav class="nav_cate_son">
-                <img src="./../../../assets/img/icon-rili-1@2x.png" @click="$router.push('/shopping')" class="nav_cate_son_listimg">
+                <img src="./../../../assets/img/icon-rili-1.png" @click="$router.push('/shopping')" class="nav_cate_son_listimg">
                 <h3>图片详情</h3>
-            </nav>
+            </nav>  
             <div class="cate_son_conter">
                 <div class="cate_son_pet">
                     <img src="../../../assets/img/gc_sy-tx-1@2x.png" class="cate_son_pet_listimg">
@@ -19,7 +19,7 @@
             </div>
             <div class="cate_son_conter_buttom">
                 <ul class="conter_buttom_ul">
-                    <li v-for="(item,index) in msg"><span>{{item}}</span></li>
+                    <li v-for="(item,index) in  msg"> <span>{{item}}</span></li>
                 </ul>
                 <div class="conter_buttom_text_describe">
                     <h4>今日早餐</h4>
@@ -35,7 +35,7 @@
                      <div class="conter_buttom_right">
                         <p><span>+99</span></p>     
                     </div>
-            </div> 
+            </div>
             </div>
         </div>
     </div>
@@ -97,22 +97,23 @@ export default{
     font-weight: 100;
     text-align: center;
     line-height: .8rem;
-    font-size: 28px;
+    font-size: 14px;
     margin-right: 3.25rem;
 }
 .cate_son_pet_listimg{
     float: left;
     margin-right:.3rem; 
+    width: 34px;
 }
 .cate_son_pet>div{
     margin-left: .1rem;
 }
 .cate_son_pet>div>h3{
-    font-size: 26px;
+    font-size: 12px;
     font-weight: 100;
 }
 .cate_son_pet>div>p{
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 100;
     line-height:.4rem;
 }
@@ -125,7 +126,7 @@ export default{
     margin-top:.3rem; 
 }
 .cate_son_conter.cate_son_pet>p{
-    font-size: 20px;
+    font-size: 10px;
 }
 .cate_son_conter_listimg{
     width: 7.5rem;
@@ -154,7 +155,7 @@ export default{
     text-align: center;
 }
 .cate_son_conter_buttom>.conter_buttom_ul>li>span{
-    font-size: 16px;
+    font-size: 10px;
     line-height: .36rem;
 }
 .conter_buttom_text_describe{
@@ -163,7 +164,7 @@ export default{
     font-size: 20px;
 }
 .conter_buttom_text_describe>h3{
-    font-size: 26px;
+    font-size: 14px;
 }
 .conter_buttom_left{
     width: 30%;
@@ -175,7 +176,7 @@ export default{
 .conter_buttom_left>p{
     line-height: 1.2rem;
     text-align: center;
-    font-size: 26px;
+    font-size: 14px;
     margin-left: .5rem;
 }
 .conter_buttom_right>p{
