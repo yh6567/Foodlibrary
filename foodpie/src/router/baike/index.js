@@ -1,62 +1,59 @@
-import baike from "@/components/baike/index"
-import Analysis from "@/components/baike/foodAnalysis"
-import searchcompare from "@/components/baike/searchAnalysis"
-import sweep from "@/components/baike/sweepCode"
-import detail from "@/components/baike/detail"
-import echart from "@/components/baike/eachart"
+
 import test from "@/components/baike/test"
+
 export default 
        [
-    {
-      path: '/', //路径
-      name: 'main', //名字
-      component: baike, //组件名
+    {  //食物百科首页
+      path: '/', 
+      name: 'main', 
+      
+      component: ()=>import("@/components/baike/index"),
       meta:{
-      	//是否显示底部导航
-        show:true
+      
+        show:true	//是否显示底部导航
       }
     },
-    {
+    { //饮食分析子页
       path: '/analysis',
       name: 'analysis',
-      component: Analysis,
+      component: resolve=>require(['@/components/baike/foodAnalysis'],resolve),
       meta:{
         show:false
       }
     },
-   {
+   {  //扫码对比
       path:"/sweep",
       name:'sweep',
-      component:sweep,
+      component:resolve =>require(['@/components/baike/sweepCode'],resolve),
       meta:{
         show:false
       }
     },
-    {
+    { //搜索对比
       path:"/searchcompare",
       name:'searchcompare',
-      component:searchcompare,
+      component:()=>import("@/components/baike/searchAnalysis"),
       meta:{
         show:false
       }
     },
-    {
+    { //食物分类详情页
       path:"/detail/:i",
       name:'detail',
-      component:detail,
+      component:()=>import("@/components/baike/detail"),
       meta:{
         show:false
       }
     },
-    {
+    { //饮食分析图表页
       path:"/echart",
       name:'echart',
-      component:echart,
+      component:()=>import("@/components/baike/eachart"),
       meta:{
         show:true
       }
     },
-    {
+    { //测试 用于个人测试 debug
       path:"/test",
       name:'test',
       component:test,

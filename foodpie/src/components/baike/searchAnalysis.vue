@@ -2,7 +2,7 @@
     <div>
      <mt-header fixed>
       <router-link to="/" slot="left">
-        <mt-button icon="back" :title="title">对比详情</mt-button>
+        <mt-button icon="back" >对比详情</mt-button>
       </router-link>
      
     

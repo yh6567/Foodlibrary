@@ -1,0 +1,110 @@
+1、食物派->食物百科
+    食物分类子页面：
+    url：https:/localhost:8080/项目名/foodtypedetail
+	返回值: json
+	请求方式: post
+	字段: foodTypeName         
+	返回的数据:
+		请求成功: {"flag": 1,
+        data:[
+                id
+			    foodName //食物名称
+                foodPic //食物图片
+                content  //营养含量
+
+		]}   
+		请求失败: {
+            "flag": 2,
+            msg   //错误信息
+            }
+2、食物派->食物百科
+    食物分类子页面详情页：
+     url：https:/localhost:8080/项目名/foodtypedetail
+	返回值: json
+	请求方式: post
+	字段: id         
+	返回的数据:
+		请求成功: {"flag": 1,
+        data:[
+                id
+			    foodName //食物名称
+                foodPic //食物图片
+                content  //营养含量
+                recommend //推荐（食物红绿灯）
+		]}   
+		请求失败: {
+            "flag": 2,
+            msg   //错误信息
+            }
+
+
+3、 食物派->搜索对比
+    食物营养元素含量：
+    url：https:/localhost:8080/项目名/foodcontent
+	返回值: json
+	请求方式: post
+	字段: foodName         
+	返回的数据:
+		请求成功: {"flag": 1,
+        data:[
+                id
+			    contentType  //营养类别
+                conten       //营养含量
+		]}   
+		请求失败: {
+            "flag": 2,
+            msg   //错误信息
+            }
+4、 食物派->饮食分析
+    食物营养元素含量：
+    url：https:/localhost:8080/项目名/anlaysis
+	返回值: json
+	请求方式: post
+	字段: {
+        breakfast:[
+            {
+
+                foodName  //食物名
+                foodWeight //食物质量
+                content  //食物能量
+            }
+        ]，
+        lunch:[
+            {
+
+                foodName  //食物名
+                foodWeight //食物质量
+                content  //食物能量
+            }
+        ]，
+        dinner:[
+            {
+
+                foodName  //食物名
+                foodWeight //食物质量
+                content  //食物能量
+            }
+        ]
+            
+        
+    }         
+	返回的数据:
+		请求成功: {"flag": 1,
+        data:[
+                id
+                mark //评分
+                heatRatio：[
+                    breakfast,（比例值）
+                    lunch,
+                    dinner
+                ]  //热量比
+                mainContent：[   
+                    carbohydrate://碳水化合物 （比例值）
+                    fat   //脂肪
+                    protein //蛋白质
+                ]
+		]}   
+		请求失败: {
+            "flag": 2,
+            msg   //错误信息
+            }
