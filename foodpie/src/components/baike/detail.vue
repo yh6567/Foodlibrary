@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <mt-header fixed>
       <router-link to="/" slot="left">
         <mt-button icon="back" :title="title">{{title}}</mt-button>
@@ -9,18 +9,23 @@
           <option value="1">全部</option>
             <option v-for="i in foodFamilylist">{{i.foodname}}</option>
       </select>
-    
+     
     </mt-header>
-    <p class="yingyang">营养素排序</p>
-    <div class="foodlist">
+   
+  <div class="yingyang">
+<p >营养素排序</p>
+    </div>
+       <div class="wrapper scrollHome" ref="homeWrapper">
+<div class="content">
+    
         <ul>
-            <li v-for="i in 10">
+            <li v-for="i in foodsList">
                 <div class="foodimg"> 
-                    <img src="../../assets/img/sy_icon_zs.png" />
+                    <img :src="i.foodPic" />
                 </div>
                 <div class="foodname">
-                    <div class="foodname-title">玉米{{i | currency}}</div>
-                    <div class="values"><span>{{112 | kcal}}</span>/<span>{{100 | gram}}</span></div>
+                    <div class="foodname-title">{{i.foodName}}</div>
+                    <div class="values"><span>{{i.content | kcal}}</span>/<span>{{100 | gram}}</span></div>
                 </div>
                 <div class="dian">
                     <img src="../../assets/img/zs_icon_dian@2x.png" />
@@ -29,74 +34,133 @@
         </ul>
     </div>
   </div>
+   </div>
+ 
 </template>
 
 <script>
+import BScroll from "better-scroll";
 export default {
   data() {
     return {
       title: "",
-      foodFamilylist:[
-               
-              
-                // {imgUrl:require("../../assets/img/sy_icon_zs@2x.png"),name:"主食类"},
-                // {imgUrl:require("../../assets/img/sy_icon_rd@2x.png"),name:"肉蛋类"},
-                // {imgUrl:require("../../assets/img/sy_icon_dz@2x.png"),name:"大豆及制品"},           
-                // {imgUrl:require("../../assets/img/sy_icon_sc@2x.png"),name:"蔬菜菌藻类"},
-                // {imgUrl:require("../../assets/img/sy_icon_sg@2x.png"),name:"水果类"},
-                // {imgUrl:require("../../assets/img/sy_icon_nn@2x.png"),name:"奶类"},
-                // {imgUrl:require("../../assets/img/sy_icon_yz@2x.png"),name:"油脂类"},
-                // {imgUrl:require("../../assets/img/sy_icon_jg@2x.png"),name:"坚果类"},
-                // {imgUrl:require("../../assets/img/sy_icon_tw@2x.png"),name:"调味品"},
-                // {imgUrl:require("../../assets/img/sy_icon_yl@2x.png"),name:"饮料类"},
-                // {imgUrl:require("../../assets/img/sy_icon_dx@2x.png"),name:"零食,点心及冷饮"},
-                // {imgUrl:require("../../assets/img/sy_icon_qt@2x.png"),name:"其他"} 
-               ],
+      foodFamilylist:[],
+      foodsList:[]
     };
   },
+  methods:{
+      //下拉选框数据
+      getSelect(){
+          this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/select#!method=get").then(({data})=>{
+        //console.log(data);
+        this.foodFamilylist=data;
+      })
+      },
+      //手机屏幕滑动
+        scroll(){
+              this.scroll = new BScroll(this.$refs.homeWrapper,{
+            //只有设置成true pullingUp才能使用
+            pullUpLoad:true,
+            click:true,
+            probeType:2
+        });
+          this.scroll.on("pullingUp",()=>{
+            this.getFoodsInfo();
+        })
+        },
+        getFoodsInfo(){
+            this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/foodsName#!method=get").then((data)=>{
+        console.log(data);
+        this.foodsList=data.data;
+        })
+        }
+  },
   mounted() {
+       
     this.title = this.$route.params.i;
+<<<<<<< HEAD
     //console.log(this.title);
     this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/select#!method=get").then(({data})=>{
         console.log(data);
         this.foodFamilylist=data;
         
     })
+=======
+    this.scroll();
+    this.getSelect();
+    this.getFoodsInfo();
+  }
+>>>>>>> wb
 };
 </script>
 
-<style>
-.mint-header{
-    background-color: #fff;
-    color: black;
+<style scoped>
+
+.scrollHome{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top:25vw;
+    }
+  .scrollHome>.content{
+      height: 1800px;
+        margin-bottom: 18vw;
+    }
+
+
+    .mint-header{
+  background-color: #fff;
+  height: 15vw;
+  color: #000;
+  font-size: 5vw;
 }
+i{
+  display: inline-block;
+  width: 4vw;
+  margin-left: 2vw;
+
+}
+.mint-button-icon i{
+  font-size: 4vw;
+}
+
+
 select{
-   
+    padding: 2vw;
+   font-size: 4vw;
     border: none;
     outline: none;
 }
 .yingyang{
-    margin-top: 10vw;
+    margin-top: 15vw;
     font-size: 4vw;
     line-height: 10vw;
     height: 10vw;
     border-top:solid 2px gray;
+     border-bottom:solid 2px gray;
     background: #fff;
 }
-.foodlist ul li{
+.content{
+    height: 100%;
+}
+.content ul{
+    height: 100%;
+}
+.content ul li{
     height: 20vw;
     background: #f4f4f4;
     border-top:solid 1px #ddd;
     display: flex;
+   
 
 }
 .foodimg{
     width: 20vw;
     height: 20vw;
-    margin: 3vw;
+    
 }
 .foodname{
-    
+   
     width: 60vw;
 }
 
@@ -111,7 +175,9 @@ select{
     font-size: 4vw;
 }
 .dian{
-    margin: 6vw
+    margin: 6vw;
+    width: 10vw;
+
     
 
 }

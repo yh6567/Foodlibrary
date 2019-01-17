@@ -1,6 +1,8 @@
 <template>
     <div id="main">
-        <header>
+    <div class="wrapper scrollHome" ref="homeWrapper">
+        <div class="content">
+            <header>
             <h2>食物派</h2>
             <h3>查询食物信息</h3>
             <div class="search">
@@ -8,6 +10,7 @@
                 <input  @click="$router.push('/search')" type="text" placeholder="搜索">
             </div>
         </header>
+  
        <nav>
            <dl @click="handleanalysis()">
                <!-- $router.push('/analysis') -->
@@ -41,11 +44,13 @@
               </li>
           </ul>
        </div>
-       
+       </div>
+       </div>
     </div>
 </template>
 
 <script>
+import BScroll from "better-scroll";
 export default {
     data(){
         return{
@@ -71,7 +76,7 @@ export default {
     },
     methods:{
       handleanalysis(){
-          if(!this.$store.state.baike.admin){
+          if(!this.$store.state.baike.adminName){
              this.$router.push('/login')    
           }else{
               this.$router.push('/analysis')
@@ -82,23 +87,50 @@ export default {
     computed:{
       
     },
-    mounted(){
-        
-        
+   mounted () {
+        this.scroll = new BScroll(this.$refs.homeWrapper,{
+            //只有设置成true pullingUp才能使用
+            pullUpLoad:true,
+            click:true,
+            probeType:2
+        });
 
+        this.scroll.on("pullingUp",()=>{
+            //this.handleGoodsUpdate();
+        })
+
+        // this.scroll.on("scroll",({x,y})=>{
+        //     console.log(y)
+        //     if(y<-970){
+        //         this.flag=true;
+        //     }else{
+        //         this.flag=false;
+        //     }
+        // })
     }
 }
 </script>
 
 <style scoped>
 #main{
+      width: 100%;
+        height: 100%;
     background: #f2f2f2;
 }
-
+ #main>.scrollHome{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top:0;
+    }
+    #main>.scrollHome>.content{
+        margin-bottom: 28vw;
+    }
 ul{
     display: flex;
      justify-content: space-around;
      flex-wrap: wrap;
+     height: 100%;
 }
 li{
    
@@ -127,6 +159,7 @@ li dl dt img{
 .food-family{
     background: #fff;
     margin: 3vw;
+    height: 1200px;
     
 
 }
@@ -160,7 +193,7 @@ li dl dt img{
  nav img{
      margin-left: 3VW;
      width: 10vw;
-     height: 10vw;
+     height: 10vw;  
  }
 .search{
     margin: 2vw;
@@ -173,6 +206,7 @@ li dl dt img{
 .search input{
     margin:2vw 0 0 2vw;
     display: inline-block; 
+    font-size: 4vw;
     border:none;
     outline:none;
     

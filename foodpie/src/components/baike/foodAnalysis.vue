@@ -16,8 +16,8 @@
 
      
     </div>
-    <div class="search-input">
-        <i>√</i><input type="text" placeholder="请输入食物名称">
+    <div @click="$router.push('/search')" class="search-input">
+        <i><img src="../../assets/img/ss_icon_ss@2x.png" alt=""></i><input type="text" placeholder="请输入食物名称">
     </div>
   </div>
 </template>
@@ -43,12 +43,34 @@ export default {};
   height: 10vw;
   background: #f4f4f4;
   margin: 2vw;
+  display: flex;
+  align-items: center;
+  
   
 }
 .search-input input{
   line-height: 10vw;
-  background: #f4f4f4;
+  background: #f4f4f4;font-size: 4vw;
   border: none;
   outline: none;
+  margin-left: 2vw;
+}
+.mint-header{
+  background-color: #fff;
+  height: 10vw;
+  color: #000;
+  font-size: 4vw;
+}
+i{
+  display: inline-block;
+  width: 4vw;
+  margin-left: 2vw;
+
+}
+.mint-button-icon i{
+  font-size: 4vw;
+}
+i img{
+  width: 100%;
 }
 </style>
