@@ -1,6 +1,5 @@
 <template>
 	<div id="intellectual">
-<<<<<<< HEAD
 		<div class="control" @click="kap">
 			<div class="control-left">
 				<p class="control-left-text">
