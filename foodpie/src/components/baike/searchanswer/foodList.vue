@@ -1,16 +1,16 @@
 <template>
-    <div class="foodList">
+    <div class="foodList wrapper">
         <div class="space"></div>
-        <ul>
-            <li v-for="(item,index) in foodlist">
-                <img src="../../../assets/img/zs_icon@3x(1).png" class="foodimg"/>
-                <div>
-                    <span class="foodname">{{item}}</span>
+        <ul class="content">
+            <li v-for="(item,index) in foodlist" @click="handlerFoodDetail(item.foodid)">
+                <img :src="item.foodimg" class="foodimg"/>
+                <div class="text">
+                    <span class="foodname">{{item.foodname}}</span>
                     <div class="energy">
-                        <span>12</span><p>千卡/100克</p>
+                        <span>{{item.calore}}</span><p>千卡/100克</p>
                     </div>
                 </div>
-                <img :src="point(item)" class="point"/>
+                <img :src="point(item.foodcolor)" class="point"/>
             </li>
         </ul>
     </div>
@@ -20,21 +20,36 @@
     import point1 from "../../../assets/img/zs_icon_dian@3x.png";
     import point2 from "../../../assets/img/zs_icon_dian@3x(1).png";
     import point3 from "../../../assets/img/yuanxing@3x.png";
+    import Vuex from "Vuex";
+    // import BScroll from 'better-scroll'
+
     export default{
         data(){
-            return{
-                foodlist:["苹果","香蕉","梨","苹果","香蕉","梨","苹果","香蕉","梨","苹果","香蕉","梨","苹果","香蕉","梨","苹果","香蕉","梨","苹果","香蕉","梨","苹果","香蕉","梨","苹果","香蕉","梨","苹果","香蕉","梨"]
+            return {
             }
         },
         methods:{
             point(item){
                 switch (item) {
-                    case "苹果" : return point1;break;
-                    case "香蕉" : return point2;break;
-                    case "梨" : return point3;break;
+                    case 0 : return point1;break;
+                    case 1 : return point2;break;
+                    case 2 : return point3;break;
                 }
+            },
+            handlerFoodDetail(foodid){
+                this.$router.push("/fooddetail");
             }
+        },
+
+        computed: {
+            ...Vuex.mapState({
+                foodlist: state => state.baike.foodListInfo
+            })
+
+        },mounted(){
+
         }
+
     }
 </script>
 
@@ -51,14 +66,18 @@
         background: #F6F6F6;
     }
     .foodList>ul>li{
-        display: flex;
+        overflow: hidden;
         border-bottom: 1px solid #F0F0F0;
         border-top: 1px solid #F0F0F0;
         background: #F6F6F6;
         .foodimg{
             width: .80rem;
             height: .80rem;
+            float: left;
             margin: .1rem 0 .1rem .32rem;
+        }
+        .text{
+            float: left;
         }
         .foodname{
             display: block;
@@ -71,7 +90,8 @@
         .point{
             width: .2rem;
             height: .2rem;
-            margin: .4rem 0 0 4.13rem;
+            float: right;
+            margin: .4rem .32rem 0 0rem;
         }
     }
 </style>

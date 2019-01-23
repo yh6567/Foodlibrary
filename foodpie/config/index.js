@@ -14,16 +14,16 @@ module.exports = {
 
 
 
-			
+
 			"/api": {
-				target: "http://localhost:3000",
+				target: "https://www.easy-mock.com/mock/5c356fc6879a3554aca75b8b",
 				changeOrigin: true,
 				pathRewrite: {
 					"^/api": ""
 				}
 			},
 			"/mo": {
-				target: "https://www.easy-mock.com",
+				target: "https://www.easy-mock.com/",
 				changeOrigin: true,
 				pathRewrite: {
 					"^/mo": ""
