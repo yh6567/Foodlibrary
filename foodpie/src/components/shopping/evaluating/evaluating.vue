@@ -1,20 +1,12 @@
 <template>
 	<div id="evaluating">
-		<div class="rank" @click="page">
-			<p class="nice">/NICE健康/</p>
-			<p class="various">各类海鲜蛋白质含量排行</p>
-			<p class="number">169559人阅读</p>
-		</div> 
-		<div class="rank"  @click="page">
-			<p class="nice">/NICE健康/</p>
-			<p class="various">各类海鲜蛋白质含量排行</p>
-			<p class="number">169559人阅读</p>
-		</div> 
-		<div class="rank">
-			<p class="nice">/NICE健康/</p>
-			<p class="various">各类海鲜蛋白质含量排行</p>
-			<p class="number">169559人阅读</p>
-		</div> 
+			<div class="rank" @click="page"  v-for="(item,index) in arr" :key="index">
+						<p class="nice">{{item.evaTxt}}</p>
+						<p class="various"> {{item.tvaTitle}}</p>
+						<p class="number"><img :src="item.eyeImg" alt=""><span>{{item.readNum}}</span></p>
+			</div>
+	</div>
+			</div> 	
 	</div>
 </template>
 
@@ -22,13 +14,20 @@
 export default{
 	data(){
 		return{
+			arr:[]
 		}
 	},
 	methods:{
 		page(){
 			this.$router.push({ path: '/evaluating' })
 		}
-	}
+	},
+	mounted(){
+			this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/shoppingevaluating#!method=get").then((data)=>{
+				this.arr=data.evaluating.profile;
+				console.log(this.arr)
+		})
+}
 }
 </script>
 
@@ -43,11 +42,7 @@ export default{
 		width: 6.86rem;
 		height: 3.8rem;
 		margin: 0.28rem 0.3rem 0.28rem;
-<<<<<<< HEAD
 		background: url(../../../assets/img/ms_pc@2x.png) no-repeat 100% 100%;
-=======
-		background: url(../../../assets/img/ms_pc@2x.png) no-repeat;
->>>>>>> zhou
 		border-radius: 5px;
 		overflow: hidden;
 	}
@@ -67,6 +62,15 @@ export default{
 		margin-top: 1.05rem;
 		font-size: 0.2rem;
 		text-indent: 0.8rem;
-		background: url(../../../assets/img/gc-pc-yj.png) no-repeat 2.77rem 0;
+	}
+	#evaluating>.rank>.number>img{
+		width: 16px;
+		height: 16px;
+		float: left;
+		margin-left: 2.5rem;
+	}
+	#evaluating>.rank>.number>span{
+		float: left;
+		text-indent: .6rem;
 	}
 </style>

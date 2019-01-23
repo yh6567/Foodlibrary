@@ -21,7 +21,7 @@ export default{
         "知识",
         "美食"
       ],
-  		currentindex:{}
+  		currentindex:0
   	}
  },
 methods:{
