@@ -1,6 +1,6 @@
 <template>
 	<div id="intellectual">
-		<div class="control"  v-for="(item,index) in arr">
+		<div class="control"  v-for="(item,index) in arr" @click="skip()">
 			<div class="control-left">
 				<p class="control-left-text">
 					{{item.knoTxt}}
