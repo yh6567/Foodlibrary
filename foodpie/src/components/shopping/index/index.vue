@@ -1,24 +1,18 @@
 <template>
 	<div id="intellectual">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> zhou
+
 		<div class="control" @click="kap">
 			<div class="control-left">
 				<p class="control-left-text">
 					控制食欲、告别情绪性暴食，你只需要7步
 				</p>
-<<<<<<< HEAD
-=======
+
 		<div class="control" @click="skip">
 			<div class="control-left">
 				<p class="control-left-text">
 					控制食欲、告别情绪性暴食，你只需要7步
 				</p> 	
->>>>>>> yuanyuan
-=======
->>>>>>> zhou
+
 				<span class="control-left-school">薄荷健康学院</span>
 				<span class="control-left-number">95636</span>
 			</div>
@@ -27,15 +21,10 @@
 			</div>
 			
 		</div>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		<div class="control" @click="kap">
-=======
 		<div class="control" @click="skip()">
->>>>>>> yuanyuan
-=======
 		<div class="control" @click="kap">
->>>>>>> zhou
 			<div class="control-left">
 				<p class="control-left-text">
 					控制食欲、告别情绪性暴食，你只需要7步
@@ -48,15 +37,9 @@
 			</div>
 			
 		</div>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		<div class="control" @click="kap">
-=======
 		<div class="control" @click="skip()">
->>>>>>> yuanyuan
-=======
 		<div class="control" @click="kap">
->>>>>>> zhou
 			<div class="control-left">
 				<p class="control-left-text">
 					控制食欲、告别情绪性暴食，你只需要7步
@@ -104,32 +87,22 @@
 		}
 	},
 	methods:{
-<<<<<<< HEAD
-<<<<<<< HEAD
 		kap(){
 			this.$router.push({ path: '/page' })
-=======
+		},
 		skip(){
 			this.$router.push({ path: '/evaluating' })
->>>>>>> yuanyuan
-=======
+		},
 		kap(){
 			this.$router.push({ path: '/page' })
->>>>>>> zhou
 		}
 	}
 }
 </script>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 <style>
-=======
 <style scoped>
->>>>>>> yuanyuan
-=======
 <style scoped>
->>>>>>> zhou
 	#intellectual{
 		width: 100%;
 		height: 10rem;

@@ -56,12 +56,12 @@ export default{
 	},
 	created(){
 		let  userMsg = JSON.parse(localStorage.getItem("user"));
+		console.log(userMsg.user_hpic)
 		if(userMsg){
 			this.myUsername = true;
 			this.nickname = userMsg.nickname;
 			this.user_hpic = userMsg.user_hpic;
 			this.loginTit="修改个人资料";
-			console.log(userMsg.user_hpic)
 		}else{
 			this.myUsername = false;
 		}
