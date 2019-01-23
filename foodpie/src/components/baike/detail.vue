@@ -78,19 +78,18 @@ export default {
   mounted() {
        
     this.title = this.$route.params.i;
-<<<<<<< HEAD
+
     //console.log(this.title);
     this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/select#!method=get").then(({data})=>{
         console.log(data);
         this.foodFamilylist=data;
         
     })
-=======
+
     this.scroll();
     this.getSelect();
     this.getFoodsInfo();
   }
->>>>>>> wb
 };
 </script>
 

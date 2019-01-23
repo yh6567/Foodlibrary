@@ -62,7 +62,7 @@
 			</div>
 			<div class="control-right">
 				<img src="../../../assets/img/gc-zs-1.png"/>
-			</div>
+		</div>
 			
 		</div>
 	</div>
