@@ -64,8 +64,8 @@ export default{
 		text-indent: 0.8rem;
 	}
 	#evaluating>.rank>.number>img{
-		width: 16px;
-		height: 16px;
+		width: .16rem;
+		height: .16rem;
 		float: left;
 		margin-left: 2.5rem;
 	}

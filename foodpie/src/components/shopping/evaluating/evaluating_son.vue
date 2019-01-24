@@ -106,7 +106,7 @@ export default {
     margin-left: 20px;
 }
 .head_evaluating>p>span{
-    font-size: 34px;
+    font-size: .34rem;
     line-height: .86rem;
     text-align: center;
     display: block;

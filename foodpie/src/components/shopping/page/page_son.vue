@@ -108,10 +108,10 @@ export default {
     margin-top: .2rem;
     width: .32rem;
     height: .32rem;
-    margin-left: 20px;
+    margin-left: .2rem;
 }
 #page_son>.page_son>.perch>.head_page>p>span{
-    font-size: 34px;
+    font-size: .34rem;
     line-height: .86rem;
     text-align: center;
     display: block;
@@ -129,7 +129,7 @@ export default {
 }
 .infarction>p{
     line-height: .6rem;
-    font-size: 28px;
+    font-size: .28rem;
 }
 .conner_page_son{
     height: 100%;
@@ -137,12 +137,12 @@ export default {
 
 }
 .conner_middle{
-  padding-left:20px;
-  padding-right:20px; 
+  padding-left:.2rem;
+  padding-right:.2rem; 
   background: #f6f6f6; 
 }
 .conner_page_son>.conner_middle>.conner_text{
-    font-size: 24px;
+    font-size: .24rem;
     line-height: .44rem;
 }
 .conner_page_son>.conner_middle>.conner_text>p{
@@ -186,21 +186,21 @@ export default {
 .age_txt>li>img{
     margin-top: .25rem;
     float: left;
-    margin-right: 10px;
+    margin-right: .1rem;
 }
 .age_txt>li>p{
-    margin-bottom: 20px;
+    margin-bottom: .2rem;
 }
 .factor>ul{
     margin-top: .4rem;
     line-height: .52rem;
-    font-size: 26px;
+    font-size: .26rem;
     color: #000;
 }
 .factor>ul>li>img{
     margin-top: .25rem;
     float: left;
-    margin-right: 10px;
+    margin-right: .1rem;
 }
 .page_conter_img{
     width: 2rem;
@@ -217,7 +217,7 @@ export default {
 .nutrition_describe>h3{
     text-align: center;
     line-height: .5rem;
-    font-size: 30px;
+    font-size: .3rem;
 }
 .nutrition_describe>p{
     text-indent: .3rem;

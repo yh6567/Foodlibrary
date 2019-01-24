@@ -104,7 +104,7 @@ export default{
     font-weight: 100;
     text-align: center;
     line-height: .8rem;
-    font-size: 28px;
+    font-size: .28rem;
     margin-right: 3.25rem;
 }
 .cate_son_pet_listimg{
@@ -119,7 +119,7 @@ export default{
     font-weight: 100;
 }
 .cate_son_pet>div>p{
-    font-size: 20px;
+    font-size: .2rem;
     font-weight: 100;
     line-height:.4rem;
 }
@@ -132,7 +132,7 @@ export default{
     margin-top:.3rem; 
 }
 .cate_son_conter.cate_son_pet>p{
-    font-size: 20px;
+    font-size: .2rem;
 }
 .cate_son_conter_listimg{
     width: 7.5rem;
@@ -176,10 +176,7 @@ export default{
     width: 30%;
     height: 1.2rem;
     margin-top:.65rem;
-<<<<<<< HEAD
-=======
     float: left;
->>>>>>> yuanyuan
     background: url(../../../assets/img/icon_dz@3x.png) no-repeat 40%;
 }
 .conter_buttom_left>p{
