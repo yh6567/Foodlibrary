@@ -1,11 +1,7 @@
 <template>
     <div>
-    	
     <cate-com/>
    	<component :is="comName"></component>
-     <!--  	<cate-com/>
-       	<Page-com/>
-       	<Kap-com/>-->
     </div>
 </template>
 

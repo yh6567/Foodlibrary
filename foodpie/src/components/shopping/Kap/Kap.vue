@@ -1,6 +1,6 @@
 <template>
 	<div id="intellectual">
-		<div class="control"  v-for="(item,index) in arr" :key="index">
+		<div class="control"  v-for="(item,index) in arr" :key="index" @click="enetr">
 			<div class="control-left">
 				<p class="control-left-text">
 					{{item.knoTxt}}
@@ -23,8 +23,8 @@
 		}
 	},
 	methods:{
-		skip(){
-			this.$router.push({ path: '/evaluating' })
+		enetr(){
+			this.$router.push({ path: '/page' })
 		}
 	},
 	mounted(){

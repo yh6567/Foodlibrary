@@ -1,6 +1,6 @@
 <template>
     <div id="cate_son">
-        <div class="cate_son">
+       <div class="cate_son">
             <nav class="nav_cate_son">
                 <img src="./../../../assets/img/icon-rili-1@2x.png" @click="$router.push('/shopping')" class="nav_cate_son_listimg">
                 <h3>图片详情</h3>
@@ -61,27 +61,28 @@ export default{
         }
     },
     mounted(){
-    	//https://www.easy-mock.com/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get
-    	 this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cateson#!method=get").then(({data})=>{
-        console.log(data);
-        
-        
-    })
-//      this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get")
-//      .then((data)=>{
-//          console.log(data);
-//          
-//      })
+    //	https://www.easy-mock.com/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get
+//     	 this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cateson#!method=get").then(({data})=>{
+//         console.log(data);
+//         
+//         
+//     // }
+// 	// )
+// //      this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get")
+// //      .then((data)=>{
+// //          console.log(data);
+// //          
+//       })
     }
 }
 </script>
 
 <style scoped>
-#cate_son{
+/* #cate_son{
     height: 100rem;
     width: 100%;
     overflow-y: auto; 
-}
+} */
 .cate_son{
     width: 100%;
     height: 100%;
@@ -187,8 +188,6 @@ export default{
     font-size: 26px;
     margin-left: .5rem;
 }
-<<<<<<< HEAD
-=======
 .conter_buttom_right>p{
     float: right;
     width: 30%;
@@ -201,5 +200,4 @@ export default{
     font-size: 26px;
     margin-left: .5rem;
 }
->>>>>>> yuanyuan
 </style>
