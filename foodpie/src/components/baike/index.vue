@@ -15,19 +15,19 @@
            <dl @click="handleanalysis()">
                <!-- $router.push('/analysis') -->
                <dd>
-                   <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
+                   <img src="../../assets/img/sy_icon_ysfx@2x.png" alt="">
                 </dd>
                <dt>饮食分析</dt>
            </dl>
             <dl @click="$router.push('/searchcompare')">
                <dd>
-                   <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
+                   <img src="../../assets/img/sy_icon_ssdb@2x.png" alt="">
                </dd>
                <dt>搜索对比</dt>
            </dl>
             <dl @click="$router.push('/sweep')">
                <dd>
-                   <img src="../../assets/img/sy_icon_zs@2x.png" alt="">
+                   <img src="../../assets/img/sy_icon_smdb@2x.png" alt="">
                </dd>
                <dt>扫码对比</dt>
            </dl>
@@ -123,8 +123,8 @@ export default {
         position: fixed;
         top:0;
     }
-    #main>.scrollHome>.content{
-        margin-bottom: 28vw;
+ #main>.scrollHome>.content{
+        padding-bottom: 20vw;
     }
 ul{
     display: flex;
@@ -135,20 +135,22 @@ ul{
 li{
    
     width: 30vw;
-    height: 30vw;
+    height: 30vw; 
     list-style: none; 
+   
 }
 li dl{
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content:space-around;
     align-items: center;
     font-size: 4vw;
 }
 
 li dl dt img{
-    width: 25vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
+    margin: 5vw;
 }
 .nav-title{
     text-align: center;
@@ -165,7 +167,7 @@ li dl dt img{
 }
 #main header{
     height: 40vw;
-    background: orange;
+    background: #EB8B4E;
     color: #fff;
 }
  #main h2{
