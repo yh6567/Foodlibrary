@@ -2,21 +2,27 @@
     <div class="namespace">
         <img src="../../../assets/img/tu1@3x.png"/>
         <div class="name">
-            <span>玉米 &nbsp;&nbsp;(鲜)</span>
+            <span>{{this.foodDetails.foodinfo.foodname}}</span>
             <div class="text">
-                <span>112</span><p class="p-one">千卡</p><p class="p-two">/每100克</p>
+                <span>{{this.foodDetails.foodinfo.calories}}</span><p class="p-one">千卡</p><p class="p-two">/每100克</p>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+	import Vuex from "Vuex";
+
     export default {
         data(){
             return{
 
             }
-        },
+        },computed:{
+      ...Vuex.mapState({
+        foodDetails:state => state.baike.foodDetails
+      })
+    },
 
     }
 </script>

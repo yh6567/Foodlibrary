@@ -3,11 +3,11 @@
     <div class="details">
       <ul>
         <li><p>营养元素</p><p>每100克</p></li>
-        <li><p>热量</p><p>就有</p></li>
-        <li><p>蛋白质</p><p>二两</p></li>
-        <li><p>脂肪</p><p>猪肉</p></li>
-        <li><p>碳水化合物</p><p>可以长身上</p></li>
-        <li><p>膳食纤维</p><p>是不是很棒棒</p></li>
+        <li><p>热量</p><p>{{this.foodDetails.foodinfo.calories}}</p></li>
+        <li><p>蛋白质</p><p>{{this.foodDetails.foodinfo.protein}}</p></li>
+        <li><p>脂肪</p><p>{{this.foodDetails.foodinfo.fat}}</p></li>
+        <li><p>碳水化合物</p><p>{{this.foodDetails.foodinfo.carbohydrate}}</p></li>
+        <li><p>膳食纤维</p><p>{{this.foodDetails.foodinfo.dietaryfibre}}</p></li>
         <li>更多营养元素</li>
       </ul>
     </div>
@@ -15,10 +15,10 @@
       <p class="ft-title">食品红绿灯</p>
       <div class="ft-content">
         <div class="ft-point">
-          <img :src="point(0)" class="point"/>
+          <img :src="point(this.foodDetails.foodinfo.foodcolor)" class="point"/>
           <p>推荐</p>
         </div>
-        <span>吃葡挞皮稍等的方发顺丰吃葡挞皮稍等的方式发顺丰吃葡挞皮稍等的方式发顺丰吃葡挞皮稍等的方式发顺丰吃葡挞皮稍等的方式发顺丰吃葡挞皮稍等的方式发顺丰吃葡挞皮稍等的方式发顺丰吃葡挞皮稍等的方式发顺丰吃葡挞皮稍等的方式发顺丰</span>
+        <span>{{this.foodDetails.remark}}</span>
       </div>
     </div>
   </div>

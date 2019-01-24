@@ -1,13 +1,9 @@
-import search from '@/components/baike/search/index'
-import searchanswer from  '@/components/baike/searchanswer/index'
-import foodDetail from "@/components/baike/foodDetails/index"
-
 
 export default
     [{
         path: '/search',
         name: 'search',
-        component: search,
+				component:  resolve=>require(["@/components/baike/search/index"],resolve),
         meta:{
             show:false
         }
@@ -15,14 +11,14 @@ export default
     {
        path:'/searchanswer',
        name: 'searchanswer',
-       component:searchanswer,
+			 component:  resolve=>require(["@/components/baike/searchanswer/index"],resolve),
        meta:{
            show:false,
        }
     },{
         path:"/fooddetail",
         name:'foodDetail',
-        component:foodDetail,
+				component:  resolve=>require(["@/components/baike/foodDetails/index"],resolve),
         meta:{
             show:false,
         }
