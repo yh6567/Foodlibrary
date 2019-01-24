@@ -28,8 +28,16 @@
               })
               this.touchbesearched.push(a);
               window.localStorage.setItem("searched",this.touchbesearched.toString());
+
+
+
+              this.$store.dispatch("getFoodListInfo");
+
+              this.$router.push({path:"/searchanswer"})
           }
-      }
+      },
+
+
   }
 </script>
 

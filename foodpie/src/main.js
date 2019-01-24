@@ -11,6 +11,8 @@ import filters from "@/filters"
 import store from "./vuex"
 import "./common/js/flexble"
 import Bus from "./Bus"
+import Bscroll from 'better-scroll'
+
 Vue.prototype.$bus = Bus;
 //引入observer非父子组件传值
 import observer from './common/js/observer.js'

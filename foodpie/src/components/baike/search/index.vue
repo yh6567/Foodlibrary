@@ -13,7 +13,6 @@
   export default {
       data(){
           return{
-              height:12.21,
           }
       },
       components:{
