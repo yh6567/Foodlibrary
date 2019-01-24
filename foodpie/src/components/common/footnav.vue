@@ -1,46 +1,50 @@
 <template>
-   <footer v-if="this.$route.meta.show">
-    
-       <router-link :v="name==='main'?'':'ac'" to="/">
-        <mt-tab-item id="食物百科">
-                <img slot="icon" src="../../assets/img/sy_icon_swbk@2x.png">
-                食物百科
-            </mt-tab-item>
-       </router-link>
-       <router-link to="/shopping">
-         <mt-tab-item id="逛吃">
-            <img slot="icon" src="../../assets/img/sy_icon_gc@2x.png">
-             逛吃
-            </mt-tab-item>
-       </router-link >
-       <router-link to="/my">
-            <mt-tab-item id="我的">
-            <img slot="icon" src="../../assets/img/sy_icon_wd@2x.png">
-            我的
-            </mt-tab-item>
-       </router-link >
-      
-     
-   </footer>
+  <footer v-if="this.$route.meta.show">
+    <router-link @click.native="change(index)" v-for="(v,index) in navList" :to="v.path">
+      <mt-tab-item id="食物百科">
+        <img slot="icon" :src="flag==index?v.selected:v.icon">
+        <p :class="flag==index?'router-link-active':''">{{v.title}}</p>
+      </mt-tab-item>
+    </router-link>
+  </footer>
 </template>
 
 <script>
 export default {
-   data(){
-       return{
-           name:""
-       }
-   },
-   methods:{
-       change(){
-           this.flag= !true
-       }
-   },
-   mounted(){
-       this.name=this.$route.name;
-       
-   }
-}
+  data() {
+    return {
+      flag: 0,
+      navList: [
+        {
+          title: "食物百科",
+          path: "/",
+          icon: require("../../assets/img/sy_icon_swbk@2x(1).png"),
+          selected: require("../../assets/img/sy_icon_swbk@2x.png")
+        },
+        {
+          title: "逛吃",
+          path: "/shopping",
+          icon: require("../../assets/img/sy_icon_gc@2x.png"),
+          selected: require("../../assets/img/sy_icon_gc@2x(1).png")
+        },
+        {
+          title: "我的",
+          path: "/my",
+          icon: require("../../assets/img/sy_icon_wd@2x.png"),
+          selected: require("../../assets/img/sy_icon_wd@2x(1).png")
+        }
+      ]
+    };
+  },
+  methods: {
+    change(index) {
+      this.flag = index;
+    }
+  },
+  mounted() {
+    this.name = this.$route.name;
+  }
+};
 </script>
 
 <style scoped>
@@ -52,19 +56,20 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-    font-size: 4vw;
+  font-size: 4vw;
   display: flex;
   justify-content: space-around;
   border-top: #ddd 1px solid;
 }
-.mint-tab-item-label{
-     font-size: 20px;
+.mint-tab-item-label {
+  font-size: 20px;
 }
-.mint-tab-item-icon{
-    width: 10vw;
-    height: 10vw;
+.mint-tab-item-icon {
+  width: 10vw;
+  height: 10vw;
 }
-.router-link-active{
-    color: yellowgreen;
+.router-link-active {
+  color: #EB8B4E;
+  font-weight: 500;
 }
 </style>
