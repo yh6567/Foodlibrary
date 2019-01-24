@@ -68,7 +68,7 @@
 				//手机号
 				telphone:"",
 				//用户头像
-				user_hpic:"require('../../../assets/img/wd_dl_tx@2x.png')",
+				user_hpic:"",
 				loginTit:"",
 				myUsername:"",
 				UserName:"",
@@ -167,7 +167,7 @@
 				this.telphone = JSON.parse(localStorage.getItem("user")).telphone;
 				this.$axios({
 					method:"post",
-					url:"/mo/mock/5c356fc6879a3554aca75b8b/api/userinfo_update#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
+					url:"/mo/mock/5c356fc6879a3554aca75b8b/api/userinfo_update#!method=POST",
 					data:{
 						telphone:this.telphone
 					}
@@ -175,7 +175,8 @@
 					if(res.flag==1){
 						//请求成功，返回结果渲染到页面上
 						let result = res.result;
-						this.user_hpic = res.user_hpic;
+						console.log(res)
+						this.user_hpic = result.user_hpic;
 						this.navs[0].con = result.nickname;
 						this.navs[1].con = result.gender;
 						this.navs[2].con = result.age;

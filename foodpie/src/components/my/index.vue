@@ -56,8 +56,8 @@ export default{
 	},
 	created(){
 		let  userMsg = JSON.parse(localStorage.getItem("user"));
-		console.log(userMsg.user_hpic)
 		if(userMsg){
+			console.log(userMsg.user_hpic)
 			this.myUsername = true;
 			this.nickname = userMsg.nickname;
 			this.user_hpic = userMsg.user_hpic;
@@ -103,6 +103,7 @@ export default{
 	.my_top>.user_hpic>img{
 		width: 100%;
 		height: 100%;
+		border-radius: 50%;
 	}
 	
 	.my_top>.login_click{

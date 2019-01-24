@@ -16,13 +16,7 @@ import register from "@/components/my/login/register";
 import registerSuccess from "@/components/my/login/registerSuccess";
 import updateMsg from "@/components/my/login/updateMsg";
 
-/*beforeRouteEnter((to,from,next)=>{
-	if(localStorage.getItem("user")){
-		console.log(1)
-	}else{
-		
-	}
-})*/
+
 export default 
        [
        {

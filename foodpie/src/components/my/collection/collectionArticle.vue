@@ -29,6 +29,7 @@
 					telphone:this.telphone
 				}
 			}).then((res)=>{
+				console.log(res)
 				//有收藏的文章
 				if(res.data.flag==1){
 					this.collectionArticles = res.data.result;

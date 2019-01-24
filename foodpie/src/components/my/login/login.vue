@@ -11,7 +11,7 @@
 			<div class="forgetPwd">
 				<router-link :to="{name:'forgetPwd'}">忘记密码？</router-link>
 			</div>
-			<div class="loginClick" @click="login(telphone,password)">
+			<div class="loginClick" @click="login()">
 				<router-link to="">登录</router-link>
 			</div>
 			<div class="register">
@@ -60,9 +60,27 @@
 				this.$router.back();
 			},
 			//点击登录请求数据
-			...Vuex.mapActions({
-				login:"handleLogin"
-			})
+			login(){
+				this.$axios({
+					method: "post",
+					url: "/mo/mock/5c356fc6879a3554aca75b8b/api/login_check#!method=post",
+					data:{
+						telphone:this.telphone,
+						password:this.password
+					}
+				}).then((res) => {
+					if(res.flag==0){
+						alert("手机号或密码错误");
+					}else if(res.flag == 1){
+						//登录成功，信息存储本地，跳转到my页面
+						localStorage.setItem("user",JSON.stringify(res.result));
+						this.$router.push({path:"/my"});
+					}else if(res.flag==2){
+						alert("未注册");
+					}
+					
+				})
+			}
 		}
 
 	}

@@ -2,7 +2,7 @@
 	<div class="myUpload">
 		<!--1.上传食物===头部-->
 		<div class="uploadTop">
-			<img src="../../../assets/img/icon-rili-1@2x.png" />
+			<img src="../../../assets/img/icon-rili-1@2x.png" @click="back()"  />
 			<h2>上传食物</h2>
 		</div>
 		<!--2.上传食物===nav部分-->
@@ -36,7 +36,18 @@
 				telphone:""
 			}
 		},
+		beforeRouteEnter(to,from ,next){
+			let msg = localStorage.getItem("user");
+			if(msg){
+				next();
+			}else{
+				next("/login");
+			}
+		},
 		methods:{
+			back(){
+				this.$router.push({path:"/my"})				
+			},
 			uploadFoodClick(){
 				if(this.uploadFoodNum==0){
 					Toast({

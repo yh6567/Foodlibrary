@@ -46,6 +46,14 @@
 			back(){
 				this.$router.push({path:"/my"})				
 			}
+		},
+		beforeRouteEnter(to,from ,next){
+			let msg = localStorage.getItem("user");
+			if(msg){
+				next();
+			}else{
+				next("/login");
+			}
 		}
 	}
 </script>

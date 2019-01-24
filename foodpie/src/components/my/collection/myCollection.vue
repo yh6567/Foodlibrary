@@ -27,7 +27,14 @@
 			"collectionArticle-com":collectionArticle,
 			"collectionFoods-com":collectionFoods
 		},
-		
+		beforeRouteEnter(to,from ,next){
+			let msg = localStorage.getItem("user");
+			if(msg){
+				next();
+			}else{
+				next("/login");
+			}
+		},
 		methods:{
 			my(){
 				this.$router.push({path:"/my"})
@@ -107,7 +114,7 @@
 		font-weight: bold;
 	}
 	.wu-nav>li>.active{
-		border-bottom: red solid 5px;
+		border-bottom: red solid .05rem;
 	}
 	
 </style>
