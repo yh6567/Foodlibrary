@@ -2,10 +2,15 @@
     <div>
      <mt-header fixed>
       <router-link to="/" slot="left">
+
         <mt-button icon="back" >对比详情</mt-button>
       </router-link>
      
     
+
+  
+
+
     </mt-header>
     <div class="add">
         <div @click="$router.push('/search')" class="add-box">+</div>

@@ -1,5 +1,6 @@
 import search from '@/components/baike/search/index'
 import searchanswer from  '@/components/baike/searchanswer/index'
+import foodDetail from "@/components/baike/foodDetails/index"
 
 
 export default
@@ -18,5 +19,13 @@ export default
        meta:{
            show:false,
        }
+    },{
+        path:"/fooddetail",
+        name:'foodDetail',
+        component:foodDetail,
+        meta:{
+            show:false,
+        }
+
     }
     ]

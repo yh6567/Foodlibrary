@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81bd9577-3320-4c11-ad54-1fcd3906d41a" name="Default Changelist" comment="">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/foodpie/src/components/search/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/search/search.vue" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/foodpie/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/App.vue" afterDir="false" />
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
-=======
-      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/foodList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailDetails.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailName.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/foodpie/src/components/baike/search/searchRecord.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/src/components/baike/search/allsearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/search/allsearch.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodpie/src/components/baike/search/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/search/search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/src/components/baike/search/searched.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/search/searched.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/foodList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/foodList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodpie/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foodpie/src/router/search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/router/search/index.js" afterDir="false" />
->>>>>>> miowmiow
+      <change beforePath="$PROJECT_DIR$/foodpie/src/vuex/baike/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/foodpie/src/vuex/baike/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,180 +33,84 @@
     <session id="-324205266">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="components" value="1" />
           <entry key="css" value="1" />
-          <entry key="html" value="7" />
-          <entry key="js" value="29" />
-          <entry key="json" value="4" />
+          <entry key="html" value="9" />
+          <entry key="js" value="63" />
+          <entry key="json" value="7" />
           <entry key="png" value="18" />
-          <entry key="vue" value="55" />
+          <entry key="vue" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="Image" value="18" />
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="29" />
-          <entry key="Svelte" value="7" />
-          <entry key="Vue.js" value="55" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="63" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Svelte" value="9" />
+          <entry key="Vue.js" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="63" />
-          <entry key="js" value="1033" />
-          <entry key="vue" value="4759" />
+          <entry key="js" value="1744" />
+          <entry key="vue" value="7699" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1033" />
+          <entry key="JavaScript" value="1744" />
+          <entry key="PLAIN_TEXT" value="124" />
           <entry key="Svelte" value="63" />
-          <entry key="Vue.js" value="4759" />
-        </counts>
-      </usages-collector>
-    </session>
-<<<<<<< HEAD
-    <session id="738281483">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="js" value="3" />
-          <entry key="vue" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JavaScript" value="3" />
-          <entry key="Vue.js" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="vue" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Vue.js" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-=======
-    <session id="1833352963">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="vue" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Vue.js" value="1" />
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
+          <entry key="Vue.js" value="7575" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpie/src/App.vue">
+        <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/index.vue">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="330">
-              <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-=======
-            <state relative-caret-position="180">
-              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="195">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding>
-                <element signature="e#80#117#0" expanded="true" />
-              </folding>
->>>>>>> miowmiow
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/../miowmiow/foodpie/src/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#141#181#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/searched.vue">
-=======
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/foodpie/src/App.vue">
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
+        <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailDetails.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-=======
-        <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/foodList.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
-              <folding>
-                <element signature="e#569#628#0" expanded="true" />
-              </folding>
->>>>>>> miowmiow
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foodpie/src/router/search/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-=======
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
-=======
->>>>>>> miowmiow
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -229,23 +137,28 @@
         <option value="$PROJECT_DIR$/foodpie/src/router/shopping/index.js" />
         <option value="$PROJECT_DIR$/foodpie/src/components/baike/searchAnalysis.vue" />
         <option value="$PROJECT_DIR$/foodpie/src/router/baike/index.js" />
-        <option value="$PROJECT_DIR$/foodpie/src/main.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/App.vue" />
         <option value="$PROJECT_DIR$/foodpie/index.html" />
         <option value="$PROJECT_DIR$/foodpie/src/common/js/flexble.js" />
         <option value="$PROJECT_DIR$/foodpie/src/components/search/searched.vue" />
-        <option value="$PROJECT_DIR$/foodpie/src/components/search/index.vue" />
-<<<<<<< HEAD
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/foodpie/src/components/search/search.vue" />
-=======
-        <option value="$PROJECT_DIR$/foodpie/src/App.vue" />
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
-=======
-        <option value="$PROJECT_DIR$/foodpie/src/router/search/index.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/search/index.vue" />
         <option value="$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/index.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/search/components/index.vue" />
+        <option value="$PROJECT_DIR$/foodpie/config/index.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/search/searchAdd.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/router/search/index.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/search/allsearch.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/search/searched.vue" />
         <option value="$PROJECT_DIR$/foodpie/src/components/baike/search/search.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/vuex/baike/index.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/main.js" />
         <option value="$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/foodList.vue" />
->>>>>>> miowmiow
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetails.js" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailHeader.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailName.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/index.vue" />
+        <option value="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailDetails.vue" />
       </list>
     </option>
   </component>
@@ -255,15 +168,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/foodpie/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/foodpie/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="125" />
     <option name="y" value="23" />
-    <option name="width" value="1315" />
+    <option name="width" value="1440" />
     <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -277,67 +192,88 @@
         <subPane>
           <expand>
             <path>
-              <item name="Foodlibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Foodlibrary" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-            </path>
-            <path>
-              <item name="Foodlibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Foodlibrary" type="462c0819:PsiDirectoryNode" />
-              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
-=======
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
-            </path>
-            <path>
-              <item name="Foodlibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Foodlibrary" type="462c0819:PsiDirectoryNode" />
-              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Foodlibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Foodlibrary" type="462c0819:PsiDirectoryNode" />
-              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Foodlibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Foodlibrary" type="462c0819:PsiDirectoryNode" />
-              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="router" type="462c0819:PsiDirectoryNode" />
->>>>>>> miowmiow
-            </path>
-            <path>
-              <item name="Foodlibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Foodlibrary" type="462c0819:PsiDirectoryNode" />
-              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-            </path>
-            <path>
-              <item name="Foodlibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Foodlibrary" type="462c0819:PsiDirectoryNode" />
-              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-=======
->>>>>>> miowmiow
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-=======
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
               <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
               <item name="foodpie" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="baike" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="baike" type="462c0819:PsiDirectoryNode" />
+              <item name="foodDetails" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="baike" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="vuex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miowmiow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miowmiow" type="462c0819:PsiDirectoryNode" />
+              <item name="foodpie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="vuex" type="462c0819:PsiDirectoryNode" />
+              <item name="baike" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,6 +289,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails" />
+      <recent name="$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/components" />
+      <recent name="$PROJECT_DIR$/foodpie/src/components/baike/search" />
+      <recent name="$PROJECT_DIR$/foodpie/src/components/baike/search/components" />
       <recent name="$PROJECT_DIR$/foodpie/src/assets/img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -386,33 +326,33 @@
       <workItem from="1546847834510" duration="14184000" />
       <workItem from="1546912021123" duration="2889000" />
       <workItem from="1546931697357" duration="14820000" />
-<<<<<<< HEAD
-      <workItem from="1547027861216" duration="24000" />
-=======
-      <workItem from="1547081807908" duration="9248000" />
->>>>>>> miowmiow
+      <workItem from="1547081807908" duration="10330000" />
+      <workItem from="1547428627909" duration="19087000" />
+      <workItem from="1547472867682" duration="2181000" />
+      <workItem from="1547540974187" duration="100000" />
+      <workItem from="1547541508455" duration="6770000" />
+      <workItem from="1547549661945" duration="367000" />
+      <workItem from="1547550035649" duration="16000" />
+      <workItem from="1547552826273" duration="424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="41235000" />
-=======
-    <option name="totallyTimeSpent" value="40372000" />
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
+    <option name="totallyTimeSpent" value="79623000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
-=======
-    <option name="totallyTimeSpent" value="49596000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
->>>>>>> miowmiow
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17124736" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21423538" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -422,11 +362,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -439,43 +379,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/package.json" />
-    <entry file="file://$PROJECT_DIR$/src/components/err/err.vue" />
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
-    <entry file="file://$PROJECT_DIR$/src/components/kuangchi/index.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/baike/index.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/my/index.vue" />
-    <entry file="file://$PROJECT_DIR$/observer.js" />
-    <entry file="file://$PROJECT_DIR$/src/App.vue" />
-    <entry file="file://$PROJECT_DIR$/src/main.js" />
-    <entry file="file://$PROJECT_DIR$/src/observer.js" />
-    <entry file="file://$PROJECT_DIR$/src/assets/lajitong-hui@3x.png" />
-=======
->>>>>>> miowmiow
-    <entry file="file://$PROJECT_DIR$/src/assets/icon-rili-1@3x.png" />
-    <entry file="file://$PROJECT_DIR$/src/assets/icon-rili-1@2x.png" />
-    <entry file="file://$PROJECT_DIR$/src/assets/icon-rili-1.png" />
-    <entry file="file://$PROJECT_DIR$/src/assets/naozhong@3x.png" />
-    <entry file="file://$PROJECT_DIR$/src/assets/ss_icon_ss.png" />
-    <entry file="file://$PROJECT_DIR$/src/assets/ss_icon_ss@2x.png" />
-    <entry file="file://$PROJECT_DIR$/src/assets/ss_icon_ss@3x.png" />
-    <entry file="file://$PROJECT_DIR$/src/components/search/search.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/search/index.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/search/searched.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/common/footnav.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/search/allsearch.vue" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/router/index.js" />
-    <entry file="file://$PROJECT_DIR$/foodpie/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/foodpie/build/webpack.base.conf.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -489,13 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/router/baike/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/foodpie/src/router/shopping/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -503,55 +399,8 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/foodpie/src/router/search/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> miowmiow
-    <entry file="file://$PROJECT_DIR$/foodpie/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/searchAnalysis.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> miowmiow
-    <entry file="file://$PROJECT_DIR$/foodpie/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/foodpie/src/common/css/reset.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpie/src/common/js/flexble.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -587,106 +436,10 @@
     <entry file="file://$PROJECT_DIR$/foodpie/src/assets/img/icon-rili-1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/allsearch.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/detail.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="26" />
-=======
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/index.vue" />
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/allsearch.vue" />
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/search.vue" />
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/searched.vue" />
-    <entry file="file://$PROJECT_DIR$/foodpie/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/router/search/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
->>>>>>> miowmiow
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/foodpie/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-=======
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/search.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/allsearch.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/searched.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
->>>>>>> 638c3d5f85a7a4deb778e1f385f0ab5ef1409bdb
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/router/search/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/search/search.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../miowmiow/foodpie/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-=======
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/detail.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -706,40 +459,163 @@
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/sweepCode.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/search/searched.vue">
+    <entry file="file://$PROJECT_DIR$/foodpie/src/bus/index.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/vuex/shopping/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/vuex/my/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/search/components" />
+    <entry file="file://$PROJECT_DIR$/foodpie/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/search/searchRecord.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/router/search/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/router/baike/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/vuex/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/search/searched.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/search/allsearch.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/search/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/index.vue">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2758" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="e#80#117#0" expanded="true" />
-          </folding>
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/vuex/baike/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetails.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/search/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/search/search.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="50" lean-forward="true" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="480">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailHeader.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/searchanswer/foodList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+        <state relative-caret-position="424">
+          <caret line="87" column="41" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailName.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding>
-            <element signature="e#569#628#0" expanded="true" />
->>>>>>> miowmiow
+            <element signature="e#141#181#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foodpie/src/components/baike/foodDetails/foodDetailDetails.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
