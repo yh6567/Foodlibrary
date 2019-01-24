@@ -1,11 +1,12 @@
 <template>
    <div>
        <img src="../../../assets/img/icon_fh@3x.png" @click="back()">
-       <span>玉米(鲜)</span>
+       <span>123</span>
    </div>
 </template>
 
 <script>
+import Vuex from "Vuex";
     export default {
         data(){
             return{
@@ -15,7 +16,11 @@
             back(){
                 this.$router.back();
             }
-        }
+        },computed:{
+          ...Vuex.mapState({
+            foodDetails:state => state.baike.foodDetails
+          })
+        },
     }
 </script>
 
