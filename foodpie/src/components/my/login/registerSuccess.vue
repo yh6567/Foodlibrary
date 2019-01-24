@@ -26,6 +26,10 @@
 			}
 		},
 		methods:{
+			back(){
+				this.$router.back();
+			},
+			
 			login(){
 				this.$router.push({path:"/login"})
 			}
@@ -59,9 +63,9 @@
 		position: absolute;
 		z-index: 1;
 		left: .32rem;
-		top: .32rem;
-		width:34px;
-		height:32px;
+		top: .28rem;
+		width:.34rem;
+		height:.32rem;
 	}
 	.regSMain{
 		margin-top: 2.74rem;
@@ -82,6 +86,7 @@
 		margin-top: .5rem;
 		width:6.86rem;
 		height:.88rem;
+		border: none;
 		background:rgba(235,139,78,1);
 		border-radius:.04rem;
 		color:rgba(255,255,255,1);

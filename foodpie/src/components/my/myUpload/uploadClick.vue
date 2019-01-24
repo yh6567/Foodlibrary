@@ -1,6 +1,6 @@
 <template>
-	<div class="myUpload">
-		<h2>上传食物数据</h2>
+	<div class="uploadClick">
+		我的上传
 	</div>
 </template>
 
