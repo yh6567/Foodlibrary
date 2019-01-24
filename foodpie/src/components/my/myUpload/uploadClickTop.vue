@@ -1,6 +1,6 @@
 <template>
-	<div class="myCom">
-		<h2>对比库</h2>
+	<div class="uploadClickTop">
+		上传头部
 	</div>
 </template>
 

@@ -29,7 +29,7 @@ export default{
 			//用户手机号			
 			telphone:""	,
 			//用户头像
-			user_hpic:require('../../assets/img/wd_dl_tx@2x.png'),
+			user_hpic:require('@/assets/img/wd_dl_tx@2x.png'),
 			//用户昵称
 			nickname:"",
 			loginTit:"点击登录",
@@ -37,24 +37,19 @@ export default{
 			myUsername:"",
 			myNavs:[
 				{
-					src:require("../../assets/img/wd_icon_zp@2x.png"),
+					src:require("@/assets/img/wd_icon_zp@2x.png"),
 					tit:"我的照片",
 					name:"myPic"
 				},
 				{
-					src:require("../../assets/img/wd_icon_sc@2x.png"),
+					src:require("@/assets/img/wd_icon_sc@2x.png"),
 					tit:"我的收藏",
 					name:"myCollection"
 				},
 				{
-					src:require("../../assets/img/wd_icon_sc@2x(1).png"),
+					src:require("@/assets/img/wd_icon_sc@2x(1).png"),
 					tit:"上传食物数据",
 					name:"myUpload"
-				},
-				{
-					src:require("../../assets/img/wd_icon_db@2x.png"),
-					tit:"对比库",
-					name:"myCompare"
 				}
 			]
 		}
@@ -62,11 +57,11 @@ export default{
 	created(){
 		let  userMsg = JSON.parse(localStorage.getItem("user"));
 		if(userMsg){
+			console.log(userMsg.user_hpic)
 			this.myUsername = true;
-			this.nickname = userMsg[0].nickname;
-			this.user_hpic = userMsg[0].user_hpic;
+			this.nickname = userMsg.nickname;
+			this.user_hpic = userMsg.user_hpic;
 			this.loginTit="修改个人资料";
-			console.log(userMsg[0].user_hpic)
 		}else{
 			this.myUsername = false;
 		}
@@ -108,6 +103,7 @@ export default{
 	.my_top>.user_hpic>img{
 		width: 100%;
 		height: 100%;
+		border-radius: 50%;
 	}
 	
 	.my_top>.login_click{

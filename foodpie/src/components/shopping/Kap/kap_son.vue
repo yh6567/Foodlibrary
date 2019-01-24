@@ -1,9 +1,7 @@
 <template>
-<div>
-    <h3>
-        这是kap-son
-    </h3>
-</div>
+   <div>
+		 <h3>kap_son</h3>
+	 </div>
 </template>
 
 <script>

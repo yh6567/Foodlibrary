@@ -1,6 +1,6 @@
 <template>
     <div id="cate_son">
-        <div class="cate_son">
+       <div class="cate_son">
             <nav class="nav_cate_son">
                 <img src="./../../../assets/img/icon-rili-1@2x.png" @click="$router.push('/shopping')" class="nav_cate_son_listimg">
                 <h3>图片详情</h3>
@@ -30,9 +30,11 @@
                 </div>
                 <div class="conter_buttom_like">
                     <div class="conter_buttom_left">
-                        <p><span>+99</span></p>
-                           
-                </div>
+                        <p><span>+99</span></p>    
+                    </div>
+                     <div class="conter_buttom_right">
+                        <p><span>+99</span></p>     
+                    </div>
             </div> 
             </div>
         </div>
@@ -59,21 +61,28 @@ export default{
         }
     },
     mounted(){
-        this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/register_check#!method=get")
-        .then(({data})=>{
-            console.log(data[0].id);
-            
-        })
+    //	https://www.easy-mock.com/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get
+//     	 this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cateson#!method=get").then(({data})=>{
+//         console.log(data);
+//         
+//         
+//     // }
+// 	// )
+// //      this.$axios.get("/mo/mock/5c356fc6879a3554aca75b8b/api/cate_son#!method=get")
+// //      .then((data)=>{
+// //          console.log(data);
+// //          
+//       })
     }
 }
 </script>
 
 <style scoped>
-#cate_son{
+/* #cate_son{
     height: 100rem;
     width: 100%;
     overflow-y: auto; 
-}
+} */
 .cate_son{
     width: 100%;
     height: 100%;
@@ -167,9 +176,25 @@ export default{
     width: 30%;
     height: 1.2rem;
     margin-top:.65rem;
+<<<<<<< HEAD
+=======
+    float: left;
+>>>>>>> yuanyuan
     background: url(../../../assets/img/icon_dz@3x.png) no-repeat 40%;
 }
 .conter_buttom_left>p{
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 26px;
+    margin-left: .5rem;
+}
+.conter_buttom_right>p{
+    float: right;
+    width: 30%;
+    height: 1.2rem;
+    margin-top:.65rem;
+}
+.conter_buttom_right>p{
     line-height: 1.2rem;
     text-align: center;
     font-size: 26px;

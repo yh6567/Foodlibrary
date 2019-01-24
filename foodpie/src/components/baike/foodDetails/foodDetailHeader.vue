@@ -1,13 +1,15 @@
 <template>
    <div>
        <img src="../../../assets/img/icon_fh@3x.png" @click="back()">
-       <span>123</span>
+       <span>{{this.foodDetails.foodinfo.foodname}}</span>
    </div>
 </template>
 
 <script>
-import Vuex from "Vuex";
+	import Vuex from "Vuex";
+
     export default {
+
         data(){
             return{
             }
@@ -17,10 +19,10 @@ import Vuex from "Vuex";
                 this.$router.back();
             }
         },computed:{
-          ...Vuex.mapState({
-            foodDetails:state => state.baike.foodDetails
-          })
-        },
+      ...Vuex.mapState({
+        foodDetails:state => state.baike.foodDetails
+      })
+    },
     }
 </script>
 

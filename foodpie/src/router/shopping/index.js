@@ -1,8 +1,9 @@
 import shopping from "@/components/shopping/index"
 import cate from '@/components/shopping/cate/cate_son.vue'
 import evaluating from '@/components/shopping/evaluating/evaluating_son.vue'
-import kap from "@/components/shopping/kap/kap_son.vue"
+import kap from "@/components/shopping/KAP/kap_son.vue"
 import page from "@/components/shopping/page/page_son.vue"
+// let evaluating = resolve=>require(["@/compoinents/shopping/evaluating/evaluating_son.vue"],resolve)
 export default
        [
     {
@@ -18,7 +19,7 @@ export default
       name: 'cate',
       component: cate,
       meta:{
-        show:true
+        show:false
       }
     },
     {
@@ -26,7 +27,7 @@ export default
       name: 'evaluating',
       component: evaluating,
       meta:{
-        show:true
+        show:false
       }
     },
      {
@@ -34,7 +35,7 @@ export default
       name: 'kap',
       component: kap,
       meta:{
-        show:true
+        show:false
       }
     },
     {
@@ -42,7 +43,7 @@ export default
       name: 'page',
       component: page,
       meta:{
-        show:true
+        show:false
       }
     }
   ]

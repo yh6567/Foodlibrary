@@ -34,6 +34,7 @@
 
 <script>
 	import { Toast } from 'mint-ui';
+	import Vuex from  "vuex";
 	export default {
 		data() {
 			return {
@@ -59,35 +60,33 @@
 				this.$router.back();
 			},
 			//点击登录请求数据
-			login() {
+			login(){
 				this.$axios({
-					method: "get",
-					url: "http://localhost:3000/login_check?tel=" + this.telphone,
-				}).then((res) => {
-					//已经注册验证用户名密码是否一致
-					if(res.length != 0) { 
-						if(res[0].tel == this.telphone && res[0].password == this.password) {
-							//登录成功，跳转到my页面，并把手机号带过去
-							localStorage.setItem("user", JSON.stringify(res))
-							this.$router.push({
-								path: "/my"
-							});
-						} else {
-							alert("手机号或密码错误")
-						}
-					} else { 
-						//该手机号未注册，请点击立即注册
-						alert("该手机号未注册")
+					method: "post",
+					url: "/mo/mock/5c356fc6879a3554aca75b8b/api/login_check#!method=post",
+					data:{
+						telphone:this.telphone,
+						password:this.password
 					}
+				}).then((res) => {
+					if(res.flag==0){
+						alert("手机号或密码错误");
+					}else if(res.flag == 1){
+						//登录成功，信息存储本地，跳转到my页面
+						localStorage.setItem("user",JSON.stringify(res.result));
+						this.$router.push({path:"/my"});
+					}else if(res.flag==2){
+						alert("未注册");
+					}
+					
 				})
-
-			},
+			}
 		}
 
 	}
 </script>
 
-<style scoped>
+<style>
 	.myLogin {
 		width: 100%;
 		height: 13.34rem;
@@ -144,8 +143,8 @@
 	.loginInput>.loginClick {
 		width: 6.86rem;
 		height: .88rem;
-		background: rgba(235, 139, 78, 1);
-		border: 2px solid rgba(214, 214, 214, 1);
+		background:rgba(235,139,78,1);
+		border-radius:.04rem;
 		text-align: center;
 		line-height: .88rem;
 		margin-top: .4rem;
@@ -184,5 +183,10 @@
 		display: flex;
 		padding: 0 1.65rem;
 		justify-content: space-between;
+	}
+	
+	.otherLogin>ul img {
+		width: .84rem;
+		height: .84rem;
 	}
 </style>
