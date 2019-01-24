@@ -43,10 +43,13 @@ export default{
 <style scoped>
 	#page{
 		background: #f6f6f6;
-		overflow:scroll;
+		height: 10rem;
+		width: 100%;
+		overflow-y:auto;
 	}
 	#pox{
-			height: 200rem;
+			height: 30rem;
+			overflow-y:auto;
 	}
 	.pox_img{
 		float: left;

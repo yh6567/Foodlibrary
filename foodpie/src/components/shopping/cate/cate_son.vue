@@ -2,12 +2,14 @@
     <div id="cate_son">
        <div class="cate_son">
             <nav class="nav_cate_son">
-                <img src="./../../../assets/img/icon-rili-1@2x.png" @click="$router.push('/shopping')" class="nav_cate_son_listimg">
+               <div class="nav_cate_son_listimg"> <img src="./../../../assets/img/icon-rili-1@2x.png" @click="$router.push('/shopping')"></div>
                 <h3>图片详情</h3>
             </nav>
             <div class="cate_son_conter">
                 <div class="cate_son_pet">
-                    <img src="../../../assets/img/gc_sy-tx-1@2x.png" class="cate_son_pet_listimg">
+									<div class="cate_son_pet_listimg">
+                    <img src="../../../assets/img/gc_sy-tx-1@2x.png">
+									</div>
                     <div>
                          <h3>昵称昵称</h3>
                          <p>1个月前</p>
@@ -19,7 +21,7 @@
             </div>
             <div class="cate_son_conter_buttom">
                 <ul class="conter_buttom_ul">
-                    <li v-for="(item,index) in msg"><span>{{item}}</span></li>
+                    <li key="index" v-for="(item,index) in msg"><span>{{item}}</span></li>
                 </ul>
                 <div class="conter_buttom_text_describe">
                     <h4>今日早餐</h4>
@@ -78,15 +80,15 @@ export default{
 </script>
 
 <style scoped>
-/* #cate_son{
-    height: 100rem;
-    width: 100%;
+ #cate_son{
+    height: 100%;
     overflow-y: auto; 
-} */
+} 
 .cate_son{
     width: 100%;
-    height: 100%;
+		height: 15rem;
     background: #fff;
+		overflow: scroll;
 }
 .nav_cate_son{
     height: .8rem;
@@ -100,22 +102,33 @@ export default{
     width: .34rem;
     height: .34rem;
 }
+.nav_cate_son_listimg>img{
+		width: 100%;
+		height: 100%;
+}
 .nav_cate_son>h3{
-    font-weight: 100;
+    font-weight: 900;
     text-align: center;
     line-height: .8rem;
     font-size: .28rem;
     margin-right: 3.25rem;
 }
+
 .cate_son_pet_listimg{
     float: left;
     margin-right:.3rem; 
+		width: .8rem;
+		height: .8rem;
+}
+.cate_son_pet_listimg>img{
+			width: 100%;
+			height: 100%;
 }
 .cate_son_pet>div{
     margin-left: .1rem;
 }
 .cate_son_pet>div>h3{
-    font-size: 26px;
+    font-size: .26rem;
     font-weight: 100;
 }
 .cate_son_pet>div>p{
@@ -161,16 +174,16 @@ export default{
     text-align: center;
 }
 .cate_son_conter_buttom>.conter_buttom_ul>li>span{
-    font-size: 16px;
+    font-size: .16rem;
     line-height: .36rem;
 }
 .conter_buttom_text_describe{
     text-indent: .34rem;
     line-height: .30rem;
-    font-size: 20px;
+    font-size: .2rem;
 }
 .conter_buttom_text_describe>h3{
-    font-size: 26px;
+    font-size: .26rem;
 }
 .conter_buttom_left{
     width: 30%;
@@ -182,7 +195,7 @@ export default{
 .conter_buttom_left>p{
     line-height: 1.2rem;
     text-align: center;
-    font-size: 26px;
+    font-size: .25rem;
     margin-left: .5rem;
 }
 .conter_buttom_right>p{
@@ -194,7 +207,7 @@ export default{
 .conter_buttom_right>p{
     line-height: 1.2rem;
     text-align: center;
-    font-size: 26px;
+    font-size: .26rem;
     margin-left: .5rem;
 }
 </style>

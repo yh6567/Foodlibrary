@@ -124,7 +124,7 @@ export default {
 }
 .infarction>h3{
     line-height: .6rem;
-    font-size: 34px;
+    font-size: .34rem;
     font-weight: 100;
 }
 .infarction>p{
@@ -158,7 +158,7 @@ export default {
     text-indent: .35rem;
 }
 .titles{
-    font-size: 24px;
+    font-size: .24rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -180,7 +180,7 @@ export default {
 .age_txt{
     margin-top: .4rem;
     line-height: .52rem;
-    font-size: 26px;
+    font-size: .26rem;
     color: #000;
 }
 .age_txt>li>img{
@@ -241,9 +241,11 @@ export default {
 .foot > .share {
   text-indent: 0.8rem;
   background: url(../../../assets/img/icon-fx@2x.png) no-repeat 1.6rem 0.36rem;
+	background-size: 10% 30%;
 }
 .foot > .collect {
   text-indent: -0.4rem;
   background: url(../../../assets/img/icon-sc@2x.png) no-repeat 1rem 0.36rem;
+	background-size: 10% 30%;
 }
 </style>
