@@ -34,7 +34,7 @@ export default{
 <style>
 	#evaluating{
 		width: 100%;
-		height: 10rem;
+		height: 15rem;
 		background: #f6f6f6;
 		overflow-y: auto;
 	}
@@ -71,6 +71,7 @@ export default{
 	}
 	#evaluating>.rank>.number>span{
 		float: left;
-		text-indent: .6rem;
+		margin-left: -.7rem;
+		margin-top: -.1rem;
 	}
 </style>

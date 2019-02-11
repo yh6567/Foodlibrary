@@ -214,11 +214,9 @@ export default {
   line-height: 0.96rem;
 }
 .foot > .share {
-  text-indent: 0.8rem;
-  background: url(../../../assets/img/icon-fx@2x.png) no-repeat 1.6rem 0.36rem;
+  background: url(../../../assets/img/icon-fx@2x.png) no-repeat 1rem 0.36rem;
 }
 .foot > .collect {
-  text-indent: -0.4rem;
   background: url(../../../assets/img/icon-sc@2x.png) no-repeat 1rem 0.36rem;
 }
 </style>

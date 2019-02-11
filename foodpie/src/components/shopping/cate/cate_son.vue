@@ -86,7 +86,7 @@ export default{
 } 
 .cate_son{
     width: 100%;
-		height: 15rem;
+		height: 100%;
     background: #fff;
 		overflow: scroll;
 }
@@ -190,13 +190,17 @@ export default{
     height: 1.2rem;
     margin-top:.65rem;
     float: left;
-    background: url(../../../assets/img/icon_dz@3x.png) no-repeat 40%;
+    background: url(../../../assets/img/icon_dz@3x.png) no-repeat 40% 40%;
 }
 .conter_buttom_left>p{
     line-height: 1.2rem;
     text-align: center;
     font-size: .25rem;
     margin-left: .5rem;
+}
+.conter_buttom_like{
+		background: #fff;	
+		height:0rem;
 }
 .conter_buttom_right>p{
     float: right;

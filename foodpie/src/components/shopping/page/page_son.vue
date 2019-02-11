@@ -115,6 +115,7 @@ export default {
     line-height: .86rem;
     text-align: center;
     display: block;
+		margin-right: .7rem;
 }
 .infarction{
     background: #eb8b51;
