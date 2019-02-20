@@ -1,8 +1,8 @@
 <template>
   <div >
-    <mt-header fixed>
+    <!-- <mt-header fixed>
       <router-link to="/" slot="left">
-        <mt-button icon="back" :title="title">{{title}}</mt-button>
+        <mt-button icon="back" :title="title"></mt-button>
         
       </router-link>
       <select slot="right">
@@ -10,10 +10,22 @@
             <option v-for="i in foodFamilylist">{{i.foodname}}</option>
       </select>
      
-    </mt-header>
+    </mt-header> -->
+    <div class="top">
+
+    
+    <div class="foothead">
+        <div class="t-foothead" @click="$router.push('/')"><img src="../../assets/img/icon-rili-1@2x.png" alt=""></div>
+        <h2>{{title}}</h2>
+        <select slot="right">
+          <option value="1">全部</option>
+            <option v-for="i in foodFamilylist">{{i.foodname}}</option>
+      </select>
+    </div>
    
   <div class="yingyang">
 <p >营养素排序</p>
+    </div>
     </div>
        <div class="wrapper scrollHome" ref="homeWrapper">
 <div class="content">
@@ -94,7 +106,34 @@ export default {
 </script>
 
 <style scoped>
-
+.top{
+    height: 25vw;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+}
+.foothead{
+    height: 15vw;
+    width: 100%;
+    line-height: 15vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.t-foothead{
+    width: 5vw;
+    height: 5vw;
+}
+.t-foothead img{
+    width: 100%;
+    height: 100%;
+}
+.mint-header-button{
+    height: 25vw;
+}
 .scrollHome{
         height: 100%;
         width: 100%;
@@ -106,10 +145,12 @@ export default {
         margin-bottom: 18vw;
     }
 
-
-    .mint-header{
+.mint-button-text{
+    height: 20vw;
+}
+.mint-header{
   background-color: #fff;
-  height: 15vw;
+  height: 25vw;
   color: #000;
   font-size: 5vw;
 }
@@ -131,7 +172,7 @@ select{
     outline: none;
 }
 .yingyang{
-    margin-top: 15vw;
+   
     font-size: 4vw;
     line-height: 10vw;
     height: 10vw;
@@ -144,11 +185,13 @@ select{
 }
 .content ul{
     height: 100%;
+    padding: 3vw;
+    background: #f4f4f4;
 }
 .content ul li{
     height: 20vw;
-    background: #f4f4f4;
-    border-top:solid 1px #ddd;
+    
+    border-bottom:solid 1px #ddd;
     display: flex;
    
 

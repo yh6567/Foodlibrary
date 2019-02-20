@@ -67,7 +67,7 @@ export default {
                 {imgUrl:require("../../assets/img/sy_icon_jg@2x.png"),name:"坚果类"},
                 {imgUrl:require("../../assets/img/sy_icon_tw@2x.png"),name:"调味品"},
                 {imgUrl:require("../../assets/img/sy_icon_yl@2x.png"),name:"饮料类"},
-                {imgUrl:require("../../assets/img/sy_icon_dx@2x.png"),name:"零食,点心及冷饮"},
+                {imgUrl:require("../../assets/img/sy_icon_dx@2x.png"),name:"零食冷饮"},
                 {imgUrl:require("../../assets/img/sy_icon_qt@2x.png"),name:"其他"} 
                ],
       value:''
@@ -112,6 +112,14 @@ export default {
 </script>
 
 <style scoped>
+#main nav>dl{
+    margin: 0;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
 #main{
       width: 100%;
         height: 100%;
@@ -126,20 +134,20 @@ export default {
  #main>.scrollHome>.content{
         padding-bottom: 20vw;
     }
-ul{
+ #main ul{
     display: flex;
      justify-content: space-around;
      flex-wrap: wrap;
      height: 100%;
 }
-li{
+ #main ul li{
    
     width: 30vw;
     height: 30vw; 
-    list-style: none; 
-   
+    list-style: none;
+    margin-bottom:10vw; 
 }
-li dl{
+ #main ul li dl{
    display: flex;
    flex-direction: column;
    justify-content:space-around;
@@ -147,7 +155,7 @@ li dl{
     font-size: 4vw;
 }
 
-li dl dt img{
+ #main ul li dl dt img{
     width: 15vw;
     height: 15vw;
     margin: 5vw;
@@ -161,7 +169,7 @@ li dl dt img{
 .food-family{
     background: #fff;
     margin: 3vw;
-    height: 1200px;
+    /* height: 1200px; */
     
 
 }
@@ -185,12 +193,12 @@ li dl dt img{
  }
  #main nav{
      height: 20vw;
-    align-items: center;
+     align-items: center;
      display: flex;
      justify-content: space-around;
      font-size: 4vw;
      background: #fff;
-     margin: 3vw;
+     margin: 3vw
  }
  nav img{
      margin-left: 3VW;
