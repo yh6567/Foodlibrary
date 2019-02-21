@@ -40,9 +40,8 @@ export default {
             })
             this.allsearched.push(a);
             window.localStorage.setItem("searched",this.allsearched.toString());
-            this.$store.dispatch("getFoodListInfo");
-
-
+            this.$store.commit("remSearch",this.searching);
+            this.$store.dispatch("getFoodListInfo",a);
             this.$router.push({path:"/searchanswer"})
 
         }

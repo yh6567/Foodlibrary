@@ -3,11 +3,11 @@
     <div class="details">
       <ul>
         <li><p>营养元素</p><p>每100克</p></li>
-        <li><p>热量</p><p>{{this.foodDetails.foodinfo.calories}}</p></li>
-        <li><p>蛋白质</p><p>{{this.foodDetails.foodinfo.protein}}</p></li>
-        <li><p>脂肪</p><p>{{this.foodDetails.foodinfo.fat}}</p></li>
-        <li><p>碳水化合物</p><p>{{this.foodDetails.foodinfo.carbohydrate}}</p></li>
-        <li><p>膳食纤维</p><p>{{this.foodDetails.foodinfo.dietaryfibre}}</p></li>
+        <li><p>热量</p><p>{{this.foodDetails.food.calories}}</p></li>
+        <li><p>蛋白质</p><p>{{this.foodDetails.food.protein}}</p></li>
+        <li><p>脂肪</p><p>{{this.foodDetails.food.fat}}</p></li>
+        <li><p>碳水化合物</p><p>{{this.foodDetails.food.carbohydrate}}</p></li>
+        <li><p>膳食纤维</p><p>{{this.foodDetails.food.dietaryfibre}}</p></li>
         <li>更多营养元素</li>
       </ul>
     </div>
@@ -15,10 +15,10 @@
       <p class="ft-title">食品红绿灯</p>
       <div class="ft-content">
         <div class="ft-point">
-          <img :src="point(this.foodDetails.foodinfo.foodcolor)" class="point"/>
+          <img :src="point(this.foodDetails.food.foodColor)" class="point"/>
           <p>推荐</p>
         </div>
-        <span>{{this.foodDetails.remark}}</span>
+        <span>{{this.foodDetails.food.remark}}</span>
       </div>
     </div>
   </div>
@@ -28,7 +28,7 @@
 import point1 from "../../../assets/img/zs_icon_dian@3x.png";
 import point2 from "../../../assets/img/zs_icon_dian@3x(1).png";
 import point3 from "../../../assets/img/yuanxing@3x.png";
-import Vuex from "Vuex";
+import Vuex from "vuex";
 export default {
     methods:{
       point(item){
@@ -45,7 +45,7 @@ export default {
       })
     },
     created(){
-      this.$store.dispatch("getFoodDetails");
+
     }
 }
 </script>

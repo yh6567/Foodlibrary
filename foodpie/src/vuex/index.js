@@ -1,5 +1,5 @@
 import Vue from "vue"
-import Vuex from "Vuex"
+import Vuex from "vuex"
 import baike from "./baike"
 import my from "./my"
 import  shopping from "./shopping"

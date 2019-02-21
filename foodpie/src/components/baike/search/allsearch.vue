@@ -30,8 +30,8 @@
               window.localStorage.setItem("searched",this.touchbesearched.toString());
 
 
-
-              this.$store.dispatch("getFoodListInfo");
+              this.$store.commit("remSearch",this.searching);
+              this.$store.dispatch("getFoodListInfo",a);
 
               this.$router.push({path:"/searchanswer"})
           }
@@ -48,7 +48,7 @@
     min-height: 2.67rem;
     color:#A3A3A3;
     font-size: .23rem;
-      overflow: hidden;
+    overflow: hidden;
   }
   .searched-title{
     width: 100%;
@@ -66,7 +66,7 @@
     width: 50%;
     height: .89rem;
     float: left;
-      border-bottom: 2px solid #F6F6F6;
+    border-bottom: 2px solid #F6F6F6;
     overflow: hidden;
     span{
       margin: .29rem 0 .29rem .29rem;

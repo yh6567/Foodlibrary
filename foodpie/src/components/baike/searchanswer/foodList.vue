@@ -1,17 +1,19 @@
 <template>
-    <div class="foodList wrapper">
-        <div class="space"></div>
-        <ul class="content">
-            <li v-for="(item,index) in foodlist" @click="handlerFoodDetail(item.foodid)">
+    <div class="foodList wrapper" ref="content">
+        <ul class="content main">
+            <li v-for="(item,index) in foodlist" @click="handlerFoodDetail(item.id)">
                 <img :src="item.foodimg" class="foodimg"/>
                 <div class="text">
                     <span class="foodname">{{item.foodname}}</span>
                     <div class="energy">
-                        <span>{{item.calore}}</span><p>千卡/100克</p>
+                        <span>{{item.calories}}</span><p>千卡/100克</p>
                     </div>
                 </div>
-                <img :src="point(item.foodcolor)" class="point"/>
+                <img :src="point(item.foodColor)" class="point"/>
             </li>
+            <div class="bottom-tip">
+                    <span class="loading-hook">{{pullupMsg}}</span>
+            </div>
         </ul>
     </div>
 </template>
@@ -20,12 +22,13 @@
     import point1 from "../../../assets/img/zs_icon_dian@3x.png";
     import point2 from "../../../assets/img/zs_icon_dian@3x(1).png";
     import point3 from "../../../assets/img/yuanxing@3x.png";
-    import Vuex from "Vuex";
-    // import BScroll from 'better-scroll'
-
+    import Vuex from "vuex";
+    import BScroll from 'better-scroll';
     export default{
         data(){
             return {
+              data: [0,1,2,3,4,5,6],
+              pullupMsg: '加载更多',
             }
         },
         methods:{
@@ -37,19 +40,29 @@
                 }
             },
             handlerFoodDetail(foodid){
+                this.$store.dispatch("getFoodDetails",foodid);
                 this.$router.push("/fooddetail");
             }
         },
-
-        computed: {
-            ...Vuex.mapState({
-                foodlist: state => state.baike.foodListInfo
-            })
-
+        computed: { ...Vuex.mapState({ foodlist: state => state.baike.foodListInfo })
         },mounted(){
-
-        }
-
+          this.$nextTick(() => {
+            if (!this.scroll) {
+               this.scroll =new BScroll(this.$refs.content, {
+                              scrollY: true,
+                              click: true,
+                              pullUpLoad:true,
+                              probeType:1
+                });
+                console.log(this.scroll);
+                this.scroll.on("pullingUp",()=>{
+                this.$store.dispatch("getFoodListInfo",this.$store.state.baike.searchch);
+                console.log("searchch",this.$store.state.baike.searchch)
+                })
+       }else{
+          this.scroll.refresh();
+        }})
+      }
     }
 </script>
 
@@ -57,13 +70,13 @@
     .foodList{
         width: 100%;
         height: 13.34rem;
-        overflow-y: scroll;
         font-size: .18rem;
+        position: fixed;
+        overflow: hidden;
+        top:.9rem;
     }
-    .space{
-        width: 100%;
-        height: .9rem;
-        background: #F6F6F6;
+    .main{
+      height:max-content;
     }
     .foodList>ul>li{
         overflow: hidden;
@@ -93,5 +106,16 @@
             float: right;
             margin: .4rem .32rem 0 0rem;
         }
-    }
+        }
+        .bottom-tip{
+         width: 100%;
+         height: 35px;
+         line-height: 35px;
+         text-align: center;
+         color: #777;
+         background: #f2f2f2;
+         position: absolute;
+         bottom: -35px;
+         left: 0;
+       }
 </style>

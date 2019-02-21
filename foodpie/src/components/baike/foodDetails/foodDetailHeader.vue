@@ -1,12 +1,12 @@
 <template>
    <div>
        <img src="../../../assets/img/icon_fh@3x.png" @click="back()">
-       <span>{{this.foodDetails.foodinfo.foodname}}</span>
+       <span>{{this.foodDetails.food.foodname}}</span>
    </div>
 </template>
 
 <script>
-	import Vuex from "Vuex";
+	import Vuex from "vuex";
 
     export default {
 
@@ -36,7 +36,7 @@
         border-bottom: .01rem solid rgba(240,240,240,1);
         font-family: PingFang-SC-Regular;
         img{
-            width:.34rem;
+            width:.32rem;
             height:.32rem;
             margin: .28rem 0 0 .32rem;
             position: absolute;

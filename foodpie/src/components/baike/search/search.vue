@@ -27,15 +27,17 @@
              })
              this.besearched.push(this.searching);
              window.localStorage.setItem("searched",this.besearched.toString());
+             this.$store.dispatch("getFoodListInfo",this.searching);
+             // this.$store.commit("remSearch",this.searching);
              this.searching = '';
-             this.$store.dispatch("getFoodListInfo");
-
-             if(this.$store.state.baike.foodListInfo[0]){
-                 this.$router.push({path:"/searchanswer"})
-             }
+             // if(!this.$store.state.baike.foodListInfo[0]){
+             this.$router.push({path:"/searchanswer"})
+             // }
         },
           back(){
-             this.$router.back();
+            this.$store.commit("deletFoodListInfo");
+            this.$store.commit("deletSearch");
+            this.$router.back();
           }
       }
   }

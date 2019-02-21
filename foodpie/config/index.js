@@ -16,7 +16,8 @@ module.exports = {
 
 
 			"/api": {
-				target: "https://www.easy-mock.com/mock/5c356fc6879a3554aca75b8b",
+				target: "http://10.9.31.236:8080/",
+
 				changeOrigin: true,
 				pathRewrite: {
 					"^/api": ""
@@ -33,7 +34,7 @@ module.exports = {
 		},
 
 		// Various Dev Server settings
-		host: 'localhost', // can be overwritten by process.env.HOST
+		host: 'localhost', // 192.168.43.142 can be overwritten by process.env.HOST
 		port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
 		autoOpenBrowser: true,
 		errorOverlay: true,

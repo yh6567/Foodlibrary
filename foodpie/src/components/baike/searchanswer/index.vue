@@ -4,7 +4,6 @@
         <foodlist-com/>
     </div>
 </template>
-
 <script>
     import search from '../search/search'
     import foodlist from  './foodList'

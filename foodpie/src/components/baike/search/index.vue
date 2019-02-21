@@ -35,8 +35,9 @@
 
 <style lang="scss" scoped>
     .min-height{
+      width: 100%;
       background: #F6F6F6;
       height: 13.34rem;
-      overflow-x: scroll;
+      overflow-y: scroll;
     }
 </style>
