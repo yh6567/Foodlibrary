@@ -7,6 +7,9 @@
 			</p>
 			<span class="control-left-school">{{item.konTitle}}</span>
 			<span class="control-left-number">{{item.readNum}}</span>
+			<div class="control-left-eye">
+				<img :src="item.eyeImg"/>
+			</div>
 		</div>
 		<div class="control-right">
 			<img :src="item.eyeImg"/>
@@ -41,7 +44,7 @@
 <style scoped>
 		#inedx_page{
 		width: 100%;
-		height: 10rem;
+		height: 11rem;
 		background: #f6f6f6;
 		overflow-y: auto;
 	}
@@ -57,17 +60,29 @@
 		width: 3.64rem;
 		padding: 0 0.1rem;
 	}
+	.control-left-eye{
+		float: left;
+		width: .26rem;
+		height: .19rem;
+		margin-left: 1.7rem;
+		float: left;
+		margin-top: -.25rem;
+	}
+	.control-left-eye>img{
+		width: 100%;
+		height: 100%;
+	}
 	#inedx_page>.control>.control-left>.control-left-text{
 		font-size: 0.23rem;
 		line-height: 0.38rem;
 		margin-top: 0.3rem;
-		margin-bottom: 0.64rem;
+		margin-bottom: 0.34rem;
 	}
 	#inedx_page>.control>.control-left>.control-left-number{
-		padding-left: 1.09rem;
+		padding-left: 2.09rem;
 		color: #c1c1c1;
 		font-size: 0.18rem;
-		background: 'url(../../../assets/img/gc-pc-yj1.png)' no-repeat 0.8rem 0.1rem;
+		/* background: 'url(../../../assets/img/gc-pc-yj1.png)' no-repeat 0.8rem 0.1rem; */
 	}
 	#inedx_page>.control>.control-left>.control-left-school{
 		font-size: 0.18rem;

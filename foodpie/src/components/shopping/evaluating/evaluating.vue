@@ -34,7 +34,7 @@ export default{
 <style>
 	#evaluating{
 		width: 100%;
-		height: 10rem;
+		height: 15rem;
 		background: #f6f6f6;
 		overflow-y: auto;
 	}
@@ -64,13 +64,14 @@ export default{
 		text-indent: 0.8rem;
 	}
 	#evaluating>.rank>.number>img{
-		width: 16px;
-		height: 16px;
+		width: .16rem;
+		height: .16rem;
 		float: left;
 		margin-left: 2.5rem;
 	}
 	#evaluating>.rank>.number>span{
 		float: left;
-		text-indent: .6rem;
+		margin-left: -.7rem;
+		margin-top: -.1rem;
 	}
 </style>
