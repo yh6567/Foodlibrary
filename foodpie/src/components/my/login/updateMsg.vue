@@ -6,7 +6,7 @@
 			<p @click="conserve()">保存</p>
 		</div>
 		<div class="uptImg" v-show="flagOther">
-			<img :src="user_hpic" />
+			<img :src="userIc" />
 			<!--<img src="../../../assets/img/wd_dl_tx@2x.png"/>-->
 			
 		</div>
@@ -68,7 +68,7 @@
 				//手机号
 				telphone:"",
 				//用户头像
-				user_hpic:"",
+				userIc:"",
 				loginTit:"",
 				myUsername:"",
 				UserName:"",
@@ -162,27 +162,29 @@
 			}
 		},
 		created(){
+			
 			//本地是否存储了数据---存储 了就请求数据
 			if(localStorage.getItem("user")){
 				this.telphone = JSON.parse(localStorage.getItem("user")).telphone;
 				this.$axios({
 					method:"post",
-					url:"/mo/mock/5c356fc6879a3554aca75b8b/api/userinfo_update#!method=POST",
+					url:"/api/userinfo_update",
 					data:{
 						telphone:this.telphone
 					}
 				}).then((res)=>{
-					if(res.flag==1){
+					if(res.flag==0){
 						//请求成功，返回结果渲染到页面上
 						let result = res.result;
-						console.log(res)
-						this.user_hpic = result.user_hpic;
-						this.navs[0].con = result.nickname;
-						this.navs[1].con = result.gender;
-						this.navs[2].con = result.age;
-						this.navs[3].con = result.height;
-						this.navs[4].con = result.weight;
-					}else if(res.flag ==0){
+						console.log(result)
+						this.userIc = result.userIc;
+						this.navs[0].con = JSON.parse(localStorage.getItem("user")).nickname;
+						this.navs[1].con = JSON.parse(localStorage.getItem("user")).gender;
+						this.navs[2].con = JSON.parse(localStorage.getItem("user")).age;
+						this.navs[3].con = JSON.parse(localStorage.getItem("user")).height;
+						this.navs[4].con = JSON.parse(localStorage.getItem("user")).weight;
+						
+					}else if(res.flag ==1){
 						//请求失败，显示默认项
 					}
 				})
@@ -247,27 +249,38 @@
 			},
 			//保存修改资料----后端处理进行资料的更新
 			conserve(){
+				let msg = JSON.parse(localStorage.getItem("user"));
+				if(!isNaN(this.navs[3].con)){
+					this.navs[3].con = this.navs[3].con+"cm";
+				}
+				if(!isNaN(this.navs[4].con)){
+					this.navs[4].con = this.navs[4].con+"kg";
+				}
+				console.log(this.navs[4].con)
 				this.$axios({
 					method:"post",
-					url:"/mo/mock/5c356fc6879a3554aca75b8b/api/userinfo_conserve#!method=POST&queryParameters=%5B%5D&body=&headers=%5B%5D",
+					url:"/api/userinfo_conserve",
 					data:{
-						telphone:this.telphone,
-						user_hpic:this.user_hpic,
-						nickname:this.nickname,
-						gender:this.gender,
-						age:this.age,
-						height:this.height,
-						weight:this.weight
+						telphone:msg.telphone,
+						userIc:msg.userIc,
+						nickname:this.navs[0].con,
+						gender:this.navs[1].con,
+						age:this.navs[2].con,
+						height:this.navs[3].con.split("c")[0],
+						weight:this.navs[4].con.split("k")[0]
 					}
 				}).then((res)=>{
-					if(res.flag==1){
+					if(res.flag==0){
 						//资料修改成功，跳转my页面
-						let msg = JSON.parse(localStorage.getItem("user"));
 						msg.nickname = this.navs[0].con;
-						msg.user_hpic = this.user_hpic;
+						msg.gender = this.navs[1].con;
+						msg.age = this.navs[2].con;
+						msg.height = this.navs[3].con;
+						msg.weight = this.navs[4].con;
+						// msg.userIc = this.userIc;
 						localStorage.setItem("user",JSON.stringify(msg));
 						this.$router.push("/my");
-					}else if(res.flag==0){
+					}else if(res.flag==1){
 						Toast({
 							message: '服务器繁忙，请重试',
 							position: 'middle',
@@ -406,11 +419,12 @@
 			img{
 				width: 1.68rem;
 				height: 1.68rem;
+				border-radius: 50%;
 			}
 		}
 		.uptMain{
 			width: 100%;
-			height: 100%;
+			height: auto;
 			li{
 				width: 100%;
 				height: 1.25rem;

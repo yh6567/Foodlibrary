@@ -1,10 +1,10 @@
 <template>
 	<div class="collectionFoods">
 		<ul class="wu-foods">
-			<li>
-				<img src="../../../assets/img/tu1@2x.png"/>
+			<li v-for="(item,index) in collectionFoods">
+				<img :src="item.foodimg"/>
 				<p class="foods">
-					<em>玉米(鲜)</em>
+					<em>{{item.foodname}}</em>
 					<i><span>112</span>千卡/100克</i>
 				</p>
 				
@@ -19,6 +19,26 @@
 			return {
 				collectionFoods:[]	
 			}
+		},
+		created(){
+			this.telphone = JSON.parse( localStorage.getItem("user") ).telphone;
+			//请求数据，显示收藏文章列表
+			this.$axios({
+				method:"post",
+				url:"/api/collection_article?kind=1",
+				data:{
+					telphone:this.telphone
+				}
+			}).then((res)=>{
+				console.log(res)
+				//有收藏的文章
+				if(res.flag==1){
+					this.collectionFoods = res.list;
+				}else{
+					//该用户没有收藏的文章
+					
+				}
+			})
 		}
 	}
 </script>

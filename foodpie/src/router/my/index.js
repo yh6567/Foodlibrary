@@ -2,7 +2,7 @@ import my from "@/components/my/index";
 
 import Cs from "@/components/my/cs";
 
-import MyPic from "@/components/my/myPic";
+//import MyPic from "@/components/my/myPic";
 import MyCol from "@/components/my/collection/myCollection";
 //上传食物数据部分
 import MyUpload from "@/components/my/myUpload/myUpload";
@@ -38,7 +38,10 @@ export default
     {
     	path:"/myPic",
     	name:"myPic",
-    	component:MyPic
+//  	component:MyPic,
+    	component:(resolve)=>{
+    		require(['@/components/my/myPic.vue'],resolve)
+    	}
     },
     {
     	path:"/myCollection",

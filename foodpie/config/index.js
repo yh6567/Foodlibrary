@@ -16,7 +16,7 @@ module.exports = {
 
 
 			"/api": {
-				target: "https://www.easy-mock.com/mock/5c356fc6879a3554aca75b8b",
+				target: "http://10.9.31.251:8080",
 				changeOrigin: true,
 				pathRewrite: {
 					"^/api": ""

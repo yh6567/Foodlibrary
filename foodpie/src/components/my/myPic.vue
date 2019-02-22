@@ -36,6 +36,66 @@
 					<p>美式炒蛋</p>
 				</li>
 			</ul>
+			<ul>
+				<li class="mainTop">
+					<img src="../../assets/img/xg_tx.png" />
+					<h4>一起吃喝</h4><br />
+					<p>3天前更新</p>
+				</li>
+				<li class="mainImg">
+					<img src="../../assets/img/581de0e68fefa53900e84f42e578392.png"/>
+					<p>营养早餐，吃出美丽，吃出健康</p>
+					<span>2018/12/26</span>
+				</li>
+				<li class="mainName">
+					<p>美式炒蛋</p>
+				</li>
+			</ul>
+			<ul>
+				<li class="mainTop">
+					<img src="../../assets/img/xg_tx.png" />
+					<h4>一起吃喝</h4><br />
+					<p>3天前更新</p>
+				</li>
+				<li class="mainImg">
+					<img src="../../assets/img/581de0e68fefa53900e84f42e578392.png"/>
+					<p>营养早餐，吃出美丽，吃出健康</p>
+					<span>2018/12/26</span>
+				</li>
+				<li class="mainName">
+					<p>美式炒蛋</p>
+				</li>
+			</ul>
+			<ul>
+				<li class="mainTop">
+					<img src="../../assets/img/xg_tx.png" />
+					<h4>一起吃喝</h4><br />
+					<p>3天前更新</p>
+				</li>
+				<li class="mainImg">
+					<img src="../../assets/img/581de0e68fefa53900e84f42e578392.png"/>
+					<p>营养早餐，吃出美丽，吃出健康</p>
+					<span>2018/12/26</span>
+				</li>
+				<li class="mainName">
+					<p>美式炒蛋</p>
+				</li>
+			</ul>
+			<ul>
+				<li class="mainTop">
+					<img src="../../assets/img/xg_tx.png" />
+					<h4>一起吃喝</h4><br />
+					<p>3天前更新</p>
+				</li>
+				<li class="mainImg">
+					<img src="../../assets/img/581de0e68fefa53900e84f42e578392.png"/>
+					<p>营养早餐，吃出美丽，吃出健康</p>
+					<span>2018/12/26</span>
+				</li>
+				<li class="mainName">
+					<p>美式炒蛋</p>
+				</li>
+			</ul>
 		</div>
 	</div>
 </template>
@@ -62,19 +122,27 @@
 	.myPic{
 		width: 7.5rem;
 		height: 13.34rem;
-		overflow: hidden;
+		overflow: auto;
 		font-family: "微软雅黑";
+
 		.myPicTop{
 			width: 100%;
-			height: .88rem;
-			margin-top: .4rem;
+			height: 1.28rem;
+			
 			display: flex;
 			align-items: center;
-			position: relative;
+			position: fixed;
+			left: 0;
+			top: 0;
+			z-index: 3;
+			background: #f7f7f7;
 			justify-content: center;
+			
 			border-bottom: 1px solid rgba(240,240,240,1);
 			img{
 				position: absolute;
+				width: .34rem;
+				height: .32rem;
 				left: .32rem;
 			}
 			h2{
@@ -87,8 +155,11 @@
 			width: 100%;
 			height: auto;
 			background: #F7F7F7;
+			overflow: auto;
+			margin-top: 1.2rem;
 			ul{
 				width: 100%;
+				
 				height: auto;
 				background: #FFFFFF;
 				position: relative;

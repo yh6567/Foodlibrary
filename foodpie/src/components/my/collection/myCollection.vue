@@ -28,6 +28,7 @@
 			"collectionFoods-com":collectionFoods
 		},
 		beforeRouteEnter(to,from ,next){
+			
 			let msg = localStorage.getItem("user");
 			if(msg){
 				next();
