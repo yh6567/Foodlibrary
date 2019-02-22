@@ -24,15 +24,14 @@
 			//请求数据，显示收藏文章列表
 			this.$axios({
 				method:"post",
-				url:"/mo/mock/5c356fc6879a3554aca75b8b/api/collection_article",
+				url:"/api/collection_article?kind=0",
 				data:{
 					telphone:this.telphone
 				}
 			}).then((res)=>{
-				console.log(res)
 				//有收藏的文章
-				if(res.data.flag==1){
-					this.collectionArticles = res.data.result;
+				if(res.flag==1){
+					this.collectionArticles = res.list;
 				}else{
 					//该用户没有收藏的文章
 					

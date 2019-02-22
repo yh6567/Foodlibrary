@@ -42,6 +42,8 @@
 			position: relative;
 			justify-content: center;
 			img{
+				width: .34rem;
+				height: .32rem;
 				position: absolute;
 				left: .32rem;
 			}
