@@ -16,12 +16,7 @@ module.exports = {
 
 
 			"/api": {
-<<<<<<< HEAD
-				target: "http://10.9.31.236:8080/",
-
-=======
 				target: "http://10.9.31.251:8080",
->>>>>>> zhouzhou
 				changeOrigin: true,
 				pathRewrite: {
 					"^/api": ""
